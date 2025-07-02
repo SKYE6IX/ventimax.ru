@@ -1,0 +1,25 @@
+@use "@/global-style/variables.scss" as *;
+
+.button-cta {
+  margin-left: auto;
+  border: none;
+  padding: 17px 56px;
+  background-color: $primary;
+  color: $neutral;
+  border-radius: 8px;
+  font-family: $font-roboto;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 11px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  @include between-breakpoints("xs", "sm") {
+    padding: 10px 20px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+  }
+}
+.button-cta:hover {
+  background-color: rgba(32, 78, 81, 0.9);
+}

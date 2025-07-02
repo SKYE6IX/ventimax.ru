@@ -1,0 +1,34 @@
+@use "@/global-style/variables.scss" as *;
+
+.header {
+  background: $neutral;
+  width: 100%;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+  padding-right: 120px;
+  @include between-breakpoints("xs", "sm") {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+  }
+  @include between-breakpoints("md", "lg") {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.header__right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  @include between-breakpoints("xs", "sm") {
+    .nav {
+      display: none;
+    }
+  }
+  @include between-breakpoints("md", "lg") {
+    gap: 50px;
+  }
+}

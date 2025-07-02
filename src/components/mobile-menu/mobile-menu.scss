@@ -1,0 +1,32 @@
+@use "@/global-style/variables.scss" as *;
+
+.mobile-menu {
+  display: none;
+  margin-left: 15px;
+  @include between-breakpoints("xs", "sm") {
+    display: block;
+  }
+}
+.mobile-menu__button {
+  width: 32px;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-menu__nav {
+  position: absolute;
+  padding-top: 40px;
+  top: 60px;
+  right: 0px;
+  width: 100%;
+  height: 341px;
+  background-color: $neutral;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+.mobile-menu__nav.open {
+  pointer-events: auto;
+}

@@ -1,0 +1,31 @@
+@use "@/global-style/variables.scss" as *;
+
+.nav {
+  margin-left: auto;
+}
+.nav__block-item {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  @include between-breakpoints("xs", "sm") {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.nav__item {
+  font-family: $font-roboto;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 20px;
+  color: $text;
+  letter-spacing: 1px;
+  transition: color 0.3 ease-in-out;
+  @include between-breakpoints("xs", "sm") {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+.nav__item:hover {
+  color: $primary;
+}

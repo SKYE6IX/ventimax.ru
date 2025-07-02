@@ -1,0 +1,36 @@
+@use "sass:map";
+
+$primary: #204e51;
+$background: #f0f0f0;
+$neutral: #fff;
+$text: #1e1e1e;
+$background-muted: #1a1f28;
+$support: #40916c;
+
+// Font
+$font-roboto: var(--font-roboto);
+
+// Breaking points
+$breakpoints: (
+  "xs": 320px,
+  "sm": 912px,
+  "md": 1024px,
+  "lg": 1280px,
+  "xxl": 1920px,
+);
+
+// Mixins
+@mixin between-breakpoints($start, $end) {
+  @media only screen and (min-width: map.get($breakpoints, $start)) and (max-width: map.get($breakpoints, $end)) {
+    @content;
+  }
+}
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media only screen and (min-width: map.get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint `#{$breakpoint}`";
+  }
+}

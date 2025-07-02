@@ -1,0 +1,12 @@
+{
+  "Navigation": {
+    "home": "首页",
+    "about": "关于我们",
+    "usage": "使用说明",
+    "products": "产品",
+    "faq": "常见问题"
+  },
+  "CTA": {
+    "text": "获取报价"
+  }
+}
