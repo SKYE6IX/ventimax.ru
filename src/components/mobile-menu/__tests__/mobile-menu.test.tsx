@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import { NextIntlClientProvider } from "next-intl";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import messages from "../messages/en.json";
+import messages from "../../../../messages/en.json";
 import MobileMenu from "@/components/mobile-menu/MobileMenu";
 
 jest.mock("@gsap/react");
