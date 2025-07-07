@@ -8,14 +8,14 @@
   align-items: center;
   padding-left: 120px;
   padding-right: 120px;
+  @include max-breakpoint("md") {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
   @include between-breakpoints("xs", "sm") {
     padding-left: 20px;
     padding-right: 20px;
     height: 60px;
-  }
-  @include between-breakpoints("md", "lg") {
-    padding-left: 100px;
-    padding-right: 100px;
   }
 }
 .header__right {
@@ -23,12 +23,20 @@
   display: flex;
   align-items: center;
   gap: 100px;
+  @include max-breakpoint("md") {
+    gap: 30px;
+    & .button-cta {
+      &:lang("ru") {
+        max-width: 150px;
+        line-height: 16.1px;
+        padding: 8px 24px;
+        text-align: center;
+      }
+    }
+  }
   @include between-breakpoints("xs", "sm") {
     .nav {
       display: none;
     }
-  }
-  @include between-breakpoints("md", "lg") {
-    gap: 50px;
   }
 }

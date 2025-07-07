@@ -6,7 +6,7 @@ import "./hero-block.scss";
 function HeroBlock() {
   const t = useTranslations("Pages.home.heroBlock");
   return (
-    <div className="hero-block">
+    <section className="hero-block">
       <div className="hero-block__text-content">
         <h1 className="hero-block__title">
           {t.rich("title", {
@@ -17,7 +17,7 @@ function HeroBlock() {
         </h1>
       </div>
       <ContentCarousel />
-    </div>
+    </section>
   );
 }
 export default HeroBlock;

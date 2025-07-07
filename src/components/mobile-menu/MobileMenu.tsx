@@ -34,7 +34,7 @@ function MobileMenu() {
   }, [isOpen]);
 
   return (
-    <div className="mobile-menu">
+    <div className="mobile-menu" aria-haspopup="true">
       <button className="mobile-menu__button" onClick={toggleMenu}>
         {isOpen ? (
           <span data-testid="close-icon">

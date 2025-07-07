@@ -13,6 +13,10 @@
     "home": {
       "heroBlock": {
         "title": "从负压风机到温室湿帘.<span> 先进的动物健康系统.</span>"
+      },
+      "introBlock": {
+        "title": "用智能设备提升生产力.",
+        "subTitle": "保护您的牲畜."
       }
     }
   },

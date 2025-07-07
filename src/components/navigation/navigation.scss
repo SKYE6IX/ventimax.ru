@@ -17,10 +17,20 @@
   font-family: $font-roboto;
   font-size: 0.875rem;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 15.4px;
   color: $text;
   letter-spacing: 1px;
+  text-align: center;
+  white-space: preserve nowrap;
   transition: color 0.3 ease-in-out;
+  width: min-content;
+  @include max-breakpoint("md") {
+    &:lang("ru") {
+      &:last-child {
+        white-space: wrap;
+      }
+    }
+  }
   @include between-breakpoints("xs", "sm") {
     font-size: 1.5rem;
     font-weight: 400;
