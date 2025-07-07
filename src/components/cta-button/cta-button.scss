@@ -3,10 +3,10 @@
 .button-cta {
   margin-left: auto;
   border: none;
-  padding: 17px 56px;
+  padding: 20px 32px;
   background-color: $primary;
   color: $neutral;
-  border-radius: 8px;
+  border-radius: 10px;
   font-family: $font-roboto;
   font-weight: 900;
   font-size: 1rem;
@@ -15,9 +15,10 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   @include between-breakpoints("xs", "sm") {
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-weight: 800;
     letter-spacing: 0.2px;
+    border-radius: 8px;
   }
 }
 .button-cta:hover {

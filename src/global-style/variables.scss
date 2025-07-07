@@ -13,7 +13,7 @@ $font-roboto: var(--font-roboto);
 // Breaking points
 $breakpoints: (
   "xs": 320px,
-  "sm": 912px,
+  "sm": 744px,
   "md": 1024px,
   "lg": 1280px,
   "xxl": 1920px,
@@ -25,12 +25,17 @@ $breakpoints: (
     @content;
   }
 }
-@mixin respond-to($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
+@mixin min-breakpoint($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
     @media only screen and (min-width: map.get($breakpoints, $breakpoint)) {
       @content;
     }
-  } @else {
-    @warn "Unknown breakpoint `#{$breakpoint}`";
+  }
+}
+@mixin max-breakpoint($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media only screen and (max-width: map.get($breakpoints, $breakpoint)) {
+      @content;
+    }
   }
 }

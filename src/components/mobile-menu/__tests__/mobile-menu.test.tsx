@@ -11,7 +11,6 @@ jest.mock("gsap");
 describe("MobileMenu Component", () => {
   beforeEach(() => {
     jest.clearAllMocks();
-
     (useGSAP as jest.Mock).mockImplementation((callback) => {
       callback({});
     });

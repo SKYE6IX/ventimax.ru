@@ -8,5 +8,38 @@
   },
   "CTA": {
     "text": "Get A Quote"
+  },
+  "Pages": {
+    "home": {
+      "heroBlock": {
+        "title": "FROM NEGATIVE-PRESSURE FANS TO GREENHOUSE PADS.<span> ELITE SYSTEM FOR ANIMAL WELFARE.</span>"
+      }
+    }
+  },
+  "Products": {
+    "hy-push-pull-exhaust-fans": {
+      "highlight": "HY series High class fan is mainly made up of blade , Centrifugal Opening Device, motor , outer frame, protectingnets, supporting frames, shutters. lt is made based on aerodynamic, effectively reduce the wind resistance.",
+      "description": ""
+    },
+    "hy-cooling-pad": {
+      "highlight": "Corrugated paper has high intensity structure, corrosion resistant, long service life. Fine percolating and absorbing water to ensure water drip wet the wall.",
+      "description": ""
+    },
+    "hy-silos": {
+      "highlight": "Silo coaming panel designed in semi-circular shape, smooth, strong with good looking. Lower coaming panel equipped with water drip edge,prevent raindrops falling on the lower cone or other parts.",
+      "description": ""
+    },
+    "hy-electric-heaters": {
+      "highlight": "This fully automated system lets you set and forget your desired temperature, with multi-level heating adjustment for customized comfort. Its advanced ceramic heating technology saves 30% energy while withstanding harsh conditions like humid livestock barns.",
+      "description": ""
+    },
+    "hy-dry-and-wet-seprator": {
+      "highlight": "This series of solid-liquid separators can be widely used as good equipment for separating animal feces, wine residue, medicine residue, slaughterhouse wastewater, biogas slurry, and dry wet separation in pigs, cows, chickens, and various large and medium-sized animal husbandry farms.",
+      "description": ""
+    },
+    "hy-roof-ventilation-fan": {
+      "highlight": "Natural wind-driven ventilation system operates 24/7 without external power. Highly sensitive to even slight breezes or temperature variations, the turbine blades rotate effortlessly to ensure continuous airflow. Designed for stable and silent operation, it significantly improves indoor air quality while maintaining a peaceful environment.",
+      "description": ""
+    }
   }
 }

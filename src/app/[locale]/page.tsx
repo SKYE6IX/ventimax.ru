@@ -1,3 +1,5 @@
+import HeroBlock from "@/components/hero-block/HeroBlock";
+
 export default function Home() {
-  return <div></div>;
+  return <HeroBlock />;
 }

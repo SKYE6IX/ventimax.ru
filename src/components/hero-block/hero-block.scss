@@ -1,0 +1,50 @@
+@use "@/global-style/variables.scss" as *;
+
+.hero-block {
+  margin-top: 40px;
+  width: 100%;
+  overflow-x: clip;
+  @include between-breakpoints("xs", "sm") {
+    margin-top: 20px;
+  }
+}
+.hero-block__text-content {
+  margin: 0px auto;
+  width: 1200px;
+  padding: 40px 40px 60px 40px;
+  border-radius: 15px;
+  background: $neutral;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include max-breakpoint("lg") {
+    width: calc(100% - 200px);
+  }
+  @include max-breakpoint("md") {
+    padding: 25px 25px 50px 25px;
+    width: calc(100% - 200px);
+  }
+  @include between-breakpoints("xs", "sm") {
+    padding: 15px 15px 40px 15px;
+    width: calc(100% - 40px);
+  }
+}
+.hero-block__title {
+  font-family: $font-roboto;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 50px;
+  color: $primary;
+  letter-spacing: 0.081px;
+  span {
+    color: #7d7d7d;
+  }
+  @include max-breakpoint("md") {
+    font-size: 2.1875rem;
+    line-height: 38.5px;
+  }
+  @include between-breakpoints("xs", "sm") {
+    font-size: 2rem;
+    line-height: 35.2px;
+  }
+}
