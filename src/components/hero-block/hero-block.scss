@@ -17,14 +17,14 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  @include max-breakpoint("lg") {
-    width: calc(100% - 200px);
-  }
   @include max-breakpoint("md") {
     padding: 25px 25px 50px 25px;
     width: calc(100% - 200px);
   }
-  @include between-breakpoints("xs", "sm") {
+  @include max-breakpoint("sm") {
+    width: calc(100% - 160px);
+  }
+  @include between-breakpoints("xs", "s") {
     padding: 15px 15px 40px 15px;
     width: calc(100% - 40px);
   }
@@ -43,7 +43,7 @@
     font-size: 2.1875rem;
     line-height: 38.5px;
   }
-  @include between-breakpoints("xs", "sm") {
+  @include between-breakpoints("xs", "s") {
     font-size: 2rem;
     line-height: 35.2px;
   }

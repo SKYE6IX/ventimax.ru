@@ -14,7 +14,7 @@
   letter-spacing: 0.5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  @include between-breakpoints("xs", "sm") {
+  @include max-breakpoint("912px") {
     padding: 12px 24px;
     font-weight: 800;
     letter-spacing: 0.2px;

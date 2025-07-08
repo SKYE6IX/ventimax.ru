@@ -73,7 +73,7 @@ function ContentCarousel() {
   return (
     <div className="content-carousel" ref={carouselRef}>
       <div className="content-carousel__slider-controllers">
-        <div className="content-carousel_buttons">
+        <div className="content-carousel_button-wrapper">
           <button
             className="content-carousel_button"
             onClick={previousSlide}

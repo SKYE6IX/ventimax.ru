@@ -1,13 +1,14 @@
 @use "@/global-style/variables.scss" as *;
 
-.nav {
-  margin-left: auto;
-}
 .nav__block-item {
   list-style-type: none;
   display: flex;
   gap: 15px;
   align-items: center;
+  @include max-breakpoint("912px") {
+    flex-direction: column;
+    gap: 40px;
+  }
   @include between-breakpoints("xs", "sm") {
     flex-direction: column;
     gap: 40px;

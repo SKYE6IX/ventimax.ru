@@ -11,24 +11,27 @@
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0.1px;
-  @include between-breakpoints("xs", "sm") {
-    font-size: 1.125rem;
-    font-weight: 600;
-    line-height: 15px;
-    letter-spacing: 0.079px;
-  }
   @include between-breakpoints("md", "lg") {
     font-size: 1.5rem;
     line-height: 15px;
   }
+  @include max-breakpoint("912px") {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 26.4px;
+  }
+  @include between-breakpoints("xs", "sm") {
+    font-size: 1.125rem;
+    line-height: 15px;
+  }
 }
 .logo__icon {
-  @include between-breakpoints("xs", "sm") {
-    width: 50px;
-    height: 30px;
-  }
   @include between-breakpoints("md", "lg") {
     width: 73px;
     height: 43px;
+  }
+  @include max-breakpoint("912px") {
+    width: 50px;
+    height: 30px;
   }
 }

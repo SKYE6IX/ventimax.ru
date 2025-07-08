@@ -32,16 +32,15 @@ function MobileMenu() {
       });
     }
   }, [isOpen]);
-
   return (
     <div className="mobile-menu" aria-haspopup="true">
       <button className="mobile-menu__button" onClick={toggleMenu}>
         {isOpen ? (
-          <span data-testid="close-icon">
+          <span data-testid="close-icon" className="mobile-menu__close-icon">
             <CloseIcon />
           </span>
         ) : (
-          <span data-testid="bugger-icon">
+          <span data-testid="bugger-icon" className="mobile-menu__open-icon">
             <BuggerIcon />
           </span>
         )}

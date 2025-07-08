@@ -12,10 +12,14 @@
     padding-left: 80px;
     padding-right: 80px;
   }
+  @include max-breakpoint("912px") {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 80px;
+  }
   @include between-breakpoints("xs", "sm") {
     padding-left: 20px;
     padding-right: 20px;
-    height: 60px;
   }
 }
 .header__right {
@@ -34,7 +38,7 @@
       }
     }
   }
-  @include between-breakpoints("xs", "sm") {
+  @include max-breakpoint("912px") {
     .nav {
       display: none;
     }
