@@ -97,7 +97,7 @@ function ContentCarousel() {
         {heroProducts.map((product) => (
           <div className="content-carousel__carousel-slide" key={product.id}>
             <Image
-              src={product.image[0]}
+              src={product.heroImage}
               alt={product.name}
               fill={true}
               className="content-carousel__image"

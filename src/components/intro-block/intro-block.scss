@@ -67,8 +67,13 @@
       width: 300px;
     }
   }
-  @include between-breakpoints("xs", "sm") {
+  @include max-breakpoint("sm") {
     width: 100%;
+    &:lang("ru") {
+      width: 100%;
+    }
+  }
+  @include between-breakpoints("xs", "s") {
     font-size: 1.625rem;
     line-height: 28.6px;
     margin-bottom: 10px;
@@ -89,8 +94,10 @@
     line-height: 24.2px;
     margin-bottom: 30px;
   }
-  @include between-breakpoints("xs", "sm") {
+  @include max-breakpoint("sm") {
     width: 100%;
+  }
+  @include between-breakpoints("xs", "s") {
     font-size: 1.125rem;
     line-height: 19.8px;
     margin-bottom: 20px;

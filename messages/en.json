@@ -7,7 +7,8 @@
     "faq": "FAQ"
   },
   "CTA": {
-    "text": "Get A Quote"
+    "text": "Get A Quote",
+    "linkText": "Read more"
   },
   "Pages": {
     "home": {
@@ -17,33 +18,37 @@
       "introBlock": {
         "title": "BOOST PRODUCTIVITY WITH SMARTER EQUIPMENT.",
         "subTitle": "PROTECT YOUR LIVESTOCK."
+      },
+      "featuredProductBlock": {
+        "title": "Products",
+        "buttonText": "Explore All Our Products"
       }
     }
   },
   "Products": {
     "hy-push-pull-exhaust-fans": {
       "highlight": "HY series High class fan is mainly made up of blade , Centrifugal Opening Device, motor , outer frame, protectingnets, supporting frames, shutters. lt is made based on aerodynamic, effectively reduce the wind resistance.",
-      "description": ""
+      "description": "HY series High class fan is mainly made up of blade, Centrifugal Opening Device,motor outer frame, protecting nets, supporting frames, shutters. It is made based on aerodynamic, effectively reduce the wind resistance. The major parts are made of galvanized steel sheets and Stainless steel sheets. Al the products are widely used in various types of buildings as farms ,greenhouses, factory building."
     },
     "hy-cooling-pad": {
       "highlight": "Corrugated paper has high intensity structure, corrosion resistant, long service life. Fine percolating and absorbing water to ensure water drip wet the wall.",
-      "description": ""
+      "description": "It offers excellent percolation and water absorption to ensure the wall stays wet. Its unique three-dimensional structure maximizes the evaporation surface area for efficient heat exchange between water and air. The outer frame is available in aluminum alloy or galvanized board. It comes in various external colors, including brown, green, brown-green interlaced, one-sided black, one-sided green, and one-sided yellow. Corrugated paper features a high-strength structure, is corrosion-resistant, and has a long service life. The warranty period is 5 or 10 years."
     },
     "hy-silos": {
       "highlight": "Silo coaming panel designed in semi-circular shape, smooth, strong with good looking. Lower coaming panel equipped with water drip edge,prevent raindrops falling on the lower cone or other parts.",
-      "description": ""
+      "description": "Silo coaming panel designed in semi-circular shape,smooth,strong with good looking.Lower coaming panel equipped with water drip edge,prevent raindrops falling on the lower cone or other parts. Reasonable angel design, each piece of upper cone plate is overlapped and combined to form the entire upper cone.Upper cone equipped with a vent hole and emergency discharge outlet (optional). Reasonable lower cone angel, feed material drop smoothly,no accumulation. Lower cone equipped with transparent inspection window. Lower cone outlet conventional size 442 or 690mm, outlet to ground distance >860mm, fit flex auger and chain feeding line easily."
     },
     "hy-electric-heaters": {
       "highlight": "This fully automated system lets you set and forget your desired temperature, with multi-level heating adjustment for customized comfort. Its advanced ceramic heating technology saves 30% energy while withstanding harsh conditions like humid livestock barns.",
-      "description": ""
+      "description": "The system offers automatic control, allowing you to set the desired temperature for fully automated operation and shutdown of the electric heating fan, enabling unmanned operation. It features multiple firepower levels, letting you freely select the heating speed and gradient from one level to several based on heating needs and power conditions. It includes delay protection with multiple levels of delayed start to prevent excessive instantaneous starting current from impacting the power grid. The fan also has a delayed stop to utilize all residual heat, protecting the heating element. The ceramic heating is durable and energy-efficient, ideal for challenging environments like livestock and poultry houses or greenhouses with high ammonia and humidity. The specially designed extinction heating tube saves up to 30% more electricity. The fan is ultra-quiet, using an external rotor design with strong airflow and low noise, meeting household standards. It’s easy to use and heats quickly, requiring only electricity (single-phase or three-phase). It reaches maximum heat capacity within 10 minutes of being powered on."
     },
     "hy-dry-and-wet-seprator": {
       "highlight": "This series of solid-liquid separators can be widely used as good equipment for separating animal feces, wine residue, medicine residue, slaughterhouse wastewater, biogas slurry, and dry wet separation in pigs, cows, chickens, and various large and medium-sized animal husbandry farms.",
-      "description": ""
+      "description": "This series of solid-liquid separators is versatile equipment suitable for separating animal feces, wine residue, medicine residue, slaughterhouse wastewater, biogas slurry, and performing dry-wet separation for pigs, cows, chickens, and various large and medium-sized livestock farms. It operates using the natural gravity of water flow, requiring no energy consumption. The crushing component uses low power, ensuring minimal energy use. The machine has a high daily processing capacity and excellent work efficiency. Constructed entirely from 304 stainless steel, it offers high strength, resists deformation, and has a long service life."
     },
     "hy-roof-ventilation-fan": {
       "highlight": "Natural wind-driven ventilation system operates 24/7 without external power. Highly sensitive to even slight breezes or temperature variations, the turbine blades rotate effortlessly to ensure continuous airflow. Designed for stable and silent operation, it significantly improves indoor air quality while maintaining a peaceful environment.",
-      "description": ""
+      "description": "The system is powered by natural wind and operates 24 hours a day. It is highly sensitive, activated by slight breezes or temperature differences to drive the turbine blade. It rotates stably and quietly, improving the indoor environment. The design uses high-quality bearings, requiring no lubrication, ensuring durability and a low failure rate. It is corrosion-resistant, acid- and alkali-proof, and has a long service life."
     }
   }
 }

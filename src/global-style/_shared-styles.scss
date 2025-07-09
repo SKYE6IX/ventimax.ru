@@ -1,0 +1,24 @@
+@use "./variables.scss" as *;
+
+%block-title {
+  font-family: var(--font-roboto);
+  font-size: 2rem;
+  line-height: 20px;
+  font-weight: 700;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  border: 1px solid $primary;
+  padding: 18px 22px;
+  @include max-breakpoint("md") {
+    font-size: 1.75rem;
+    padding: 16px 20px;
+    line-height: 18px;
+  }
+  @include between-breakpoints("xs", "s") {
+    font-size: 1.5rem;
+    line-height: 14px;
+    font-weight: 500;
+  }
+}

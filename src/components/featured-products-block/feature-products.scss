@@ -1,0 +1,72 @@
+@use "@/global-style/variables.scss" as *;
+@use "@/global-style/shared-styles.scss" as *;
+
+.featured-products {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include max-breakpoint("md") {
+    margin-top: 80px;
+    width: calc(100% - 200px);
+  }
+  @include max-breakpoint("sm") {
+    width: calc(100% - 160px);
+  }
+  @include between-breakpoints("xs", "s") {
+    margin-top: 40px;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.featured-products__title {
+  @extend %block-title;
+}
+.featured-products__product-list {
+  margin-top: 80px; //(-40px is on image card) plus 40px space between title
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  row-gap: 80px; //60px space plus additional 20px shadow space from the svg background from the card
+  @include max-breakpoint("md") {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    row-gap: 80px; //60px space plus additional 20px shadow space from the svg background from the card
+  }
+  @include max-breakpoint("sm") {
+    gap: 20px;
+    row-gap: 60px; //60px space plus additional 20px shadow space from the svg background from the card
+  }
+  @include between-breakpoints("xs", "s") {
+    display: flex;
+    flex-direction: column;
+    gap: 80px; //(-40px is on image card) plus 40px space between title
+  }
+}
+.featured-products__button {
+  margin-top: 80px; //60px space plus additional 20px shadow space from the svg background from the card
+  font-family: $font-roboto;
+  font-size: 1rem;
+  line-height: 12.2px;
+  background: $primary;
+  color: $neutral;
+  border: none;
+  padding: 18px 22px;
+  border-radius: 15px;
+  transition: opacity 0.3s ease-in;
+  @include max-breakpoint("md") {
+    margin-top: 60px; //40px space plus additional 20px shadow space from the svg background from the
+  }
+}
+.featured-products__button:hover {
+  opacity: 0.9;
+}
