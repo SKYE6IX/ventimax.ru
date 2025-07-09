@@ -22,6 +22,21 @@
       "featuredProductBlock": {
         "title": "Products",
         "buttonText": "Explore All Our Products"
+      },
+      "aboutUsBlock": {
+        "title": "About us",
+        "subTitle": "We Provide The Best Agricultural Cooling and Heating Systems solutions.",
+        "text": "Qingzhou Ventimax Agriculture and Animal Husbandry Technology LTD. Established in 2010, is a professional manufacturer engaged in the research, development, sale and service of all kinds of cooling heating and animal husbandry equipment. We are located in Weifang City Shandong Province with convenient transportation access. Dedicated to strict quality control and thoughtful customer service. Selling well around China, our products are also exported to clients in countries and region like Australia, kroea, Japan, Spain, Singapore and Europe and the United States.",
+        "weInto": {
+          "one": "Negative Pressure Fan",
+          "two": "Cooling Pad",
+          "three": "Green House And Poultry Fan",
+          "four": "Manure Scraper Machine",
+          "five": "Feed Silo",
+          "six": "Light Traps"
+        },
+        "buttonText": "Learn more",
+        "yoe": "Years of  Experience"
       }
     }
   },
