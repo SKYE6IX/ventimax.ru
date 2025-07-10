@@ -1,0 +1,190 @@
+@use "@/global-style/variables.scss" as *;
+@use "@/global-style/shared-styles.scss" as *;
+
+.form-container {
+  width: 100%;
+}
+.form-container__title {
+  font-family: $font-roboto;
+  font-size: 3.125rem;
+  line-height: 55px;
+  font-weight: 400;
+  color: $text;
+  @include max-breakpoint("md") {
+    font-size: 2.5rem;
+    line-height: 44px;
+  }
+}
+.form-container__inner-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  @include max-breakpoint("md") {
+    position: relative;
+    flex-direction: column;
+    gap: 50px;
+  }
+  @include between-breakpoints("xs", "s") {
+    margin-top: 30px;
+    gap: 40px;
+  }
+}
+.form-container__form {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form-container__form-input-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  @include between-breakpoints("xs", "s") {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.form-container__form-label {
+  font-family: $font-roboto;
+  font-size: 1.125rem;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: $text;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form-container__form-input,
+.form-container__form-text-area {
+  height: 60px;
+  border-radius: 15px;
+  border: 1px solid #d3d8de;
+  background: rgba(255, 255, 255, 0);
+  padding: 21px;
+  font-family: $font-roboto;
+  font-size: 1rem;
+  line-height: 19.2px;
+  outline: none;
+}
+.form-container__form-text-area {
+  resize: none;
+  height: 260px;
+  @include between-breakpoints("xs", "s") {
+    height: 204px;
+  }
+}
+.form-container__form-button {
+  align-self: flex-start;
+  padding: 20px 32px;
+  border: none;
+  background: $primary;
+  color: $neutral;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-roboto;
+  font-size: 1rem;
+  line-height: 19.2px;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in;
+  @include max-breakpoint("md") {
+    width: 230px;
+  }
+  @include between-breakpoints("xs", "s") {
+    width: 100%;
+  }
+}
+.form-container__form-button:hover {
+  opacity: 0.9;
+}
+.form-container__form-button-icon {
+  display: inline-flex;
+  align-items: center;
+  svg {
+    height: 15px;
+  }
+}
+.form-container__social-wrapper {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  gap: 50px;
+  @include max-breakpoint("md") {
+    padding: 0px;
+    align-items: center;
+  }
+  @include between-breakpoints("xs", "s") {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.form-container__quick-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @include max-breakpoint("md") {
+    flex-direction: row;
+    gap: 15px;
+  }
+  @include between-breakpoints("xs", "s") {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.form-container__quick-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.form-container__quick-link-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $primary;
+  border-radius: 50px;
+}
+.form-container__quick-link-info {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form-container__quick-link-title {
+  font-family: $font-roboto;
+  font-size: 1.125rem;
+  line-height: 21.6px;
+  font-weight: 700;
+  color: $text;
+}
+.form-container__quick-link-text {
+  max-width: 190px;
+  font-family: $font-roboto;
+  font-size: 1rem;
+  line-height: 19.2px;
+  font-weight: 400;
+  color: $text;
+}
+.form-container__social-link-wrapper {
+  display: inline-flex;
+  gap: 30px;
+  align-items: center;
+  @include max-breakpoint("md") {
+    position: absolute;
+    right: 0px;
+    bottom: 120px;
+  }
+  @include between-breakpoints("xs", "s") {
+    bottom: 0px;
+    position: relative;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.form-container__social-link {
+}

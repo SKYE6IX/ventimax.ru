@@ -10,6 +10,35 @@
     "text": "Get A Quote",
     "linkText": "Read more"
   },
+  "Form": {
+    "title": "Get In Touch",
+    "inputs": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your Name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your Email"
+      },
+      "number": {
+        "label": "Phone Number"
+      },
+      "subject": {
+        "label": "Subject"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your Message"
+      }
+    },
+    "quickLink": {
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location"
+    },
+    "sendButton": "Send"
+  },
   "Pages": {
     "home": {
       "heroBlock": {
@@ -45,6 +74,9 @@
           "silos": "These silos are in the process of Storing bulk feeds safely from moisture, pests, and contamination. It Automatically dispensing feed through the connected pipe system to animal feeders in a controlled manner, ensuring consistent supply.",
           "coneFan": "This systems is in the process exhausting hot, stale air from inside the livestock and poultry building, creating negative pressure, which pulls in fresh, cooler air maintaining optimal temperature, humidity, and air quality inside the animal housing."
         }
+      },
+      "contactBlock": {
+        "title": "Contact Us"
       }
     }
   },

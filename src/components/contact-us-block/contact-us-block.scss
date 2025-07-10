@@ -1,0 +1,43 @@
+@use "@/global-style/variables.scss" as *;
+@use "@/global-style/shared-styles.scss" as *;
+
+.contact-us {
+  width: 100%;
+  padding-top: 120px;
+  background: $neutral;
+  padding-bottom: 60px;
+  @include max-breakpoint("md") {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  @include between-breakpoints("xs", "s") {
+    padding-top: 40px;
+  }
+}
+.contact-us__inner-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  @include max-breakpoint("md") {
+    width: calc(100% - 200px);
+  }
+  @include max-breakpoint("sm") {
+    width: calc(100% - 120px);
+  }
+  @include between-breakpoints("xs", "s") {
+    width: calc(100% - 40px);
+  }
+}
+.contact-us__title {
+  @extend %block-title;
+  display: inline-flex;
+}
+.contact-us__form {
+  margin-top: 60px;
+  @include max-breakpoint("md") {
+    margin-top: 40px;
+  }
+  @include between-breakpoints("xs", "s") {
+    margin-top: 30px;
+  }
+}

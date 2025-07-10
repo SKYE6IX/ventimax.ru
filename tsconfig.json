@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/utils/gsapHorizonatalLoop.js"
+    "src/utils/gsapHorizonatalLoop.js",
+    "src/components/contact-us-block/contact-us-block.acss"
   ],
   "exclude": ["node_modules"]
 }

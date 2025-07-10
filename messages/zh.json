@@ -10,6 +10,35 @@
     "text": "获取报价",
     "linkText": "阅读更多"
   },
+  "Form": {
+    "title": "联系我们",
+    "inputs": {
+      "name": {
+        "label": "姓名",
+        "placeholder": "您的姓名"
+      },
+      "email": {
+        "label": "电子邮件",
+        "placeholder": "您的电子邮件"
+      },
+      "number": {
+        "label": "电话号码"
+      },
+      "subject": {
+        "label": "主题t"
+      },
+      "message": {
+        "label": "信息",
+        "placeholder": "您的信息"
+      }
+    },
+    "quickLink": {
+      "phone": "电话",
+      "email": "电子邮件",
+      "location": "位置"
+    },
+    "sendButton": "发送"
+  },
   "Pages": {
     "home": {
       "heroBlock": {
@@ -45,6 +74,9 @@
           "silos": "这些筒仓正在安全储存散装饲料，防止湿气、害虫和污染。它们通过连接的管道系统自动分配饲料到动物喂食器，以可控方式确保持续供应。",
           "coneFan": "该系统正在排出畜禽建筑内的热气和陈旧空气，创造负压，吸入新鲜、凉爽的空气，维持动物房舍内最佳的温度、湿度和空气质量。"
         }
+      },
+      "contactBlock": {
+        "title": "联系我们"
       }
     }
   },
