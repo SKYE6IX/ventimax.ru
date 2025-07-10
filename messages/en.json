@@ -37,6 +37,14 @@
         },
         "buttonText": "Learn more",
         "yoe": "Years of  Experience"
+      },
+      "usageBlock": {
+        "title": "Usage",
+        "items": {
+          "coolingPad": "This system is in the process of circulating and distributing water over the cooling pads. The air passes through the wet pads, and evaporation cools the air, which is then blown into the facility.",
+          "silos": "These silos are in the process of Storing bulk feeds safely from moisture, pests, and contamination. It Automatically dispensing feed through the connected pipe system to animal feeders in a controlled manner, ensuring consistent supply.",
+          "coneFan": "This systems is in the process exhausting hot, stale air from inside the livestock and poultry building, creating negative pressure, which pulls in fresh, cooler air maintaining optimal temperature, humidity, and air quality inside the animal housing."
+        }
       }
     }
   },

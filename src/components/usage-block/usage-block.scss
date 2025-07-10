@@ -1,0 +1,111 @@
+@use "@/global-style/variables.scss" as *;
+@use "@/global-style/shared-styles.scss" as *;
+
+.usage-block {
+  margin-top: 100px;
+  padding-top: 60px;
+  width: 100%;
+  background: $neutral;
+  @include max-breakpoint("md") {
+    margin-top: 80px;
+    padding-top: 40px;
+  }
+  @include between-breakpoints("xs", "s") {
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+}
+.usage-block__inner-wrapper {
+  width: 1200px;
+  margin: 0px auto;
+  @include max-breakpoint("md") {
+    width: calc(100% - 200px);
+  }
+  @include max-breakpoint("sm") {
+    width: calc(100% - 40px);
+  }
+}
+.usage-block__title {
+  @extend %block-title;
+  display: inline-flex;
+}
+.usage-block__usage-list {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  @include max-breakpoint("md") {
+    margin-top: 15px;
+    gap: 60px;
+  }
+  @include between-breakpoints("xs", "s") {
+    margin-top: 30px;
+  }
+}
+.usage-block__item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  @include max-breakpoint("sm") {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.usage-block__item.middle {
+  flex-direction: row-reverse;
+  @include max-breakpoint("sm") {
+    flex-direction: column;
+  }
+}
+.usage-block__item-left {
+  width: 475px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @include max-breakpoint("md") {
+    width: 322px;
+    gap: 10px;
+  }
+  @include max-breakpoint("sm") {
+    width: 100%;
+  }
+}
+.usage-block__item-title {
+  font-family: $font-roboto;
+  font-size: 2.5rem;
+  line-height: 44px;
+  font-weight: 900;
+  color: $primary;
+  @include max-breakpoint("md") {
+    font-size: 1.75rem;
+    line-height: 30.8px;
+  }
+}
+.usage-block__item-text {
+  font-family: $font-roboto;
+  font-size: 1.375rem;
+  line-height: 28.6px;
+  font-weight: 400;
+  color: $text;
+  @include max-breakpoint("md") {
+    font-size: 1.0625rem;
+    line-height: 22.1px;
+  }
+}
+.usage-block__item-image-wrapper {
+  position: relative;
+  width: 703.153px;
+  height: 387.467px;
+  @include max-breakpoint("md") {
+    width: 472.495px;
+    height: 260.364px;
+    aspect-ratio: 472.49/260.36;
+  }
+  @include max-breakpoint("sm") {
+    width: 100%;
+    height: 400px;
+  }
+  @include between-breakpoints("xs", "s") {
+    height: 195px;
+  }
+}
