@@ -77,6 +77,26 @@
       },
       "contactBlock": {
         "title": "Contact Us"
+      },
+      "faqBlock": {
+        "title": "Frequent Asked Questions",
+        "subTitle": "How can We Help You?",
+        "faqOne": {
+          "question": "I want a specific size or color. Can I get my color coated steel customized?",
+          "answer": "Yes. Customization is available. You can choose the color or pattern, size (length, width, thickness, weight, etc.), paints, shape, etc. We offer coils and sheets, as well as further processing services, such as logo printing, etc. Please send us your requirements, we will meet your requirements."
+        },
+        "faqTwo": {
+          "question": "Are we a trader or a manufacturer?",
+          "answer": "We are a manufacturer and have our own factory."
+        },
+        "faqThree": {
+          "question": "How do you package products for delivery?",
+          "answer": "We packaged all products according to customer's need."
+        },
+        "faqFour": {
+          "question": "How long is your delivery time?",
+          "answer": "If the products are in stock, generally it's about 5-10 days. It's about 15-20 days if the goods are not in stock, according to the quantity."
+        }
       }
     }
   },

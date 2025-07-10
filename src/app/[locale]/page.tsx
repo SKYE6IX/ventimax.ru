@@ -4,6 +4,7 @@ import FeaturedProducts from "@/components/featured-products-block/FeaturedProdu
 import AboutUs from "@/components/about-us-block/AboutUs";
 import UsageBlock from "@/components/usage-block/UsageBlock";
 import ContactUsBlock from "@/components/contact-us-block/ContactUsBlock";
+import FAQ from "@/components/faqBlock/FAQ";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutUs />
       <UsageBlock />
       <ContactUsBlock />
+      <FAQ />
     </div>
   );
 }
