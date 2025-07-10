@@ -49,10 +49,12 @@ function FAQ() {
                 ].join(" ")}
                 onClick={() => toggleDropdown(key)}
                 data-testid="faq-block-dropdown-button"
+                aria-expanded={state.isOpen}
               >
                 <ArrowDownIcon />
               </button>
             </div>
+
             <div
               className={[
                 "faq-block__item-body",

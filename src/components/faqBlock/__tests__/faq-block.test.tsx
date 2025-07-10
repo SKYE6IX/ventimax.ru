@@ -1,10 +1,8 @@
 import { render, screen } from "@testing-library/react";
-// import userEvent from "@testing-library/user-event";
+import userEvent from "@testing-library/user-event";
 import { NextIntlClientProvider } from "next-intl";
 import messages from "../../../../messages/en.json";
 import FAQ from "../FAQ";
-
-// Tech DEBT
 
 describe("FAQ component", () => {
   it("render block title and sub title", () => {
@@ -76,5 +74,57 @@ describe("FAQ component", () => {
     dropDownButtons.forEach((el) => {
       expect(el).toBeInTheDocument();
     });
+  });
+
+  it("should add OPEN class to show dropdown and CLOSE to hidden dropdown", () => {
+    // Arrange
+    render(
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <FAQ />
+      </NextIntlClientProvider>
+    );
+
+    // Act
+    const dropDowns = screen.getAllByTestId("faq-block-drop-down");
+
+    const shownDropDown = dropDowns.find(
+      (el) => el.getAttribute("aria-expanded") === "true"
+    );
+    const hiddenDropDown = dropDowns.filter(
+      (el) => el.getAttribute("aria-expanded") === "false"
+    );
+
+    // Assert
+    expect(shownDropDown).toHaveClass("open");
+    hiddenDropDown.forEach((el) => {
+      expect(el).toHaveClass("close");
+    });
+  });
+
+  it("should close an open dropdown", async () => {
+    // Arrange
+    const user = userEvent.setup();
+    render(
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <FAQ />
+      </NextIntlClientProvider>
+    );
+
+    // Act
+    const dropDowns = screen.getAllByTestId("faq-block-drop-down");
+    const buttons = screen.getAllByTestId("faq-block-dropdown-button");
+    const activeButton = buttons.find(
+      (el) => el.getAttribute("aria-expanded") === "true"
+    ) as HTMLElement;
+    const shownDropDown = dropDowns.find(
+      (el) => el.getAttribute("aria-expanded") === "true"
+    );
+
+    // Assert
+    expect(shownDropDown).toHaveClass("open");
+
+    await user.click(activeButton);
+
+    expect(shownDropDown).toHaveClass("close");
   });
 });
