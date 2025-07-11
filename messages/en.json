@@ -6,6 +6,23 @@
     "products": "Products",
     "faq": "FAQ"
   },
+  "Footer": {
+    "companyIntro": "Qingzhou Ventimax Agriculture and Animal Husbandry Technology LTD. Established in 2010, is a professional manufacturer engaged in the research, development, sale and service of all kinds of cooling heating and animal husbandry equipment.",
+    "rightReserve": "All rights reserved",
+    "links": {
+      "title": "Quick Links",
+      "products": "Products",
+      "aboutUs": "About us",
+      "faq": "FAQ",
+      "getInTouch": "Get in touch"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location"
+    }
+  },
   "CTA": {
     "text": "Get A Quote",
     "linkText": "Read more"

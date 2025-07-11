@@ -6,6 +6,23 @@
     "products": "产品",
     "faq": "常见问题"
   },
+  "Footer": {
+    "companyIntro": "青州文蒂马克斯农业与畜牧技术有限公司。成立于2010年，是一家专业制造商，致力于各类冷却、加热及畜牧设备的研发、销售和服务。",
+    "rightReserve": "版权所有",
+    "links": {
+      "title": "快速链接",
+      "products": "产品",
+      "aboutUs": "关于我们",
+      "faq": "常见问题",
+      "getInTouch": "联系我们"
+    },
+    "contact": {
+      "title": "联系我们",
+      "phone": "电话",
+      "email": "电子邮件",
+      "location": "位置"
+    }
+  },
   "CTA": {
     "text": "获取报价",
     "linkText": "阅读更多"
