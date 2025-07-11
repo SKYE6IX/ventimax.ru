@@ -25,7 +25,10 @@ function IntroBlock() {
             playsInline
             data-testid="video-player"
           >
-            <source src="/products-intro/intro.mp4" type="video/mp4" />
+            <source
+              src="https://res.cloudinary.com/eleven-11/video/upload/v1752230936/ventimax-asset/intro_w3vnio.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
       </div>
