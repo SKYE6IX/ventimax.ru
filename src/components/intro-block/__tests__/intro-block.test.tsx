@@ -38,7 +38,8 @@ describe("intro block component", () => {
 
   it("render video player and correct attribute", () => {
     // Arrange
-    const testSrc = "/products-intro/intro.mp4";
+    const testSrc =
+      "https://res.cloudinary.com/eleven-11/video/upload/v1752230936/ventimax-asset/intro_w3vnio.mp4";
     render(
       <NextIntlClientProvider locale="en" messages={messages}>
         <IntroBlock />
