@@ -13,8 +13,8 @@ describe("About us page", () => {
     );
 
     // Act
-    const pageTitle = screen.getByTestId("about-us-title");
-    const pageSubTitle = screen.getByTestId("about-us-sub-title");
+    const pageTitle = screen.getByTestId("about-us-page-title");
+    const pageSubTitle = screen.getByTestId("about-us-page-sub-title");
 
     // Assert
     expect(pageTitle).toBeInTheDocument();
@@ -30,7 +30,7 @@ describe("About us page", () => {
     );
 
     // Act
-    const text = screen.getByTestId("about-us-text");
+    const text = screen.getByTestId("about-us-page-text");
 
     // Assert
     expect(text).toBeInTheDocument();
@@ -45,7 +45,7 @@ describe("About us page", () => {
     );
 
     // Act
-    const metricsBox = screen.getAllByTestId("about-us-metrics");
+    const metricsBox = screen.getAllByTestId("about-us-page-metrics");
 
     // Assert
     metricsBox.forEach((el) => {
@@ -77,10 +77,10 @@ describe("About us page", () => {
 
     // Act
     const certificatesImage = screen.getAllByTestId(
-      "about-us-certificate-image"
+      "about-us-page-certificate-image"
     );
     const certificatesTitle = screen.getAllByTestId(
-      "about-us-certificate-title"
+      "about-us-page-certificate-title"
     );
 
     // Assert

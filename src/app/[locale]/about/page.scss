@@ -1,14 +1,14 @@
 @use "@/global-style/variables.scss" as *;
 @use "@/global-style/shared-styles.scss" as *;
 
-.about-us {
+.about-us-page {
   width: 100%;
   padding-bottom: 100px;
   @include between-breakpoints("xs", "s") {
     padding-bottom: 40px;
   }
 }
-.about-us__image-container {
+.about-us-page__image-container {
   position: relative;
   width: 100%;
   height: 460px;
@@ -16,10 +16,10 @@
     height: 281px;
   }
 }
-.about-us__image {
+.about-us-page__image {
   object-fit: cover;
 }
-.about-us__inner-wrapper {
+.about-us-page__inner-wrapper {
   width: 1200px;
   margin-top: 100px;
   margin-left: auto;
@@ -36,13 +36,13 @@
     margin-top: 40px;
   }
 }
-.about-us__details-wrapper {
+.about-us-page__details-wrapper {
 }
-.about-us__title {
+.about-us-page__title {
   @extend %block-title;
   display: inline-flex;
 }
-.about-us__sub-title {
+.about-us-page__sub-title {
   font-family: $font-roboto;
   font-size: 2.5rem;
   line-height: 44px;
@@ -60,7 +60,7 @@
     margin-top: 15px;
   }
 }
-.about-us__text {
+.about-us-page__text {
   font-family: $font-roboto;
   font-size: 1.5rem;
   line-height: 33.6px;
@@ -78,7 +78,7 @@
     margin-top: 15px;
   }
 }
-.about-us__metrics-wrapper {
+.about-us-page__metrics-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -93,7 +93,7 @@
     flex-direction: column;
   }
 }
-.about-us__metrics {
+.about-us-page__metrics {
   width: 214px;
   height: 234px;
   padding: 0px 10px;
@@ -114,10 +114,10 @@
     height: 376.15px;
   }
 }
-.about-us__metrics:hover {
+.about-us-page__metrics:hover {
   transform: scale(1.05);
 }
-.about-us__metrics-text-bold {
+.about-us-page__metrics-text-bold {
   font-family: $font-roboto;
   font-size: 3.125rem;
   line-height: 55px;
@@ -147,7 +147,7 @@
     }
   }
 }
-.about-us__metrics-text-small {
+.about-us-page__metrics-text-small {
   font-family: $font-roboto;
   font-size: 1.374rem;
   line-height: 24.2px;
@@ -163,7 +163,7 @@
     line-height: 38.5px;
   }
 }
-.about-us__certificates-wrapper {
+.about-us-page__certificates-wrapper {
   margin-top: 100px;
   @include max-breakpoint("md") {
     margin-top: 80px;
@@ -175,7 +175,7 @@
     align-items: center;
   }
 }
-.about-us__certificates-heading {
+.about-us-page__certificates-heading {
   @extend %block-title;
   display: inline-flex;
   font-size: 1.5rem;
@@ -189,7 +189,7 @@
     line-height: 19.8px;
   }
 }
-.about-us__certificates-list {
+.about-us-page__certificates-list {
   width: 100%;
   margin-top: 50px;
   display: flex;
@@ -210,7 +210,7 @@
     gap: 30px;
   }
 }
-.about-us__certificates {
+.about-us-page__certificates {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,10 +221,10 @@
     flex-direction: column-reverse;
   }
 }
-.about-us__certificates:hover {
+.about-us-page__certificates:hover {
   transform: scale(1.05);
 }
-.about-us__certificates-image-container {
+.about-us-page__certificates-image-container {
   position: relative;
   width: 280.679px;
   height: 381px;
@@ -240,7 +240,7 @@
     height: 408.645px;
   }
 }
-.about-us__certificates-title {
+.about-us-page__certificates-title {
   @extend %block-title;
   font-size: 1.125rem;
   line-height: 21.6px;

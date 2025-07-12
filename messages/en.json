@@ -127,6 +127,16 @@
         "provideServiceFor": "Providing services for 365 days"
       },
       "certificates": "Certificates"
+    },
+    "products": {
+      "navigation": {
+        "negativeFan": "Negative Pressure Fan",
+        "coolingPad": "Cooling pad",
+        "heatingEquipment": "Heating Equipment",
+        "farmingEquipment": "Farming Equipment",
+        "fecalCleaning": "Fecal Cleaning Equipment",
+        "otherFans": "Other Fans"
+      }
     }
   },
   "Products": {
@@ -153,6 +163,24 @@
     "hy-roof-ventilation-fan": {
       "highlight": "Natural wind-driven ventilation system operates 24/7 without external power. Highly sensitive to even slight breezes or temperature variations, the turbine blades rotate effortlessly to ensure continuous airflow. Designed for stable and silent operation, it significantly improves indoor air quality while maintaining a peaceful environment.",
       "description": "The system is powered by natural wind and operates 24 hours a day. It is highly sensitive, activated by slight breezes or temperature differences to drive the turbine blade. It rotates stably and quietly, improving the indoor environment. The design uses high-quality bearings, requiring no lubrication, ensuring durability and a low failure rate. It is corrosion-resistant, acid- and alkali-proof, and has a long service life."
+    },
+    "hy-heavy-hammer-exhaust-fan": {
+      "description": "Fans mainly consists of blade, motor, frame, protect net, bracing cage, shutters. The motor drives blade tocause air flow and louver window can open and close automatically to keep the dust from entering."
+    },
+    "hy-plastic-cooling-pad": {
+      "description": "The product we manufacture is an air purification device specifically designed for the animal husbandry industry. It helps restore a pure and clean air environment around the ranch, ensuring the surrounding area remains free from polluted gases. The device can utilize either biological or chemical purification methods. We offer standard modular equipment or building-integrated system modes, and we can also customize non-standard solutions based on user needs. For modular equipment, users can select the appropriate size based on their actual ventilation flow rate. We typically provide two standard specifications: 50,000 m³ and 75,000 m³. Each module operates as an independent system, but multiple modules can also be combined to share a common solution pool and control system. For integrated systems, the design is incorporated during the building's planning phase, seamlessly blending with the structure. These systems use adjustable prefabricated modules to achieve the required capacity, allowing for on-site installation and cost-effective operation."
+    },
+    "hy-poultry-light-filter": {
+      "description": "Non-glare PVC materials, by extrusion molding finished, anti-ageing, chemical resistant, high pressure washable. Reasonable design, different dimension available, easy assembly. Frame options for customers, stainless steel sheet or galvanized sheet."
+    },
+    "hy-series-coal-burning-heater": {
+      "description": "This heating system is designed for areas ranging from 300 to 1,800 square meters. Its combustion chamber features a heightened design, ensuring a long service life. The system includes a stainless steel dust precipitator, which is simple yet highly efficient. With an insulated three-return design, heat loss is minimized, achieving up to 90% thermal efficiency. A key durability feature is the 20mm-thick heat-resistant cast steel pipe, which prevents deformation even after a decade of use. All performance indicators meet national Class I environmental standards, making it both powerful and eco-friendly."
+    },
+    "hy-fecal-pumping-pump": {
+      "description": "This manure pump has the characteristics of stable performance and easy maintenance. Especially under harsh conditions such as high temperatures in summer, freezing in winter, uneven media, thick and viscous chicken feathers and straw fibers, it can still work normally. It has a simple structure, a wide range of applications, and a relatively low cost. Usage: This pump not only has the characteristics of a manure pump, but also has the function of a mud pump, which can transport highly viscous feces to a certain height and is not easy to block. Widely used for the transportation of feces in poor conditions such as chicken farms, duck farms, and pig farms. (The manure pump is in a lifting mode, and the motor of this machine cannot enter water. The lift is 6 meters, and the remote distance is 100 meters. This data is for reference only, please refer to the actual situation.)"
+    },
+    "hy-air-circulation-fan": {
+      "description": "This product features Haier’s triple-protection specialty motor, which delivers stable performance, advanced energy-saving technology, and an automatic thermal protection system. It has undergone rigorous 360-hour destructive testing in Haier’s laboratory to ensure durability. The fan blades are made of lightweight stamped aluminum sheets, designed with a wide angle for high airflow while maintaining low noise levels. The shell uses an integrated collector design and is available in stainless steel or spray-coated steel plate options for added versatility. For easy installation, it includes convenient and sleek buckle-type hangers. Built for longevity, this product is engineered for a long service life."
     }
   }
 }

@@ -6,7 +6,7 @@ import "./navigation.scss";
 function Navigation() {
   const t = useTranslations("Navigation");
   const menu = [
-    { key: "home", href: "/home" },
+    { key: "home", href: "/" },
     { key: "about", href: "/about" },
     { key: "usage", href: "#usage" },
     { key: "products", href: "/products" },

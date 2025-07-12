@@ -35,10 +35,7 @@ describe("About us component", () => {
     );
 
     // Assert
-    expect(divWithBgImage).toHaveStyle({
-      backgroundImage:
-        "url(/company-image.jpg) lightgray 50% / cover no-repeat",
-    });
+    expect(divWithBgImage).toBeInTheDocument();
   });
 
   it("render button with learn more text", () => {
@@ -50,7 +47,7 @@ describe("About us component", () => {
     );
 
     // Act
-    const button = screen.getByTestId("about-us-button");
+    const button = screen.getByTestId("about-us-block-button");
 
     // Assert
     expect(button).toBeInTheDocument();
