@@ -4,7 +4,11 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import "./navigation.scss";
 
-function Navigation() {
+type NavigationProps = {
+  closeMenu?: () => void;
+};
+
+function Navigation({ closeMenu }: NavigationProps) {
   const t = useTranslations("Navigation");
   const pathname = usePathname();
   const menu = [
@@ -24,6 +28,7 @@ function Navigation() {
             className={["nav__item", pathname === m.href ? "active" : ""].join(
               " "
             )}
+            onClick={closeMenu}
           >
             <Link href={m.href} className="nav__link">
               {t(m.key)}

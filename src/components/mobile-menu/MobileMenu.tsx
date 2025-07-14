@@ -50,7 +50,7 @@ function MobileMenu() {
         className={["mobile-menu__nav", isOpen ? "open" : ""].join(" ")}
         ref={menuRef}
       >
-        <Navigation />
+        <Navigation closeMenu={toggleMenu} />
       </div>
     </div>
   );
