@@ -1,10 +1,10 @@
 services:
   ventimax:
-   container_name: ventimax
-   build:
-    context: .
-    doockerfile: prod.Dockerfile
+    container_name: ventimax
+    build:
+      context: .
+      dockerfile: prod.Dockerfile
     restart: always
     ports:
-     -3000:3000
-     
+        - 3000:3000
+        
