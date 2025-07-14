@@ -137,6 +137,15 @@
         "fecalCleaning": "Fecal Cleaning Equipment",
         "otherFans": "Other Fans"
       }
+    },
+    "productDetails": {
+      "priceFrom": "From",
+      "aboutProduct": {
+        "title": "About the product",
+        "details": "Details",
+        "specifications": "Specifications",
+        "type": "Type"
+      }
     }
   },
   "Products": {

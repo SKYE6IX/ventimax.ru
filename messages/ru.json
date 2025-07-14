@@ -137,6 +137,15 @@
         "fecalCleaning": "Оборудование для очистки навоза",
         "otherFans": "Другие вентиляторы"
       }
+    },
+    "productDetails": {
+      "priceFrom": "От",
+      "aboutProduct": {
+        "title": "О продукте",
+        "details": "Подробности",
+        "specifications": "Характеристики",
+        "type": "Тип"
+      }
     }
   },
   "Products": {

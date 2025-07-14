@@ -137,6 +137,15 @@
         "fecalCleaning": "粪便清理设备",
         "otherFans": "其他风机"
       }
+    },
+    "productDetails": {
+      "priceFrom": "来自",
+      "aboutProduct": {
+        "title": "关于产品",
+        "details": "详情",
+        "specifications": "规格",
+        "type": "类 型"
+      }
     }
   },
   "Products": {

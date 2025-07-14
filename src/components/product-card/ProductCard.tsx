@@ -43,7 +43,7 @@ function ProductCard({ id, imageSrc, title }: ProductCardProps) {
         >
           {t(`${id}.description`)}
         </p>
-        <Link href="#" className="product-card__details-link">
+        <Link href={`products/${id}`} className="product-card__details-link">
           {linkText("linkText")}
           <span>
             <ArrowRight />

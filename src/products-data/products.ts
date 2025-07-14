@@ -1,5 +1,3 @@
-// This file contains the data for hero products displayed on the homepage.
-
 export type Category =
   | "neagtive-pressure-fan"
   | "cooling-pad"
@@ -16,6 +14,88 @@ export const products = [
     images: ["/product-images/hy-push-pull-exhaust-fans/image-1.webp"],
     tags: ["featured", "hero"],
     category: "neagtive-pressure-fan",
+    specifications: [
+      {
+        type: "HYFB-800",
+        list: [
+          { key: "Diameter blades (mm)", value: "710(29in)" },
+          { key: "Frequency (Hz)", value: "50" },
+          { key: "Motor rotational speed (r/min)", value: "≥1400" },
+          { key: "Air flow (m³/h)", value: "26000" },
+          { key: "Input power (W)", value: "370" },
+          { key: "Noise decibels", value: "≤64" },
+          { key: "Total pressure (Pa)", value: "60" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "800" },
+          { key: "Width (mm)", value: "450" },
+          { key: "Thickness (mm)", value: "450" },
+        ],
+      },
+      {
+        type: "HYFB-1000",
+        list: [
+          { key: "Diameter blades (mm)", value: "900(36in)" },
+          { key: "Frequency (Hz)", value: "50" },
+          { key: "Motor rotational speed (r/min)", value: "≥1400" },
+          { key: "Air flow (m³/h)", value: "32000" },
+          { key: "Input power (W)", value: "750" },
+          { key: "Noise decibels", value: "≤64" },
+          { key: "Total pressure (Pa)", value: "70" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "1000" },
+          { key: "Width (mm)", value: "450" },
+          { key: "Thickness (mm)", value: "450" },
+        ],
+      },
+      {
+        type: "HYFB-1100",
+        list: [
+          { key: "Diameter blades (mm)", value: "1000(44in)" },
+          { key: "Frequency (Hz)", value: "50" },
+          { key: "Motor rotational speed (r/min)", value: "≥1400" },
+          { key: "Air flow (m³/h)", value: "40000" },
+          { key: "Input power (W)", value: "750" },
+          { key: "Noise decibels", value: "≤64" },
+          { key: "Total pressure (Pa)", value: "70" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "1100" },
+          { key: "Width (mm)", value: "450" },
+          { key: "Thickness (mm)", value: "450" },
+        ],
+      },
+      {
+        type: "HYFB-1380",
+        list: [
+          { key: "Diameter blades (mm)", value: "1270(50in)" },
+          { key: "Frequency (Hz)", value: "50" },
+          { key: "Motor rotational speed (r/min)", value: "≥1400" },
+          { key: "Air flow (m³/h)", value: "44800" },
+          { key: "Input power (W)", value: "1100" },
+          { key: "Noise decibels", value: "≤64" },
+          { key: "Total pressure (Pa)", value: "56" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "1380" },
+          { key: "Width (mm)", value: "450" },
+          { key: "Thickness (mm)", value: "450" },
+        ],
+      },
+      {
+        type: "HYFB-1530",
+        list: [
+          { key: "Diameter blades (mm)", value: "1400(56in)" },
+          { key: "Frequency (Hz)", value: "50" },
+          { key: "Motor rotational speed (r/min)", value: "≥1400" },
+          { key: "Air flow (m³/h)", value: "58000" },
+          { key: "Input power (W)", value: "1500" },
+          { key: "Noise decibels", value: "≤64" },
+          { key: "Total pressure (Pa)", value: "60" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "1530" },
+          { key: "Width (mm)", value: "450" },
+          { key: "Thickness (mm)", value: "450" },
+        ],
+      },
+    ],
   },
   {
     id: "hy-heavy-hammer-exhaust-fan",
@@ -27,6 +107,152 @@ export const products = [
     ],
     tags: [],
     category: "neagtive-pressure-fan",
+    specifications: [
+      {
+        type: 'HYA480(18")',
+        list: [
+          { key: "Diameter blades (mm)", value: "410" },
+          { key: "Blade rotational speed (r/min)", value: "1400" },
+          { key: "Motor rotational speed (r/min)", value: "1400" },
+          { key: "Air flow (m³/h)", value: "3600" },
+          { key: "Total pressure (Pa)", value: "≤60" },
+          { key: "Noise decibels", value: "≤60" },
+          { key: "Input power (W)", value: "180" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "480" },
+          { key: "Width (mm)", value: "320" },
+          { key: "Thickness (mm)", value: "" },
+        ],
+      },
+      {
+        type: 'HYA-620(24")',
+        list: [
+          { key: "Diameter blades (mm)", value: "500" },
+          { key: "Blade rotational speed (r/min)", value: "680" },
+          { key: "Motor rotational speed (r/min)", value: "1400" },
+          { key: "Air flow (m³/h)", value: "6500" },
+          { key: "Total pressure (Pa)", value: "≤60" },
+          { key: "Noise decibels", value: "≤60" },
+          { key: "Input power (W)", value: "370" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "620" },
+          { key: "Width (mm)", value: "620" },
+          { key: "Thickness (mm)", value: "400" },
+        ],
+      },
+      {
+        type: 'HYA-800(29")',
+        list: [
+          { key: "Diameter blades (mm)", value: "710" },
+          { key: "Blade rotational speed (r/min)", value: "660" },
+          { key: "Motor rotational speed (r/min)", value: "1400" },
+          { key: "Air flow (m³/h)", value: "22000" },
+          { key: "Total pressure (Pa)", value: "≤60" },
+          { key: "Noise decibels", value: "≤60" },
+          { key: "Input power (W)", value: "370" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "800" },
+          { key: "Width (mm)", value: "800" },
+          { key: "Thickness (mm)", value: "400" },
+        ],
+      },
+      {
+        type: 'HYA-900(30")',
+        list: [
+          { key: "Diameter blades (mm)", value: "750" },
+          { key: "Blade rotational speed (r/min)", value: "630" },
+          { key: "Motor rotational speed (r/min)", value: "1400" },
+          { key: "Air flow (m³/h)", value: "28000" },
+          { key: "Total pressure (Pa)", value: "≤65" },
+          { key: "Noise decibels", value: "≤65" },
+          { key: "Input power (W)", value: "550" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "900" },
+          { key: "Width (mm)", value: "900" },
+          { key: "Thickness (mm)", value: "400" },
+        ],
+      },
+      {
+        type: 'HYA-1000(36")',
+        list: [
+          { key: "Diameter blades (mm)", value: "900" },
+          { key: "Blade rotational speed (r/min)", value: "610" },
+          { key: "Motor rotational speed (r/min)", value: "1400" },
+          { key: "Air flow (m³/h)", value: "30000" },
+          { key: "Total pressure (Pa)", value: "≤70" },
+          { key: "Noise decibels", value: "≤70" },
+          { key: "Input power (W)", value: "550" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "1000" },
+          { key: "Width (mm)", value: "1000" },
+          { key: "Thickness (mm)", value: "400" },
+        ],
+      },
+      {
+        type: 'HYA-1100(40")',
+        list: [
+          { key: "Diameter blades (mm)", value: "1000" },
+          { key: "Blade rotational speed (r/min)", value: "600" },
+          { key: "Motor rotational speed (r/min)", value: "1400" },
+          { key: "Air flow (m³/h)", value: "32500" },
+          { key: "Total pressure (Pa)", value: "≤70" },
+          { key: "Noise decibels", value: "≤70" },
+          { key: "Input power (W)", value: "750" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "1100" },
+          { key: "Width (mm)", value: "1100" },
+          { key: "Thickness (mm)", value: "400" },
+        ],
+      },
+      {
+        type: 'HYA-1220(44")',
+        list: [
+          { key: "Diameter blades (mm)", value: "1100" },
+          { key: "Blade rotational speed (r/min)", value: "460" },
+          { key: "Motor rotational speed (r/min)", value: "1400" },
+          { key: "Air flow (m³/h)", value: "38000" },
+          { key: "Total pressure (Pa)", value: "≤70" },
+          { key: "Noise decibels", value: "≤70" },
+          { key: "Input power (W)", value: "1100" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "1200" },
+          { key: "Width (mm)", value: "1200" },
+          { key: "Thickness (mm)", value: "400" },
+        ],
+      },
+      {
+        type: 'HYA-1380(50")',
+        list: [
+          { key: "Diameter blades (mm)", value: "1250" },
+          { key: "Blade rotational speed (r/min)", value: "439" },
+          { key: "Motor rotational speed (r/min)", value: "1400" },
+          { key: "Air flow (m³/h)", value: "44000" },
+          { key: "Total pressure (Pa)", value: "≤70" },
+          { key: "Noise decibels", value: "≤70" },
+          { key: "Input power (W)", value: "1100" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "1380" },
+          { key: "Width (mm)", value: "1380" },
+          { key: "Thickness (mm)", value: "400" },
+        ],
+      },
+      {
+        type: 'HYA-1530(56")',
+        list: [
+          { key: "Diameter blades (mm)", value: "1400" },
+          { key: "Blade rotational speed (r/min)", value: "325" },
+          { key: "Motor rotational speed (r/min)", value: "1400" },
+          { key: "Air flow (m³/h)", value: "55800" },
+          { key: "Total pressure (Pa)", value: "≤70" },
+          { key: "Noise decibels", value: "≤70" },
+          { key: "Input power (W)", value: "1500" },
+          { key: "Rated voltage (V)", value: "380" },
+          { key: "Height (mm)", value: "1530" },
+          { key: "Width (mm)", value: "1530" },
+          { key: "Thickness (mm)", value: "400" },
+        ],
+      },
+    ],
   },
   {
     id: "hy-cooling-pad",
@@ -35,6 +261,7 @@ export const products = [
     images: ["/product-images/hy-cooling-pad/image-1.webp"],
     tags: ["featured", "hero"],
     category: "cooling-pad",
+    specifications: [],
   },
   {
     id: "hy-plastic-cooling-pad",
@@ -43,6 +270,16 @@ export const products = [
     images: ["/product-images/hy-plastic-cooling-pad/image-1.webp"],
     tags: [],
     category: "cooling-pad",
+    specifications: [
+      {
+        type: null,
+        list: [
+          { key: "Ammonia removal rate", value: ">70%~95%" },
+          { key: "Odor removal rate", value: ">40%~75%" },
+          { key: "Dust removal rate", value: ">45%~80%" },
+        ],
+      },
+    ],
   },
   {
     id: "hy-silos",
@@ -51,6 +288,141 @@ export const products = [
     images: ["/product-images/hy-silos/image-1.webp"],
     tags: ["featured", "hero"],
     category: "farming-equipment",
+    specifications: [
+      {
+        type: "HY1801 3.0",
+        list: [
+          { key: "Diameter", value: "1.8m" },
+          { key: "Height", value: "3.06 meters" },
+          { key: "Layers", value: "1" },
+          { key: "Capacity", value: "4.62 cubic meters" },
+          {
+            key: "Details",
+            value: "4 columns, 4 straight supports, 8 tension supports",
+          },
+        ],
+      },
+      {
+        type: "HY1802 4.5",
+        list: [
+          { key: "Diameter", value: "1.8m" },
+          { key: "Height", value: "3.06 meters" },
+          { key: "Layers", value: "2" },
+          { key: "Capacity", value: "6.92 cubic meters" },
+          {
+            key: "Details",
+            value: "4 columns, 4 straight supports, 8 tension supports",
+          },
+        ],
+      },
+      {
+        type: "HY1803 6.0",
+        list: [
+          { key: "Diameter", value: "1.8m" },
+          { key: "Height", value: "6.3 meters" },
+          { key: "Layers", value: "3" },
+          { key: "Capacity", value: "9.23 cubic meters" },
+          {
+            key: "Details",
+            value: "4 columns, 4 straight supports, 8 tension supports",
+          },
+        ],
+      },
+      {
+        type: "HY2801 7",
+        list: [
+          { key: "Diameter", value: "2.8m" },
+          { key: "Height", value: "4.5 meters" },
+          { key: "Layers", value: "1" },
+          { key: "Capacity", value: "10.77 cubic meters" },
+          {
+            key: "Details",
+            value: "6 columns, 6 straight supports, 12 tension supports",
+          },
+        ],
+      },
+      {
+        type: "HY2802 10.0",
+        list: [
+          { key: "Diameter", value: "2.8m" },
+          { key: "Height", value: "5.4 meters" },
+          { key: "Layers", value: "2" },
+          { key: "Capacity", value: "15.38 cubic meters" },
+          {
+            key: "Details",
+            value: "6 columns, 6 straight supports, 12 tension supports",
+          },
+        ],
+      },
+      {
+        type: "HY2803 15",
+        list: [
+          { key: "Diameter", value: "2.8m" },
+          { key: "Height", value: "6.3 meters" },
+          { key: "Layers", value: "3" },
+          { key: "Capacity", value: "23.08 cubic meters" },
+          {
+            key: "Details",
+            value: "6 columns, 6 straight supports, 12 tension supports",
+          },
+        ],
+      },
+      {
+        type: "HY2804 18",
+        list: [
+          { key: "Diameter", value: "2.8m" },
+          { key: "Height", value: "7.2 meters" },
+          { key: "Layers", value: "4" },
+          { key: "Capacity", value: "27.69 cubic meters" },
+          {
+            key: "Details",
+            value: "6 columns, 6 straight supports, 12 tension supports",
+          },
+        ],
+      },
+      {
+        type: "HY3602 20",
+        list: [
+          { key: "Diameter", value: "3.6m" },
+          { key: "Height", value: "5.4 meters" },
+          { key: "Layers", value: "2" },
+          { key: "Capacity", value: "30.76 cubic meters" },
+          {
+            key: "Details",
+            value:
+              "8 columns, 8 straight supports, 16 tension supports, 12 reinforcing ribs",
+          },
+        ],
+      },
+      {
+        type: "HY3603 25",
+        list: [
+          { key: "Diameter", value: "3.6m" },
+          { key: "Height", value: "6.3 meters" },
+          { key: "Layers", value: "3" },
+          { key: "Capacity", value: "38.46 cubic meters" },
+          {
+            key: "Details",
+            value:
+              "8 columns, 8 straight supports, 16 tension supports, 12 reinforcing ribs",
+          },
+        ],
+      },
+      {
+        type: "HY3604 30",
+        list: [
+          { key: "Diameter", value: "3.6m" },
+          { key: "Height", value: "7.2 meters" },
+          { key: "Layers", value: "4" },
+          { key: "Capacity", value: "46.15 cubic meters" },
+          {
+            key: "Details",
+            value:
+              "8 columns, 8 straight supports, 16 tension supports, 12 reinforcing ribs",
+          },
+        ],
+      },
+    ],
   },
   {
     id: "hy-poultry-light-filter",
@@ -59,15 +431,80 @@ export const products = [
     images: ["/product-images/hy-poultry-light-filter/image-1.webp"],
     tags: [],
     category: "farming-equipment",
+    specifications: [],
   },
-
   {
     id: "hy-electric-heaters",
     name: "HY-ELECTRIC HEATERS",
     heroImage: "/product-images/hy-electric-heaters/hero.webp",
     images: ["/product-images/hy-electric-heaters/image-1.webp"],
-    tags: [],
+    tags: ["featured", "hero"],
     category: "heating-equipment",
+    specifications: [
+      {
+        type: "HYD-5",
+        list: [
+          { key: "Power kW", value: "0.09" },
+          { key: "Voltage V", value: "380/220" },
+          { key: "Heating area m²", value: "50-80" },
+          { key: "Dimensions mm", value: "450x580x710" },
+        ],
+      },
+      {
+        type: "HYD-10",
+        list: [
+          { key: "Power kW", value: "0.12" },
+          { key: "Voltage V", value: "380/220" },
+          { key: "Heating area m²", value: "100-130" },
+          { key: "Dimensions mm", value: "500x650x780" },
+        ],
+      },
+      {
+        type: "HYD-15",
+        list: [
+          { key: "Power kW", value: "0.37" },
+          { key: "Voltage V", value: "380/220" },
+          { key: "Heating area m²", value: "130-180" },
+          { key: "Dimensions mm", value: "580x680x840" },
+        ],
+      },
+      {
+        type: "HYD-20",
+        list: [
+          { key: "Power kW", value: "0.37" },
+          { key: "Voltage V", value: "380/220" },
+          { key: "Heating area m²", value: "180-230" },
+          { key: "Dimensions mm", value: "580x680x840" },
+        ],
+      },
+      {
+        type: "HYD-30",
+        list: [
+          { key: "Power kW", value: "0.55" },
+          { key: "Voltage V", value: "380/220" },
+          { key: "Heating area m²", value: "230-350" },
+          { key: "Dimensions mm", value: "680x770x1020" },
+        ],
+      },
+      {
+        type: "HYD-40",
+        list: [
+          { key: "Power kW", value: "1.5" },
+          { key: "Voltage V", value: "380/220" },
+          { key: "Heating area m²", value: "350-450" },
+          { key: "Dimensions mm", value: "680x710x1180" },
+        ],
+      },
+      {
+        type: "HYD-50",
+        list: [
+          { key: "Power kW", value: "1.5" },
+          { key: "Voltage V", value: "380/220" },
+          { key: "Heating area m²", value: "450-500" },
+          { key: "Dimensions mm", value: "680x710x1180" },
+        ],
+      },
+    ],
   },
   {
     id: "hy-series-coal-burning-heater",
@@ -76,8 +513,69 @@ export const products = [
     images: ["/product-images/hy-series-coal-burning-heater/image-1.webp"],
     tags: [],
     category: "heating-equipment",
+    specifications: [
+      {
+        type: "HYRY-30",
+        list: [
+          { key: "Power", value: "30KW" },
+          { key: "Voltage", value: "220V 50Hz" },
+          { key: "Air flow m³/h", value: "720" },
+          { key: "Fuel consumption L/h", value: "1.5~2.4" },
+          { key: "Fuel tank capacity L", value: "38" },
+          { key: "Usage space m²", value: "240" },
+          { key: "Product size mm", value: "920x456x630" },
+          { key: "Packaging size mm", value: "930x450x500" },
+          { key: "Net weight kg", value: "21.5" },
+          { key: "Gross weight kg", value: "23.5" },
+        ],
+      },
+      {
+        type: "HYRY-50",
+        list: [
+          { key: "Power", value: "50KW" },
+          { key: "Voltage", value: "220V 50Hz" },
+          { key: "Air flow m³/h", value: "1100" },
+          { key: "Fuel consumption L/h", value: "2.0~4.0" },
+          { key: "Fuel tank capacity L", value: "56" },
+          { key: "Usage space m²", value: "400" },
+          { key: "Product size mm", value: "1050x490x615" },
+          { key: "Packaging size mm", value: "1080x5000x580" },
+          { key: "Net weight kg", value: "27.4" },
+          { key: "Gross weight kg", value: "33" },
+        ],
+      },
+      {
+        type: "HYRY-70",
+        list: [
+          { key: "Power", value: "70KW" },
+          { key: "Voltage", value: "220V 50Hz" },
+          { key: "Air flow m³/h", value: "1300" },
+          { key: "Fuel consumption L/h", value: "2.5~5.4" },
+          { key: "Fuel tank capacity L", value: "68" },
+          { key: "Usage space m²", value: "450" },
+          { key: "Product size mm", value: "1170x570x705" },
+          { key: "Packaging size mm", value: "1215x580x705" },
+          { key: "Net weight kg", value: "40.8" },
+          { key: "Gross weight kg", value: "45.8" },
+        ],
+      },
+      {
+        type: "HYRY-100",
+        list: [
+          { key: "Power", value: "100KW" },
+          { key: "Voltage", value: "220V 50Hz" },
+          { key: "Air flow m³/h", value: "1500" },
+          { key: "Fuel consumption L/h", value: "4.0~8.0" },
+          { key: "Fuel tank capacity L", value: "69" },
+          { key: "Usage space m²", value: "600" },
+          { key: "Product size mm", value: "1195x570x690" },
+          { key: "Packaging size mm", value: "1251x581x706" },
+          { key: "Net weight kg", value: "45.8" },
+          { key: "Gross weight kg", value: "53" },
+        ],
+      },
+    ],
   },
-
   {
     id: "hy-dry-and-wet-seprator",
     name: "HY-DRY AND WET SEPARATOR",
@@ -85,6 +583,7 @@ export const products = [
     images: ["/product-images/hy-dry-and-wet-seprator/image-1.webp"],
     tags: ["featured", "hero"],
     category: "fecal-cleaning-equipment",
+    specifications: [],
   },
   {
     id: "hy-fecal-pumping-pump",
@@ -93,6 +592,7 @@ export const products = [
     images: ["/product-images/hy-fecal-pumping-pump/image-1.webp"],
     tags: [],
     category: "fecal-cleaning-equipment",
+    specifications: [],
   },
 
   {
@@ -102,6 +602,18 @@ export const products = [
     images: ["/product-images/hy-roof-ventilation-fan/image-1.webp"],
     tags: ["featured", "hero"],
     category: "other-fans",
+    specifications: [
+      {
+        type: null,
+        list: [
+          { key: "Power", value: "0.25KW" },
+          { key: "Gas displacement", value: "3500-4000m³" },
+          { key: "Diameter", value: "600mm" },
+          { key: "Height", value: "450mm" },
+          { key: "Install diameter", value: "530mm" },
+        ],
+      },
+    ],
   },
   {
     id: "hy-air-circulation-fan",
@@ -113,5 +625,40 @@ export const products = [
     ],
     tags: [],
     category: "other-fans",
+    specifications: [
+      {
+        type: "HY-400",
+        list: [
+          { key: "Air flow (m³/h)", value: "3200" },
+          { key: "Power (w)", value: "120" },
+          { key: "Voltage (v)", value: "220/380" },
+          { key: "Total pressure (Pa)", value: "60" },
+          { key: "Frequency (Hz)", value: "50" },
+          { key: "Effective distance (m)", value: "12-16" },
+        ],
+      },
+      {
+        type: "HY-500",
+        list: [
+          { key: "Air flow (m³/h)", value: "5400" },
+          { key: "Power (w)", value: "180" },
+          { key: "Voltage (v)", value: "220/380" },
+          { key: "Total pressure (Pa)", value: "60" },
+          { key: "Frequency (Hz)", value: "50" },
+          { key: "Effective distance (m)", value: "18-22" },
+        ],
+      },
+      {
+        type: "HY-600",
+        list: [
+          { key: "Air flow (m³/h)", value: "6500" },
+          { key: "Power (w)", value: "370" },
+          { key: "Voltage (v)", value: "220/380" },
+          { key: "Total pressure (Pa)", value: "60" },
+          { key: "Frequency (Hz)", value: "50" },
+          { key: "Effective distance (m)", value: "24-28" },
+        ],
+      },
+    ],
   },
 ];
