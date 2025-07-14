@@ -197,7 +197,9 @@
   font-weight: 500;
   color: $text;
 }
+
 .about-us-block___button {
+  border: 1px solid red;
   margin-top: 40px;
   border: none;
   background: $primary;
@@ -210,6 +212,10 @@
   font-weight: 600;
   cursor: pointer;
   transition: opacity 0.3s ease-in;
+  a {
+    border: 1px solid red;
+    height: 100%;
+  }
   @include max-breakpoint("md") {
     margin-top: 20px;
   }

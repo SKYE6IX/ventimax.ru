@@ -6,7 +6,7 @@ import "./usage-block.scss";
 function UsageBlock() {
   const t = useTranslations("Pages.home.usageBlock");
   return (
-    <section className="usage-block">
+    <section className="usage-block" id="usage">
       <div className="usage-block__inner-wrapper">
         <h3 className="usage-block__title" data-testid="usage-block-title">
           {t("title")}

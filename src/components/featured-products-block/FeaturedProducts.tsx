@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import ProductCard from "../product-card/ProductCard";
 import { products } from "@/products-data/products";
 import "./feature-products.scss";
@@ -25,12 +26,13 @@ function FeaturedProducts() {
           />
         ))}
       </div>
-      <button
+      <Link
+        href="/products"
         className="featured-products__button"
         data-testid="featured-block-button"
       >
         {t("buttonText")}
-      </button>
+      </Link>
     </section>
   );
 }

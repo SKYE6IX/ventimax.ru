@@ -6,7 +6,7 @@ import Form from "../form/Form";
 function ContactUsBlock() {
   const t = useTranslations("Pages.home.contactBlock");
   return (
-    <section className="contact-us">
+    <section className="contact-us" id="contactBlock">
       <div className="contact-us__inner-wrapper">
         <h3 className="contact-us__title">{t("title")}</h3>
         <div className="contact-us__form">

@@ -26,6 +26,12 @@ function ContentCarousel() {
 
   const { contextSafe } = useGSAP(
     () => {
+      // Reset activeElementRef and initial animation
+      // duriung navigations
+      activeElementRef.current = null;
+      setInitialAnimation(true);
+
+      // Set the the initial style for the image
       gsap.set(".content-carousel__image", {
         scale: (i) => (i === 0 ? 1 : 0.7),
       });

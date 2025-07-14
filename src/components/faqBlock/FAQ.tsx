@@ -25,7 +25,7 @@ function FAQ() {
     }));
   };
   return (
-    <section className="faq-block">
+    <section className="faq-block" id="faq">
       <h3 className="faq-block__title" data-testid="faq-block-title">
         {t("title")}
       </h3>

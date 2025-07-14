@@ -132,6 +132,7 @@ function Form() {
             type="submit"
             className="form-container__form-button"
             data-testid="form-button"
+            disabled
           >
             {t("sendButton")}
             <span className="form-container__form-button-icon">
@@ -151,7 +152,7 @@ function Form() {
                   {t("quickLink.phone")}:
                 </span>
                 <Link
-                  href="#"
+                  href="tel:+86-536-3521951"
                   className="form-container__quick-link-text"
                   data-testid="form-quick-link-number"
                 >
@@ -169,7 +170,7 @@ function Form() {
                   {t("quickLink.email")}:
                 </span>
                 <Link
-                  href="#"
+                  href="mailto:sdhywk@126.com"
                   className="form-container__quick-link-text"
                   data-testid="form-quick-link-email"
                 >
@@ -198,7 +199,7 @@ function Form() {
 
           <div className="form-container__social-link-wrapper">
             <Link
-              href="#"
+              href="https://wa.me/8616653608178"
               className="form-container__social-link"
               data-testid="form-social-link"
             >

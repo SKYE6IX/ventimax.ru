@@ -1,11 +1,14 @@
+"use client";
 import React from "react";
 import { useTranslations } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
 import CheckIcon from "../icons/CheckIcon";
 import "./about-us.scss";
 
 function AboutUs() {
   const t = useTranslations("Pages.home.aboutUsBlock");
   const itemsNum = ["one", "two", "three", "four", "five", "six"];
+  const router = useRouter();
   return (
     <section className="about-us-block">
       <div
@@ -54,6 +57,7 @@ function AboutUs() {
         <button
           className="about-us-block___button"
           data-testid="about-us-block-button"
+          onClick={() => router.push("/about")}
         >
           {t("buttonText")}
         </button>

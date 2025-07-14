@@ -7,14 +7,25 @@ import MailIcon from "../icons/MailIcon";
 import LocationIcon from "../icons/LocationIcon";
 import "./footer.scss";
 
-const keys = ["products", "aboutUs", "faq", "getInTouch"];
+const footerNav = [
+  { key: "products", href: "/products" },
+  { key: "aboutUs", href: "/about" },
+  { key: "faq", href: "/#faq" },
+  { key: "getInTouch", href: "/#contactBlock" },
+];
 const contactUs = [
-  { key: "phone", icon: TelephoneIcon, value: "+86-536-3521951" },
-  { key: "email", icon: MailIcon, value: "sdhywk@126.com" },
+  {
+    key: "phone",
+    icon: TelephoneIcon,
+    value: "+86-536-3521951",
+    prefix: "tel:",
+  },
+  { key: "email", icon: MailIcon, value: "sdhywk@126.com", prefix: "mailto:" },
   {
     key: "location",
     icon: LocationIcon,
     value: "Economic Development zone, Qingzhou, China",
+    prefix: "",
   },
 ];
 
@@ -40,14 +51,14 @@ function Footer() {
               {t("links.title")}
             </h5>
             <ul className="footer__link-list">
-              {keys.map((key) => (
+              {footerNav.map((nav) => (
                 <li
-                  key={key}
+                  key={nav.key}
                   className="footer__link"
                   data-testid="footer-link-item"
                 >
-                  <Link href="#" data-testid="footer-link">
-                    {t(`links.${key}`)}
+                  <Link href={nav.href} data-testid="footer-link">
+                    {t(`links.${nav.key}`)}
                   </Link>
                 </li>
               ))}
@@ -73,7 +84,7 @@ function Footer() {
                         {t(`contact.${contact.key}`)}:
                       </span>
                       <Link
-                        href="#"
+                        href={contact.prefix + contact.value}
                         className="footer__contact-link"
                         data-testid="footer-contact-link"
                       >
