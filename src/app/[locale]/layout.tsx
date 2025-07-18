@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { Roboto } from "next/font/google";
+import RocketChat from "@/components/rocket-chat/RocketChat";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import Modal from "@/components/modal/Modal";
+import ModalToggleProvider from "@/context/ModalToggleProvider";
 import "../../global-style/globals.scss";
 
 const roboto = Roboto({
@@ -33,10 +36,14 @@ export default async function RootLayout({
   return (
     <html lang={locale} className={roboto.variable}>
       <body>
+        <RocketChat />
         <NextIntlClientProvider>
-          <Header />
-          {children}
-          <Footer />
+          <ModalToggleProvider>
+            <Header />
+            <Modal />
+            {children}
+            <Footer />
+          </ModalToggleProvider>
         </NextIntlClientProvider>
       </body>
     </html>

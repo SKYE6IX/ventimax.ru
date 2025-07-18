@@ -35,24 +35,27 @@ function FAQ() {
       <div className="faq-block__list-wrapper">
         {Object.entries(dropDown).map(([key, state]) => (
           <div className="faq-block__item-wrapper" key={key}>
-            <div className="faq-block__item-header">
+            <div
+              className="faq-block__item-header"
+              onClick={() => toggleDropdown(key)}
+              aria-pressed={state.isOpen}
+            >
               <h5
                 className="faq-block__item-title"
                 data-testid="faq-block-dropdown-title"
               >
                 {t(`${key}.question`)}
               </h5>
-              <button
+              <span
                 className={[
                   "faq-block__item-button",
                   state.isOpen ? "open" : "close",
                 ].join(" ")}
-                onClick={() => toggleDropdown(key)}
                 data-testid="faq-block-dropdown-button"
                 aria-expanded={state.isOpen}
               >
                 <ArrowDownIcon />
-              </button>
+              </span>
             </div>
 
             <div

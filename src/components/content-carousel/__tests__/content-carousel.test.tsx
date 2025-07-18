@@ -6,7 +6,12 @@ import messages from "../../../../messages/en.json";
 import ContentCarousel from "../ContentCarousel";
 
 jest.mock("@gsap/react");
-jest.mock("gsap");
+jest.mock("gsap", () => ({
+  matchMedia: jest.fn(() => ({
+    add: jest.fn().mockReturnThis(),
+  })),
+  registerPlugin: jest.fn(),
+}));
 
 describe("Content Carousel Component", () => {
   beforeEach(() => {
@@ -15,7 +20,6 @@ describe("Content Carousel Component", () => {
       contextSafe: jest.fn(),
     });
   });
-
   it("render all CTA buttons", () => {
     // Arrange
     render(

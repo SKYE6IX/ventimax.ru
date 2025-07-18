@@ -54,7 +54,12 @@
       "email": "电子邮件",
       "location": "位置"
     },
-    "sendButton": "发送"
+    "sendButton": "发送",
+    "response": {
+      "success": "消息发送成功！",
+      "failed": "消息发送失败，请再次尝试！"
+    },
+    "closeModal": "关闭"
   },
   "Pages": {
     "home": {

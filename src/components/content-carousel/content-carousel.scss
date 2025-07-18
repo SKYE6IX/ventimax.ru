@@ -24,6 +24,8 @@
   -webkit-overflow-scrolling: touch;
   @include max-breakpoint("md") {
     margin-top: -30px;
+    touch-action: pan-x;
+    overscroll-behavior: contain;
   }
   @include between-breakpoints("xs", "s") {
     margin-top: -20px;

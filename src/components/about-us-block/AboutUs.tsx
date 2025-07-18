@@ -9,6 +9,7 @@ function AboutUs() {
   const t = useTranslations("Pages.home.aboutUsBlock");
   const itemsNum = ["one", "two", "three", "four", "five", "six"];
   const router = useRouter();
+
   return (
     <section className="about-us-block">
       <div

@@ -54,7 +54,12 @@
       "email": "Email",
       "location": "Location"
     },
-    "sendButton": "Send"
+    "sendButton": "Send",
+    "response": {
+      "success": "Message sent successfully!",
+      "failed": "Message failed to send at this time, try again!"
+    },
+    "closeModal": "Close"
   },
   "Pages": {
     "home": {

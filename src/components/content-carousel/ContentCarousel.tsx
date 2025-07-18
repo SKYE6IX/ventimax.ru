@@ -26,49 +26,61 @@ function ContentCarousel() {
 
   const { contextSafe } = useGSAP(
     () => {
-      // Reset activeElementRef and initial animation
-      // duriung navigations
-      activeElementRef.current = null;
-      setInitialAnimation(true);
-
-      // Set the the initial style for the image
-      gsap.set(".content-carousel__image", {
-        scale: (i) => (i === 0 ? 1 : 0.7),
-      });
-      const slides = gsap.utils.toArray(".content-carousel__carousel-slide");
-      loopRef.current = horizontalLoop(slides, {
-        paused: true,
-        center: true,
-        draggable: true,
-        onChange: (element: HTMLDivElement, index: number) => {
-          setActiveIdx(index);
-          if (activeElementRef.current) {
-            gsap.fromTo(
-              ".active .content-carousel__image",
-              { scale: 1 },
-              { scale: 0.7, duration: 0.3, ease: "power1.inOut" }
-            );
-            activeElementRef.current.classList.remove("active");
-          }
-          element.classList.add("active");
-          activeElementRef.current = element;
-          gsap
-            .timeline({ defaults: { ease: "power1.inOut" } })
-            .fromTo(
-              ".active .content-carousel__image",
-              { scale: 0.7 },
-              { scale: 1, duration: 0.3, ease: "power1.inOut" },
-              0.4
-            )
-            .progress(initialAnimation ? 1 : 0);
+      const mm = gsap.matchMedia();
+      const breakPoint = 912;
+      mm.add(
+        {
+          isDesktop: `(min-width: ${breakPoint}px)`,
+          isMobile: `(max-width: ${breakPoint}px)`,
         },
-      });
-      loopRef.current.toIndex(0, { duration: 0 });
-      setInitialAnimation(false);
+        (context) => {
+          // @ts-expect-error isMobile type doesnt exist on Condition
+          const { isMobile } = context.conditions;
+          // Reset activeElementRef and initial animation
+          // duriung navigations
+          activeElementRef.current = null;
+          setInitialAnimation(true);
+          // Set the the initial style for the image
+          gsap.set(".content-carousel__image", {
+            scale: (i) => (i === 0 ? 1 : 0.7),
+          });
+          const slides = gsap.utils.toArray(
+            ".content-carousel__carousel-slide"
+          );
+          loopRef.current = horizontalLoop(slides, {
+            paused: true,
+            center: true,
+            draggable: isMobile,
+            onChange: (element: HTMLDivElement, index: number) => {
+              setActiveIdx(index);
+              if (activeElementRef.current) {
+                gsap.fromTo(
+                  ".active .content-carousel__image",
+                  { scale: 1 },
+                  { scale: 0.7, duration: 0.3, ease: "power1.inOut" }
+                );
+                activeElementRef.current.classList.remove("active");
+              }
+              element.classList.add("active");
+              activeElementRef.current = element;
+              gsap
+                .timeline({ defaults: { ease: "power1.inOut" } })
+                .fromTo(
+                  ".active .content-carousel__image",
+                  { scale: 0.7 },
+                  { scale: 1, duration: 0.3, ease: "power1.inOut" },
+                  0.4
+                )
+                .progress(initialAnimation ? 1 : 0);
+            },
+          });
+          loopRef.current.toIndex(0, { duration: 0 });
+          setInitialAnimation(false);
+        }
+      );
     },
     { scope: carouselRef }
   );
-
   const nextSlide = contextSafe(() => {
     loopRef.current?.next({ duration: 0.3, ease: "power1.inOut" });
   });

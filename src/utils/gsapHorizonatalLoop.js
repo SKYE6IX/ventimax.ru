@@ -14,6 +14,7 @@ export function horizontalLoop(items, config) {
   let timeline;
   items = gsap.utils.toArray(items);
   config = config || {};
+
   // Use a context so that if this is called from within another context
   // or a gsap.matchMedia(), we can perform proper cleanup like the "resize"
   // event handler on the window.
@@ -191,6 +192,7 @@ export function horizontalLoop(items, config) {
         ? tl.time(timeWrap(time))
         : tl.tweenTo(time, vars);
     }
+
     tl.toIndex = (index, vars) => toIndex(index, vars);
     tl.closestIndex = (setCurrent) => {
       let index = getClosest(times, tl.time(), tl.duration());
@@ -200,6 +202,7 @@ export function horizontalLoop(items, config) {
       }
       return index;
     };
+
     tl.current = () => (indexIsDirty ? tl.closestIndex(true) : curIndex);
     tl.next = (vars) => toIndex(tl.current() + 1, vars);
     tl.previous = (vars) => toIndex(tl.current() - 1, vars);
@@ -209,6 +212,7 @@ export function horizontalLoop(items, config) {
       tl.vars.onReverseComplete();
       tl.reverse();
     }
+
     if (config.draggable && typeof Draggable === "function") {
       proxy = document.createElement("div");
       let wrap = gsap.utils.wrap(0, 1),
@@ -224,6 +228,7 @@ export function horizontalLoop(items, config) {
             wrap(startProgress + (draggable.startX - draggable.x) * ratio)
           ),
         syncIndex = () => tl.closestIndex(true);
+
       typeof InertiaPlugin === "undefined" &&
         console.warn(
           "InertiaPlugin required for momentum-based scrolling and snapping. https://greensock.com/club"
@@ -231,6 +236,10 @@ export function horizontalLoop(items, config) {
       draggable = Draggable.create(proxy, {
         trigger: items[0].parentNode,
         type: "x",
+        inertia: true,
+        overshootTolerance: 0,
+        allowContextMenu: true,
+        minimumMovement: 5,
         onPressInit() {
           let x = this.x;
           gsap.killTweensOf(tl);
@@ -244,8 +253,6 @@ export function horizontalLoop(items, config) {
         },
         onDrag: align,
         onThrowUpdate: align,
-        overshootTolerance: 0,
-        inertia: true,
         snap(value) {
           //Note: if the user presses and releases in the middle of a throw,
           //due to the sudden correction of proxy.x in the onPressInit(),
