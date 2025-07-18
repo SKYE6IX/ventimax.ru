@@ -26,6 +26,7 @@ const defaultFormState = {
   subject: "",
   message: "",
 };
+const isProduction = process.env.NODE_ENV === "production";
 
 function Form() {
   const t = useTranslations("Form");
@@ -46,11 +47,17 @@ function Form() {
     if (formRef.current) {
       emailjs
         .sendForm(
-          process.env.NEXT_PUBLIC_SERVICE_ID as string,
-          process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
+          isProduction
+            ? (process.env.SERVICE_ID as string)
+            : (process.env.NEXT_PUBLIC_SERVICE_ID as string),
+          isProduction
+            ? (process.env.TEMPLATE_ID as string)
+            : (process.env.NEXT_PUBLIC_TEMPLATE_ID as string),
           formRef.current,
           {
-            publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY as string,
+            publicKey: isProduction
+              ? (process.env.PUBLIC_KEY as string)
+              : (process.env.NEXT_PUBLIC_PUBLIC_KEY as string),
           }
         )
         .then(
