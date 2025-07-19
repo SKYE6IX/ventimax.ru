@@ -4,6 +4,7 @@ steps:
     args:
       [
         "build",
+        "--no-cache",
         "-t",
         "europe-west1-docker.pkg.dev/${PROJECT_ID}/cloud-run-source-deploy/ventimax.ru/ventimax-ru",
         "--build-arg",
