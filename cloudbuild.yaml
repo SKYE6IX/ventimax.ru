@@ -8,6 +8,8 @@ steps:
         "-t",
         "europe-west1-docker.pkg.dev/${PROJECT_ID}/cloud-run-source-deploy/ventimax.ru/ventimax-ru:${COMMIT_SHA}",
         "--build-arg",
+        "CACHE_BUST=$(date +%s)",
+        "--build-arg",
         "ROCKET_CHAT_URL=${_ROCKET_CHAT_URL}",
         "--build-arg",
         "SERVICE_ID=${_SERVICE_ID}",
@@ -24,5 +26,11 @@ steps:
         "push",
         "europe-west1-docker.pkg.dev/${PROJECT_ID}/cloud-run-source-deploy/ventimax.ru/ventimax-ru:${COMMIT_SHA}",
       ]
+
+  - name: "ubuntu"
+    entrypoint: "bash"
+    args: ["-c", "ls -la /workspace"]
+
 options:
   logging: "CLOUD_LOGGING_ONLY"
+  sourceProvenanceHash: ["SHA256"]
