@@ -11,7 +11,7 @@ steps:
     env:
       - "NEXT_PUBLIC_ROCKET_CHAT_URL=${_ROCKET_CHAT_URL}"
       - "NEXT_PUBLIC_SERVICE_ID=${_SERVICE_ID}"
-      - "NEXT_PUBLIC_TEMPLATE_ID==${_TEMPLATE_ID}"
+      - "NEXT_PUBLIC_TEMPLATE_ID=${_TEMPLATE_ID}"
       - "NEXT_PUBLIC_PUBLIC_KEY=${_PUBLIC_KEY}"
   # Docker Push
   - name: "gcr.io/cloud-builders/docker"
