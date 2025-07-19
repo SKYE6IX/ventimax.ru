@@ -57,4 +57,17 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
+ARG ROCKET_CHAT_URL
+ARG SERVICE_ID
+ARG TEMPLATE_ID
+ARG PUBLIC_KEY
+
+ENV NEXT_PUBLIC_ROCKET_CHAT_URL=$ROCKET_CHAT_URL
+
+ENV NEXT_PUBLIC_SERVICE_ID=$SERVICE_ID
+
+ENV NEXT_PUBLIC_TEMPLATE_ID=$TEMPLATE_ID
+
+ENV NEXT_PUBLIC_PUBLIC_KEY=$PUBLIC_KEY
+
 CMD ["node", "server.js"]
