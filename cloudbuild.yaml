@@ -6,7 +6,14 @@ steps:
         "build",
         "-t",
         "europe-west1-docker.pkg.dev/${PROJECT_ID}/cloud-run-source-deploy/ventimax.ru/ventimax-ru",
-        "--build-arg=ROCKET_CHAT_URL=${_ROCKET_CHAT_URL},SERVICE_ID=${_SERVICE_ID},TEMPLATE_ID=${_TEMPLATE_ID},PUBLIC_KEY=${_PUBLIC_KEY}",
+        "--build-arg",
+        "ROCKET_CHAT_URL=${_ROCKET_CHAT_URL}",
+        "--build-arg",
+        "SERVICE_ID=${_SERVICE_ID}",
+        "--build-arg",
+        "TEMPLATE_ID=${_TEMPLATE_ID}",
+        "--build-arg",
+        "PUBLIC_KEY=${_PUBLIC_KEY}",
         ".",
       ]
   # Docker Push

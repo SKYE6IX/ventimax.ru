@@ -34,7 +34,7 @@ ENV NEXT_PUBLIC_TEMPLATE_ID=$TEMPLATE_ID
 
 ENV NEXT_PUBLIC_PUBLIC_KEY=$PUBLIC_KEY
 
-RUN echo "NEXT_PUBLIC_ROCKET_CHAT_URL=$ROCKET_CHAT_URL"
+RUN echo "Injected NEXT_PUBLIC_ROCKET_CHAT_URL is: $NEXT_PUBLIC_ROCKET_CHAT_URL"
 
 RUN npm run build
 
@@ -56,7 +56,5 @@ COPY --from=builder /app/messages ./messages
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-
-EXPOSE 4000
 
 CMD ["node", "server.js"]
