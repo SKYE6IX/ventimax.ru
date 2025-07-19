@@ -20,3 +20,5 @@ steps:
         "push",
         "europe-west1-docker.pkg.dev/${PROJECT_ID}/cloud-run-source-deploy/ventimax.ru/ventimax-ru@sha256:1568f9ade95e8c0dcabd9873054c65c53479dea42f518d68c7f0c49ad4f547fe",
       ]
+options:
+  logging: "CLOUD_LOGGING_ONLY"
