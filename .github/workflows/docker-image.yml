@@ -28,5 +28,5 @@ jobs:
               uses: docker/build-push-action@v6
               with:
                 push: true
-                file: prod.Dockerfile
+                file: Dockerfile
                 tags: ${{ vars.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
