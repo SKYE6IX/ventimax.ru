@@ -10,6 +10,7 @@ import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Modal from "@/components/modal/Modal";
 import ModalToggleProvider from "@/context/ModalToggleProvider";
+import convertStringToArray from "@/utils/convertToStringArray";
 import "../../global-style/globals.scss";
 
 const roboto = Roboto({
@@ -28,6 +29,7 @@ export async function generateMetadata({
   return {
     title: "Ventimax",
     description: t("metaData.description"),
+    keywords: convertStringToArray(t("metaData.keywords")),
     metadataBase: new URL("https://ventimax.ru"),
     alternates: {
       canonical: "/",
