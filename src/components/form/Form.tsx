@@ -41,10 +41,6 @@ function Form() {
     setFormState({ ...formState, [name]: value });
   };
 
-  console.log(process.env.NEXT_PUBLIC_SERVICE_ID);
-  console.log(process.env.NEXT_PUBLIC_TEMPLATE_ID);
-  console.log(process.env.NEXT_PUBLIC_PUBLIC_KEY);
-
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSending(true);

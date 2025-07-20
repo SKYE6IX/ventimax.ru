@@ -1,6 +1,7 @@
 @use "@/global-style/variables.scss" as *;
 
-.logo {
+.logo,
+.logo__link {
   display: flex;
   align-items: center;
 }

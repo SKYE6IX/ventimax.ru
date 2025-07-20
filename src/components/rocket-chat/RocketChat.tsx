@@ -4,7 +4,6 @@ import Script from "next/script";
 
 function RocketChat() {
   const rocketUrl = process.env.NEXT_PUBLIC_ROCKET_CHAT_URL;
-  console.log(rocketUrl);
   return (
     <Script
       strategy="afterInteractive"
