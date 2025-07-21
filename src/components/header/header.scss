@@ -33,7 +33,7 @@
       &:lang("ru") {
         max-width: 150px;
         line-height: 16.1px;
-        padding: 8px 24px;
+        padding: 8px 16px;
         text-align: center;
       }
     }
@@ -41,6 +41,15 @@
   @include max-breakpoint("912px") {
     .nav {
       display: none;
+    }
+  }
+  @include between-breakpoints("xs", "s") {
+    & .button-cta {
+      &:lang("ru") {
+        max-width: 130px;
+        line-height: 16.1px;
+        padding: 8px 0px;
+      }
     }
   }
 }
