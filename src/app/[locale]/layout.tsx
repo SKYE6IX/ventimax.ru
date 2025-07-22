@@ -59,6 +59,7 @@ export async function generateMetadata({
     },
     verification: {
       yandex: "48dbdbd128595d9d",
+      google: "WqBwl_Fzxiw8EqkOKgbmByoqTwGDOBc_8tfVic2ltkU",
     },
     category: "Livestocks Equipments",
   };
@@ -81,7 +82,6 @@ export default async function RootLayout({
     notFound();
   }
   setRequestLocale(locale);
-
   const message = await getMessages({ locale: locale });
   const jsonLd: WithContext<WebPage> = {
     "@context": "https://schema.org",
@@ -91,6 +91,11 @@ export default async function RootLayout({
     url: "https://ventimax.ru/",
     keywords: message.SEO.jsonLd.keywords,
     inLanguage: locale,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Shandong Hengyuan Lufeng Agriculture and Animal Husbandry Technology Co., Ltd.",
+      url: "https://ventimax.ru/",
+    },
     mainEntity: {
       "@type": "Organization",
       name: "Shandong Hengyuan Lufeng Agriculture and Animal Husbandry Technology Co., Ltd.",
