@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import {
+  getTranslations,
+  setRequestLocale,
+  getMessages,
+} from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Roboto } from "next/font/google";
 import Script from "next/script";
+import { WebPage, WithContext } from "schema-dts";
 import RocketChat from "@/components/rocket-chat/RocketChat";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/header/Header";
@@ -32,7 +37,7 @@ export async function generateMetadata({
     keywords: convertStringToArray(t("metaData.keywords")),
     metadataBase: new URL("https://ventimax.ru"),
     alternates: {
-      canonical: "/",
+      canonical: "https://ventimax.ru",
       languages: {
         en: "https://ventimax.ru/en",
         ru: "https://ventimax.ru/ru",
@@ -53,12 +58,14 @@ export async function generateMetadata({
       },
     },
     verification: {
-      google: "google",
-      yandex: "yandex",
-      yahoo: "yahoo",
+      yandex: "48dbdbd128595d9d",
     },
     category: "Livestocks Equipments",
   };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function RootLayout({
@@ -68,10 +75,59 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }>) {
+  const isProduction = process.env.NODE_ENV === "production";
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+  setRequestLocale(locale);
+
+  const message = await getMessages({ locale: locale });
+  const jsonLd: WithContext<WebPage> = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: message.SEO.jsonLd.name,
+    description: message.SEO.jsonLd.description,
+    url: "https://ventimax.ru/",
+    keywords: message.SEO.jsonLd.keywords,
+    inLanguage: locale,
+    mainEntity: {
+      "@type": "Organization",
+      name: "Shandong Hengyuan Lufeng Agriculture and Animal Husbandry Technology Co., Ltd.",
+      description: message.SEO.jsonLd.mainEntity.description,
+      url: "https://ventimax.ru/",
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+86-536-3521951",
+        contactType: message.SEO.jsonLd.contactType,
+        areaServed: "Global",
+        availableLanguage: ["English", "Russian", "Chinese"],
+      },
+    },
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: message.SEO.jsonLd.breadcrumb.itemOne.name,
+          item: "https://ventimax.ru/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: message.SEO.jsonLd.breadcrumb.itemTwo.name,
+          item: "https://ventimax.ru/products",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: message.SEO.jsonLd.breadcrumb.itemThree.name,
+          item: "https://ventimax.ru/about",
+        },
+      ],
+    },
+  };
 
   return (
     <html lang={locale} className={roboto.variable}>
@@ -85,11 +141,12 @@ export default async function RootLayout({
             <Footer />
           </ModalToggleProvider>
         </NextIntlClientProvider>
-        <Script
-          id="yandex-metrica"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
+        {isProduction && (
+          <Script
+            id="yandex-metrica"
+            strategy="lazyOnload"
+            dangerouslySetInnerHTML={{
+              __html: `
        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
        m[i].l=1*new Date();
        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -101,6 +158,13 @@ export default async function RootLayout({
         accurateTrackBounce:true
        });
             `,
+            }}
+          />
+        )}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
           }}
         />
       </body>

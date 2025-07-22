@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://ventimax.ru",
+      url: "https://ventimax.ru/",
       lastModified: new Date(),
       alternates: {
         languages: {
