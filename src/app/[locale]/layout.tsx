@@ -58,7 +58,7 @@ export async function generateMetadata({
       },
     },
     verification: {
-      yandex: "48dbdbd128595d9d",
+      yandex: "ccd26c026b83880e",
       google: "WqBwl_Fzxiw8EqkOKgbmByoqTwGDOBc_8tfVic2ltkU",
     },
     category: "Livestocks Equipments",
