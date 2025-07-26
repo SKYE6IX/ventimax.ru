@@ -32,12 +32,13 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "SEO" });
   return {
-    title: "Ventimax",
+    title:
+      "Ventimax - Shandong Hengyuan Lufeng Agriculture and Animal Husbandry Technology Co., Ltd.",
     description: t("metaData.description"),
     keywords: convertStringToArray(t("metaData.keywords")),
-    metadataBase: new URL("https://ventimax.ru"),
+    metadataBase: new URL("https://ventimax.ru/ru"),
     alternates: {
-      canonical: "https://ventimax.ru",
+      canonical: "https://ventimax.ru/ru",
       languages: {
         en: "https://ventimax.ru/en",
         ru: "https://ventimax.ru/ru",
@@ -88,19 +89,19 @@ export default async function RootLayout({
     "@type": "WebPage",
     name: message.SEO.jsonLd.name,
     description: message.SEO.jsonLd.description,
-    url: "https://ventimax.ru/",
+    url: "https://ventimax.ru/ru",
     keywords: message.SEO.jsonLd.keywords,
     inLanguage: locale,
     isPartOf: {
       "@type": "WebSite",
       name: "Shandong Hengyuan Lufeng Agriculture and Animal Husbandry Technology Co., Ltd.",
-      url: "https://ventimax.ru/",
+      url: "https://ventimax.ru/ru",
     },
     mainEntity: {
       "@type": "Organization",
       name: "Shandong Hengyuan Lufeng Agriculture and Animal Husbandry Technology Co., Ltd.",
       description: message.SEO.jsonLd.mainEntity.description,
-      url: "https://ventimax.ru/",
+      url: "https://ventimax.ru/ru",
       contactPoint: {
         "@type": "ContactPoint",
         telephone: "+86-536-3521951",
@@ -116,19 +117,19 @@ export default async function RootLayout({
           "@type": "ListItem",
           position: 1,
           name: message.SEO.jsonLd.breadcrumb.itemOne.name,
-          item: "https://ventimax.ru/",
+          item: "https://ventimax.ru/ru",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: message.SEO.jsonLd.breadcrumb.itemTwo.name,
-          item: "https://ventimax.ru/products",
+          item: "https://ventimax.ru/ru/products",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: message.SEO.jsonLd.breadcrumb.itemThree.name,
-          item: "https://ventimax.ru/about",
+          item: "https://ventimax.ru/ru/about",
         },
       ],
     },

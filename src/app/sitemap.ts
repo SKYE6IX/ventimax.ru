@@ -2,37 +2,58 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://ventimax.ru/",
+      url: "https://ventimax.ru/en",
       lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: "https://ventimax.ru/en",
-          ru: "https://ventimax.ru/ru",
-          zh: "https://ventimax.ru/zh",
-        },
-      },
+      changeFrequency: "daily",
+      priority: 1,
     },
     {
-      url: "https://ventimax.ru/about",
+      url: "https://ventimax.ru/ru",
       lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: "https://ventimax.ru/en/about",
-          ru: "https://ventimax.ru/ru/about",
-          zh: "https://ventimax.ru/zh/about",
-        },
-      },
+      changeFrequency: "daily",
+      priority: 1,
     },
     {
-      url: "https://ventimax.ru/products",
+      url: "https://ventimax.ru/zh",
       lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: "https://ventimax.ru/en/products",
-          ru: "https://ventimax.ru/ru/products",
-          zh: "https://ventimax.ru/zh/products",
-        },
-      },
+      changeFrequency: "daily",
+      priority: 1,
+    },
+    {
+      url: "https://ventimax.ru/en/about",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "https://ventimax.ru/ru/about",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "https://ventimax.ru/zh/about",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "https://ventimax.ru/en/products",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "https://ventimax.ru/ru/products",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "https://ventimax.ru/zh/products",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
     },
   ];
 }
