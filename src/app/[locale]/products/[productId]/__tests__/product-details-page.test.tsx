@@ -51,7 +51,7 @@ describe("Product component", () => {
       return mockData;
     });
     const param = Promise.resolve(mockData);
-    const mockTitle = "HY-PUSH-PULL EXHAUST FANS";
+    const mockTitle = "HY-PUSH-PULL EXHAUST FAN";
 
     render(
       <NextIntlClientProvider locale="en" messages={message}>
