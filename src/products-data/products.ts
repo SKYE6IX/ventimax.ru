@@ -9,7 +9,7 @@ export type Category =
 export const products = [
   {
     id: "hy-push-pull-exhaust-fans",
-    name: "HY-PUSH-PULL EXHAUST FANS",
+    name: "HY-PUSH-PULL EXHAUST FAN",
     heroImage: "/product-images/hy-push-pull-exhaust-fans/hero.webp",
     images: ["/product-images/hy-push-pull-exhaust-fans/image-1.webp"],
     tags: ["featured", "hero"],
