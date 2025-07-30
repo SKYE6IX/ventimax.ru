@@ -80,8 +80,8 @@ describe("Form components", () => {
 
   it("render quick link with correct data", () => {
     // Arrange
-    const phoneNumber = "+86-536-3521951";
-    const email = "sdhywk@126.com";
+    const phoneNumber = "+86-1665-3608178";
+    const email = "amyxuan@cool-fan.com";
     const location = "Economic Development zone, Qingzhou, China";
     render(
       <NextIntlClientProvider locale="en" messages={messages}>

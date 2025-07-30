@@ -107,9 +107,9 @@ function ProductDetails({
           >
             {product?.name}
           </h3>
-          <h5 className="product-details-page__product-price">
+          {/* <h5 className="product-details-page__product-price">
             {t("priceFrom")} $5000.00
-          </h5>
+          </h5> */}
           <div className="product-details-page__button-container">
             <CtaButton />
           </div>

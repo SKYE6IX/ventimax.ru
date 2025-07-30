@@ -150,7 +150,6 @@ function Form() {
                 type="tel"
                 name="phone"
                 required
-                // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 value={formState.phone}
                 onChange={handleChange}
                 data-testid="form-input"
@@ -222,11 +221,11 @@ function Form() {
                   {t("quickLink.phone")}:
                 </span>
                 <Link
-                  href="tel:+86-536-3521951"
+                  href="tel:+8616653608178"
                   className="form-container__quick-link-text"
                   data-testid="form-quick-link-number"
                 >
-                  +86-536-3521951
+                  +86-1665-3608178
                 </Link>
               </div>
             </div>
@@ -240,11 +239,11 @@ function Form() {
                   {t("quickLink.email")}:
                 </span>
                 <Link
-                  href="mailto:sdhywk@126.com"
+                  href="mailto:amyxuan@cool-fan.com"
                   className="form-container__quick-link-text"
                   data-testid="form-quick-link-email"
                 >
-                  sdhywk@126.com
+                  amyxuan@cool-fan.com
                 </Link>
               </div>
             </div>
