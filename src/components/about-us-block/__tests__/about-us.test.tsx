@@ -22,20 +22,29 @@ describe("About us component", () => {
     expect(blockTitle).toBeInTheDocument();
     expect(blockSubTitle).toBeInTheDocument();
   });
-  it("render background image", () => {
+  it("render about us video", () => {
     // Arrange
+    const testSrc =
+      "https://res.cloudinary.com/eleven-11/video/upload/v1754138914/ventimax-asset/1267_qn9bq0.mov";
     render(
       <NextIntlClientProvider locale="en" messages={messages}>
         <AboutUs />
       </NextIntlClientProvider>
     );
     // Act
-    const divWithBgImage = screen.getByTestId(
-      "about-us-block-background-image"
-    );
+    const video = screen.getByTestId("about-us-video-player");
+
     // Assert
-    expect(divWithBgImage).toBeInTheDocument();
+    expect(video).toBeInTheDocument();
+    expect(video).not.toHaveAttribute("controls");
+    expect(video).toHaveAttribute("autoPlay");
+    expect(video).toHaveAttribute("loop");
+
+    const source = video.querySelector("source");
+    expect(source).toHaveAttribute("src", testSrc);
+    expect(source).toHaveAttribute("type", "video/mp4");
   });
+
   it("render button with learn more text", () => {
     // Arrange
     render(

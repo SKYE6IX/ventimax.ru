@@ -3,45 +3,54 @@
 
 .about-us-block {
   margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  display: flex;
-  gap: 70px;
   @include max-breakpoint("md") {
     margin-top: 80px;
-    width: calc(100% - 200px);
-    gap: 40px;
-  }
-  @include max-breakpoint("sm") {
-    width: calc(100% - 40px);
-    flex-direction: column;
-    align-items: center;
   }
   @include between-breakpoints("xs", "s") {
     margin-top: 40px;
-    gap: 30px;
   }
 }
-.about-us-block__image-container {
-  flex-shrink: 0;
-  width: 594px;
-  height: 704px;
-  border-radius: 15px;
-  background: url("/company-image.jpg") lightgray 50% / cover no-repeat;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
-  position: relative;
+
+.about-us-block__heading {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
   @include max-breakpoint("md") {
-    width: 417px;
-    height: 596px;
+    width: calc(100% - 200px);
   }
   @include max-breakpoint("sm") {
-    width: calc(100% - 40px);
+    width: calc(100% - 100px);
   }
   @include between-breakpoints("xs", "s") {
-    height: 316px;
-    aspect-ratio: 80/79;
+    width: 100%;
   }
+}
+.about-us-block___title {
+  @extend %block-title;
+  display: inline-flex;
+  margin-bottom: 40px;
+  @include max-breakpoint("sm") {
+    margin-bottom: 20px;
+  }
+  @include between-breakpoints("xs", "s") {
+    margin-left: 20px;
+  }
+}
+.about-us-block__media-container {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 15px;
+  position: relative;
+  @include between-breakpoints("xs", "s") {
+    border-radius: 0px;
+  }
+}
+.about-us-block__video {
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .about-us-block__yoe {
   width: 214px;
@@ -54,20 +63,16 @@
   justify-content: center;
   gap: 15px;
   position: absolute;
-  bottom: 60px;
-  left: -40px;
+  bottom: 50px;
+  left: -50px;
   @include max-breakpoint("md") {
     width: 176.504px;
     height: 193px;
     bottom: 40px;
-    left: -30px;
+    left: -40px;
   }
-  @include between-breakpoints("xs", "s") {
-    gap: 10px;
-    width: 131.218px;
-    height: 143.481px;
-    bottom: 20px;
-    left: -15px;
+  @include max-breakpoint("sm") {
+    display: none;
   }
 }
 .about-us-block__yoe-title {
@@ -88,12 +93,6 @@
       font-size: 1.75rem;
     }
   }
-  @include between-breakpoints("xs", "s") {
-    font-size: 1.875rem;
-    span {
-      font-family: 1.25rem;
-    }
-  }
 }
 .about-us-block__yoe-text {
   font-family: $font-roboto;
@@ -106,23 +105,26 @@
     font-size: 1.125rem;
     line-height: 19.8px;
   }
-  @include between-breakpoints("xs", "s") {
-    font-size: 0.875rem;
-    line-height: 15.4px;
+}
+
+.about-us-block___body {
+  width: 1200px;
+  margin: 0px auto;
+  @include max-breakpoint("md") {
+    width: calc(100% - 200px);
   }
-}
-.about-us-block___right-side {
-  width: 100%;
-}
-.about-us-block___title {
-  @extend %block-title;
-  display: inline-flex;
+  @include max-breakpoint("sm") {
+    width: calc(100% - 100px);
+  }
+  @include between-breakpoints("xs", "s") {
+    width: calc(100% - 40px);
+  }
 }
 .about-us-block___sub-title {
   margin-top: 30px;
   font-family: $font-roboto;
-  font-size: 1.5rem;
-  line-height: 27.5px;
+  font-size: 2.5rem;
+  line-height: 44px;
   font-weight: 700;
   color: $primary;
   @include max-breakpoint("md") {
@@ -133,17 +135,11 @@
 }
 .about-us-block___text {
   margin-top: 15px;
-  max-height: 290px;
   font-family: $font-roboto;
-  font-size: 1.1875rem;
-  line-height: 26.6px;
+  font-size: 1.5rem;
+  line-height: 33.6px;
   font-weight: 400;
   color: $text;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  line-clamp: 11;
-  -webkit-line-clamp: 11;
-  overflow: hidden;
   @include max-breakpoint("md") {
     margin-top: 10px;
     font-size: 1rem;
@@ -151,6 +147,7 @@
   }
 }
 .about-us-block___product-list {
+  width: 700px;
   margin-top: 20px;
   list-style: none;
   display: grid;
@@ -160,6 +157,7 @@
     margin-top: 15px;
   }
   @include between-breakpoints("xs", "s") {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -199,7 +197,6 @@
 }
 
 .about-us-block___button {
-  border: 1px solid red;
   margin-top: 40px;
   border: none;
   background: $primary;
@@ -213,7 +210,6 @@
   cursor: pointer;
   transition: opacity 0.3s ease-in;
   a {
-    border: 1px solid red;
     height: 100%;
   }
   @include max-breakpoint("md") {
