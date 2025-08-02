@@ -5,6 +5,9 @@ import AboutUs from "@/components/about-us-block/AboutUs";
 import UsageBlock from "@/components/usage-block/UsageBlock";
 import ContactUsBlock from "@/components/contact-us-block/ContactUsBlock";
 import FAQ from "@/components/faqBlock/FAQ";
+import Certificates from "@/components/certificates/Certificates";
+import Metrics from "@/components/metrics/Metrics";
+import "./page.scss";
 
 export default function Home() {
   return (

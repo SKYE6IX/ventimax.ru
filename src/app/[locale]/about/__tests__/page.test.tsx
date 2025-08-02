@@ -35,44 +35,4 @@ describe("About us page", () => {
     // Assert
     expect(text).toBeInTheDocument();
   });
-
-  it("render all certificates image with correct title", () => {
-    // Arrange
-    const certificatesData = [
-      {
-        title: "Certificates of Conformity",
-      },
-      {
-        title: "BS Reliable trust Testing",
-      },
-      {
-        title: "Quality Management",
-      },
-      {
-        title: "Foreign Trade Operator",
-      },
-    ];
-    render(
-      <NextIntlClientProvider locale="en" messages={messages}>
-        <AboutUs />
-      </NextIntlClientProvider>
-    );
-
-    // Act
-    const certificatesImage = screen.getAllByTestId(
-      "about-us-page-certificate-image"
-    );
-    const certificatesTitle = screen.getAllByTestId(
-      "about-us-page-certificate-title"
-    );
-
-    // Assert
-    certificatesImage.forEach((el) => {
-      expect(el).toBeInTheDocument();
-    });
-    certificatesTitle.forEach((el, i) => {
-      expect(el).toBeInTheDocument();
-      expect(el).toHaveTextContent(certificatesData[i].title);
-    });
-  });
 });
