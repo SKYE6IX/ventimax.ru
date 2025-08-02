@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Metrics from "@/components/metrics/Metrics";
 import "./page.scss";
 
 const certificatesData = [
@@ -53,48 +54,7 @@ function AboutUs() {
             {t("text")}
           </p>
         </section>
-        <section className="about-us-page__metrics-wrapper">
-          <div
-            className="about-us-page__metrics"
-            data-testid="about-us-metrics"
-          >
-            <h5 className="about-us-page__metrics-text-bold">
-              13<span>+</span>
-            </h5>
-            <span className="about-us-page__metrics-text-small">
-              {t("metrics.yoe")}
-            </span>
-          </div>
-          <div
-            className="about-us-page__metrics"
-            data-testid="about-us-page-metrics"
-          >
-            <h5 className="about-us-page__metrics-text-bold">
-              200<span>+</span>
-            </h5>
-            <span className="about-us-page__metrics-text-small">
-              {t("metrics.productType")}
-            </span>
-          </div>
-          <div
-            className="about-us-page__metrics"
-            data-testid="about-us-page-metrics"
-          >
-            <h5 className="about-us-page__metrics-text-bold">2010</h5>
-            <span className="about-us-page__metrics-text-small">
-              {t("metrics.established")}
-            </span>
-          </div>
-          <div
-            className="about-us-page__metrics"
-            data-testid="about-us-page-metrics"
-          >
-            <h5 className="about-us-page__metrics-text-bold">365</h5>
-            <span className="about-us-page__metrics-text-small">
-              {t("metrics.provideServiceFor")}
-            </span>
-          </div>
-        </section>
+        <Metrics />
         <section className="about-us-page__certificates-wrapper">
           <h3 className="about-us-page__certificates-heading">
             {t("certificates")}

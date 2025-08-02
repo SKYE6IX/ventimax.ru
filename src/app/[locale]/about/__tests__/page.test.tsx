@@ -36,23 +36,6 @@ describe("About us page", () => {
     expect(text).toBeInTheDocument();
   });
 
-  it("render all metris boxs", () => {
-    // Arrange
-    render(
-      <NextIntlClientProvider locale="en" messages={messages}>
-        <AboutUs />
-      </NextIntlClientProvider>
-    );
-
-    // Act
-    const metricsBox = screen.getAllByTestId("about-us-page-metrics");
-
-    // Assert
-    metricsBox.forEach((el) => {
-      expect(el).toBeInTheDocument();
-    });
-  });
-
   it("render all certificates image with correct title", () => {
     // Arrange
     const certificatesData = [

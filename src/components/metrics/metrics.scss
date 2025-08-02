@@ -1,0 +1,101 @@
+@use "@/global-style/variables.scss" as *;
+@use "@/global-style/shared-styles.scss" as *;
+
+.metrics-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  @include max-breakpoint("md") {
+    gap: 20px;
+  }
+  @include between-breakpoints("xs", "s") {
+    flex-direction: column;
+  }
+}
+.metrics {
+  width: 280.105px;
+  height: 306.283px;
+  padding: 0px 10px;
+  border-radius: 20px;
+  background: $background-muted;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.3s ease-in-out;
+  @include max-breakpoint("md") {
+    width: 199.815px;
+    height: 218.489px;
+  }
+  @include max-breakpoint("sm") {
+    width: 180px;
+    height: 196.822px;
+  }
+  @include between-breakpoints("xs", "s") {
+    width: 100%;
+    height: 376.15px;
+  }
+}
+.metrics:hover {
+  transform: scale(1.03);
+}
+.metrics__text-bold {
+  font-family: $font-roboto;
+  font-size: 4.0625rem;
+  line-height: 78px;
+  color: $neutral;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  span {
+    font-size: 2.8125rem;
+    line-height: 54px;
+    color: $support;
+  }
+  @include max-breakpoint("md") {
+    font-size: 2.875rem;
+    line-height: 55.2px;
+    span {
+      font-size: 2rem;
+      line-height: 38.4px;
+    }
+  }
+  @include max-breakpoint("sm") {
+    font-size: 2.6285rem;
+    line-height: 50.4672px;
+    span {
+      font-size: 1.8125rem;
+      line-height: 34.8px;
+    }
+  }
+  @include between-breakpoints("xs", "s") {
+    font-size: 5rem;
+    line-height: 88px;
+    span {
+      font-size: 3.5rem;
+      line-height: 61.6px;
+    }
+  }
+}
+.metrics__text-small {
+  font-family: $font-roboto;
+  font-size: 1.5rem;
+  line-height: 28.8px;
+  font-weight: 600;
+  color: $neutral;
+  text-align: center;
+  @include max-breakpoint("md") {
+    font-size: 1.283875rem;
+    line-height: 24.6505px;
+  }
+  @include max-breakpoint("sm") {
+    font-size: 1.1565625rem;
+    line-height: 22.206px;
+  }
+  @include between-breakpoints("xs", "s") {
+    font-size: 2.1875rem;
+    line-height: 38.5px;
+  }
+}
