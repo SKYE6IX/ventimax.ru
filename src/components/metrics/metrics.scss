@@ -3,6 +3,18 @@
 
 .metrics-wrapper {
   width: 100%;
+}
+.metrics-wrapper__heading {
+  @extend %block-title;
+  display: inline-flex;
+  margin-bottom: 50px;
+  @include max-breakpoint("md") {
+    margin-bottom: 20px;
+  }
+}
+
+.metrics-wrapper__list {
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -13,6 +25,7 @@
     flex-direction: column;
   }
 }
+
 .metrics {
   width: 280.105px;
   height: 306.283px;
@@ -38,9 +51,11 @@
     height: 376.15px;
   }
 }
+
 .metrics:hover {
   transform: scale(1.03);
 }
+
 .metrics__text-bold {
   font-family: $font-roboto;
   font-size: 4.0625rem;
@@ -79,6 +94,7 @@
     }
   }
 }
+
 .metrics__text-small {
   font-family: $font-roboto;
   font-size: 1.5rem;

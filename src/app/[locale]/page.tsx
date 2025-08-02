@@ -1,3 +1,4 @@
+"use client";
 import HeroBlock from "@/components/hero-block/HeroBlock";
 import IntroBlock from "@/components/intro-block/IntroBlock";
 import FeaturedProducts from "@/components/featured-products-block/FeaturedProducts";
@@ -11,11 +12,17 @@ import "./page.scss";
 
 export default function Home() {
   return (
-    <div>
+    <div className="home-page">
       <HeroBlock />
       <IntroBlock />
+      <section className="home-page__metrics">
+        <Metrics />
+      </section>
       <FeaturedProducts />
       <AboutUs />
+      <section className="home-page__certificates">
+        <Certificates />
+      </section>
       <UsageBlock />
       <ContactUsBlock />
       <FAQ />

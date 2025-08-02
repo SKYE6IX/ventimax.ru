@@ -1,0 +1,21 @@
+@use "@/global-style/variables.scss" as *;
+@use "@/global-style/shared-styles.scss" as *;
+
+.home-page__metrics,
+.home-page__certificates {
+  width: 1200px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  @include max-breakpoint("md") {
+    margin-top: 80px;
+    width: calc(100% - 200px);
+  }
+  @include max-breakpoint("sm") {
+    width: calc(100% - 100px);
+  }
+  @include between-breakpoints("xs", "s") {
+    width: calc(100% - 40px);
+    margin-top: 40px;
+  }
+}

@@ -11,16 +11,6 @@
 .certificates__heading {
   @extend %block-title;
   display: inline-flex;
-  font-size: 1.5rem;
-  line-height: 26.4px;
-  @include max-breakpoint("md") {
-    font-size: 1.25rem;
-    line-height: 22px;
-  }
-  @include between-breakpoints("xs", "s") {
-    font-size: 1.125rem;
-    line-height: 19.8px;
-  }
 }
 .certificates__list {
   width: 100%;
