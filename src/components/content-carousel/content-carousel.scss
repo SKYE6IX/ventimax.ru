@@ -1,196 +1,195 @@
 @use "@/global-style/variables.scss" as *;
 
 .content-carousel {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 200px;
-  @include max-breakpoint("md") {
-    gap: 100px;
-  }
-  @include between-breakpoints("xs", "s") {
-    gap: 30px;
-  }
+   width: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 200px;
+   @include max-breakpoint("md") {
+      gap: 100px;
+   }
+   @include between-breakpoints("xs", "s") {
+      gap: 30px;
+   }
 }
 
 .content-carousel__carousel {
-  margin-top: -40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  overflow: visible;
-  scroll-snap-type: none;
-  -webkit-overflow-scrolling: touch;
-  @include max-breakpoint("md") {
-    margin-top: -30px;
-    touch-action: pan-x;
-    overscroll-behavior: contain;
-  }
-  @include between-breakpoints("xs", "s") {
-    margin-top: -20px;
-  }
+   margin-top: -40px;
+   width: 100%;
+   display: flex;
+   overflow: visible;
+   scroll-snap-type: none;
+   -webkit-overflow-scrolling: touch;
+   @include max-breakpoint("md") {
+      margin-top: -30px;
+      touch-action: pan-x;
+      overscroll-behavior: contain;
+   }
+   @include between-breakpoints("xs", "s") {
+      margin-top: -20px;
+   }
 }
 .content-carousel__carousel-slide {
-  position: relative;
-  flex-shrink: 0;
-  flex-grow: 0;
-  width: 840px;
-  height: 530px;
-  @include max-breakpoint("lg") {
-    width: 640px;
-    height: 330px;
-  }
-  @include max-breakpoint("md") {
-    width: 550px;
-    height: 360px;
-  }
-  @include between-breakpoints("xs", "s") {
-    width: 280px;
-    height: 184px;
-  }
+   position: relative;
+   flex-shrink: 0;
+   flex-grow: 0;
+   width: 840px;
+   height: 530px;
+   @include max-breakpoint("lg") {
+      width: 640px;
+      height: 330px;
+   }
+   @include max-breakpoint("md") {
+      width: 550px;
+      height: 360px;
+   }
+   @include between-breakpoints("xs", "s") {
+      width: 280px;
+      height: 184px;
+   }
 }
 .content-carousel__image {
-  object-fit: contain;
+   object-fit: contain;
 }
 .content-carousel__slider-controllers {
-  width: 1200px;
-  margin: 0px auto;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #6e7f77;
-  position: absolute;
-  bottom: 215px;
-  left: 50%;
-  transform: translateX(-50%);
-  @include max-breakpoint("lg") {
-    width: calc(100% - 200px);
-  }
-  @include max-breakpoint("md") {
-    padding-bottom: 15px;
-  }
-  @include between-breakpoints("xs", "s") {
-    display: none;
-  }
+   width: 1200px;
+   margin: 0px auto;
+   padding-bottom: 30px;
+   border-bottom: 1px solid #6e7f77;
+   position: absolute;
+   bottom: 215px;
+   left: 50%;
+   transform: translateX(-50%);
+   @include max-breakpoint("lg") {
+      width: calc(100% - 200px);
+   }
+   @include max-breakpoint("md") {
+      padding-bottom: 15px;
+   }
+   @include between-breakpoints("xs", "s") {
+      display: none;
+   }
 }
 .content-carousel_button-wrapper {
-  display: flex;
-  justify-content: space-between;
+   display: flex;
+   justify-content: space-between;
 }
 .content-carousel_button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  svg {
-    width: 60px;
-    height: 60px;
-  }
-  @include max-breakpoint("md") {
-    svg {
-      width: 40px;
-      height: 40px;
-    }
-  }
+   background: none;
+   border: none;
+   cursor: pointer;
+   svg {
+      width: 60px;
+      height: 60px;
+   }
+   @include max-breakpoint("md") {
+      svg {
+         width: 40px;
+         height: 40px;
+      }
+   }
 }
 .content-carousel__carousel-details-wrapper {
-  width: 1200px;
-  margin: 0px auto;
-  display: flex;
-  justify-content: space-between;
-  @include max-breakpoint("lg") {
-    width: calc(100% - 200px);
-  }
-  @include between-breakpoints("xs", "s") {
-    width: calc(100% - 40px);
-    flex-direction: column-reverse;
-    gap: 20px;
-  }
+   width: 1200px;
+   margin: 0px auto;
+   display: flex;
+   justify-content: space-between;
+   @include max-breakpoint("lg") {
+      width: calc(100% - 200px);
+   }
+   @include between-breakpoints("xs", "s") {
+      width: calc(100% - 40px);
+      flex-direction: column-reverse;
+      gap: 20px;
+   }
 }
 .content-carousel__slider-details:not(:is(.active)) {
-  display: none;
-  transition: display 0.2s ease-in;
+   display: none;
+   transition: display 0.2s ease-in;
 }
 .content-carousel__slider-details.active {
-  display: flex;
-  animation: 0.2s ease-in fade-up;
+   display: flex;
+   animation: 0.2s ease-in fade-up;
 }
 .content-carousel__slider-details {
-  flex-direction: column;
-  width: 70%;
-  height: 205px;
-  & .button-cta {
-    margin-left: unset;
-    align-self: flex-start;
-  }
-  @include between-breakpoints("xs", "s") {
-    width: 100%;
-    height: auto;
-    & .button-cta {
+   flex-direction: column;
+   width: 70%;
+   height: 205px;
+   & .button-cta {
+      margin-left: unset;
+      align-self: flex-start;
+   }
+   @include between-breakpoints("xs", "s") {
       width: 100%;
-      padding-top: 19px;
-      padding-bottom: 19px;
-    }
-  }
+      height: auto;
+      & .button-cta {
+         width: 100%;
+         padding-top: 19px;
+         padding-bottom: 19px;
+      }
+   }
 }
 .content-carousel__slider-title {
-  font-family: $font-roboto;
-  font-size: 1.8rem;
-  font-weight: 700;
-  font-style: normal;
-  color: $primary;
-  margin-bottom: 15px;
-  @include max-breakpoint("md") {
-    font-size: 2rem;
-    line-height: 35.2px;
-  }
-  @include between-breakpoints("xs", "sm") {
-    font-size: 1.5rem;
-    line-height: 26.4px;
-    margin-bottom: 10px;
-  }
+   font-family: $font-roboto;
+   font-size: 1.8rem;
+   font-weight: 700;
+   font-style: normal;
+   color: $primary;
+   margin-bottom: 15px;
+   @include max-breakpoint("md") {
+      font-size: 2rem;
+      line-height: 35.2px;
+   }
+   @include between-breakpoints("xs", "sm") {
+      font-size: 1.5rem;
+      line-height: 26.4px;
+      margin-bottom: 10px;
+   }
 }
 
 .content-carousel__slider-highlight {
-  font-family: $font-roboto;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 22.4px;
-  color: $text;
-  margin-bottom: 30px;
-  height: 65px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  line-clamp: 3;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  @include between-breakpoints("xs", "sm") {
-    font-size: 0.9375rem;
-    line-height: 21px;
-  }
+   font-family: $font-roboto;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 22.4px;
+   color: $text;
+   margin-bottom: 30px;
+   height: 65px;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   line-clamp: 3;
+   -webkit-line-clamp: 3;
+   overflow: hidden;
+   @include between-breakpoints("xs", "sm") {
+      font-size: 0.9375rem;
+      line-height: 21px;
+   }
 }
 .content-carousel__carousel-progress-wrapper {
-  height: 31px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-right: 50px;
+   height: 31px;
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   margin-right: 50px;
 }
 .content-carousel__carousel-progress {
-  width: 12px;
-  height: 12px;
-  background: #7d7d7d;
-  opacity: 0.5;
+   width: 12px;
+   height: 12px;
+   background: #7d7d7d;
+   opacity: 0.5;
 }
 .content-carousel__carousel-progress.active {
-  background: $primary;
-  opacity: 1;
+   background: $primary;
+   opacity: 1;
 }
 @keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+   0% {
+      opacity: 0;
+      transform: translateY(10px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
 }

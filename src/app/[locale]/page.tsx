@@ -8,6 +8,7 @@ import ContactUsBlock from "@/components/contact-us-block/ContactUsBlock";
 import FAQ from "@/components/faqBlock/FAQ";
 import Certificates from "@/components/certificates/Certificates";
 import Metrics from "@/components/metrics/Metrics";
+import ExhibitionBlock from "@/components/exhibition-block/ExhibitionBlock";
 import "./page.scss";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       </section>
       <FeaturedProducts />
       <AboutUs />
+      <ExhibitionBlock />
       <section className="home-page__certificates">
         <Certificates />
       </section>

@@ -1,0 +1,86 @@
+@use "@/global-style/variables.scss" as *;
+@use "@/global-style/shared-styles.scss" as *;
+
+.exhibition-block {
+   margin-top: 120px;
+   margin-bottom: 120px;
+   width: 100%;
+   @include max-breakpoint("md") {
+      margin-top: 100px;
+      margin-bottom: 100px;
+   }
+   @include between-breakpoints("xs", "s") {
+      margin-top: 80px;
+      margin-bottom: 80px;
+   }
+}
+.exhibition-block__header {
+   width: 1200px;
+   margin: 0 auto;
+   @include max-breakpoint("md") {
+      width: calc(100% - 200px);
+   }
+   @include max-breakpoint("sm") {
+      width: calc(100% - 100px);
+   }
+   @include between-breakpoints("xs", "s") {
+      width: calc(100% - 40px);
+   }
+}
+.exhibition-block__title {
+   @extend %block-title;
+   display: inline-flex;
+}
+.exhibition-block__slider-container {
+   width: 100%;
+   margin-top: 50px;
+   overflow: hidden;
+   display: flex;
+   @include between-breakpoints("xs", "s") {
+      margin-top: 30px;
+   }
+}
+.exhibition-block__slide {
+   flex: 0 0 700px;
+   position: relative;
+   aspect-ratio: 4/2.5;
+   border-radius: 15px;
+   @include max-breakpoint("md") {
+      flex-basis: 600px;
+   }
+   @include between-breakpoints("xs", "s") {
+      flex-basis: calc(100% - 80px);
+   }
+}
+.exhibition-block__image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: inherit;
+}
+.exhibition-block__slider-controls-container {
+   width: 100%;
+   position: relative;
+   margin-top: 40px;
+   height: 60px;
+   @include between-breakpoints("xs", "s") {
+      margin-top: 20px;
+   }
+}
+.exhibition-block__slider-controls {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   gap: 40px;
+}
+.exhibition-block__slider-control {
+   border: none;
+   background: none;
+   outline: none;
+   cursor: pointer;
+   svg {
+      width: 60px;
+      height: 60px;
+   }
+}

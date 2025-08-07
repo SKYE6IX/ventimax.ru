@@ -115,6 +115,9 @@
         "buttonText": "Узнать больше",
         "yoe": "лет опыта"
       },
+      "exhibitionBlock": {
+        "title": "Выставки"
+      },
       "usageBlock": {
         "title": "Применение",
         "items": {

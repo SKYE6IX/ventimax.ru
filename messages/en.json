@@ -115,6 +115,9 @@
         "buttonText": "Learn more",
         "yoe": "Years of  Experience"
       },
+      "exhibitionBlock": {
+        "title": "exhibitions"
+      },
       "usageBlock": {
         "title": "Usage",
         "items": {

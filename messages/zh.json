@@ -115,6 +115,9 @@
         "buttonText": "了解更多",
         "yoe": "多年经验"
       },
+      "exhibitionBlock": {
+        "title": "展览"
+      },
       "usageBlock": {
         "title": "使用说明",
         "items": {
