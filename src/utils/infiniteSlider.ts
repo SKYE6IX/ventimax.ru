@@ -1,4 +1,8 @@
 import gsap from "gsap";
+import Draggable from "gsap/Draggable";
+import InertiaPlugin from "gsap/InertiaPlugin";
+
+gsap.registerPlugin(Draggable, InertiaPlugin);
 
 type SliderConfig = GSAPTimelineVars & {
    paddingRight?: number;
@@ -6,6 +10,7 @@ type SliderConfig = GSAPTimelineVars & {
    speed?: number;
    snap?: number;
    paused?: boolean;
+   draggable?: boolean;
    onChange?: (element: HTMLDivElement, currentIndex: number) => void;
 };
 
@@ -19,7 +24,20 @@ type Timeline = GSAPTimeline & {
    next: (vars: GSAPTweenVars) => gsap.core.Timeline | gsap.core.Tween;
    previous: (vars: GSAPTweenVars) => gsap.core.Timeline | gsap.core.Tween;
    times: number[];
+   draggable: Draggable;
 };
+
+function debounce(callback: () => void, delay: number) {
+   let timeoutID: NodeJS.Timeout;
+   return () => {
+      if (timeoutID) {
+         clearTimeout(timeoutID);
+      }
+      timeoutID = setTimeout(() => {
+         callback();
+      }, delay);
+   };
+}
 
 export function infiniteSlider({
    items,
@@ -67,7 +85,8 @@ export function infiniteSlider({
          currentIndex = 0,
          indexIsDirty = false,
          timeOffset = 0,
-         totalWidth: number;
+         totalWidth: number,
+         draggableProxy: HTMLDivElement;
       // Some browsers shift by a pixel to accommodate flex layouts,
       // so for example if width is 20% the first element's width might be 242px,
       // and the next 243px, alternating back and forth. So we snap to 5 percentage
@@ -142,6 +161,7 @@ export function infiniteSlider({
          }
          return index;
       };
+
       const populateTimeline = () => {
          let i: number,
             item: HTMLDivElement,
@@ -189,15 +209,23 @@ export function infiniteSlider({
          }
          timeWrap = gsap.utils.wrap(0, tl.duration());
       };
-      const refresh = (deep: boolean) => {
-         //  let progress = tl.progress();
+
+      const refresh = (deep?: boolean) => {
+         const progress = tl.progress();
          tl.progress(0, true);
          populateWidths();
          if (deep) {
             populateTimeline();
          }
          populateOffset();
+
+         if (deep && tl.draggable && tl.paused()) {
+            tl.time(times[currentIndex], true);
+         } else {
+            tl.progress(progress, true);
+         }
       };
+
       gsap.set(items, { x: 0 });
       populateWidths();
       populateTimeline();
@@ -225,6 +253,7 @@ export function infiniteSlider({
          }
          currentIndex = newIndex;
          vars.overwrite = true;
+         gsap.killTweensOf(draggableProxy);
          return vars.duration === 0
             ? tl.time(timeWrap(time))
             : tl.tweenTo(time, vars);
@@ -239,13 +268,82 @@ export function infiniteSlider({
          }
          return index;
       };
-
       tl.current = () => (indexIsDirty ? tl.closestIndex(true) : currentIndex);
       tl.next = (vars) => toIndex(tl.current() + 1, vars);
       tl.previous = (vars) => toIndex(tl.current() - 1, vars);
       tl.progress(1, true).progress(0, true);
       tl.times = times;
 
+      // Draggable logic
+      if (config?.draggable && typeof Draggable === "function") {
+         draggableProxy = document.createElement("div");
+         const wrap = gsap.utils.wrap(0, 1);
+         let ratio: number,
+            startProgress: number,
+            // eslint-disable-next-line prefer-const
+            draggable: Draggable,
+            lastSnap: number,
+            initialChangeX: number,
+            wasPlaying: boolean;
+         const align = () =>
+            tl.progress(
+               wrap(startProgress + (draggable.startX - draggable.x) * ratio)
+            );
+         const debounceAlign = debounce(align, 200);
+         const syncIndex = () => tl.closestIndex(true);
+         draggable = Draggable.create(draggableProxy, {
+            trigger: items[0].parentNode as HTMLDivElement,
+            type: "x",
+            inertia: true,
+            overshootTolerance: 0,
+            minimumMovement: 5,
+            onPressInit: () => {
+               const x = draggable.x;
+               gsap.killTweensOf(tl);
+               wasPlaying = !tl.paused();
+               tl.pause();
+               startProgress = tl.progress();
+               refresh();
+               ratio = 0.5 / totalWidth;
+               initialChangeX = startProgress / -ratio - x;
+               gsap.set(draggableProxy, { x: startProgress / -ratio });
+            },
+            onDrag: () => {
+               debounceAlign();
+            },
+            onThrowUpdate: () => {
+               debounceAlign();
+            },
+            snap: (value) => {
+               if (Math.abs(startProgress / -ratio - draggable.x) < 10) {
+                  return lastSnap + initialChangeX;
+               }
+               const time = -(value * ratio) * tl.duration();
+               const wrappedTime = timeWrap(time);
+               const snapTime =
+                  times[getClosest(times, wrappedTime, tl.duration())];
+               let dif = snapTime - wrappedTime;
+               if (Math.abs(dif) > tl.duration() / 2) {
+                  dif += dif < 0 ? tl.duration() : -tl.duration();
+               }
+               lastSnap = (time + dif) / tl.duration() / -ratio;
+               return lastSnap;
+            },
+            onRelease: () => {
+               syncIndex();
+               if (draggable.isThrowing) {
+                  indexIsDirty = true;
+               }
+            },
+            onThrowComplete: () => {
+               syncIndex();
+               if (wasPlaying) {
+                  tl.play();
+               }
+            },
+         })[0];
+         tl.draggable = draggable;
+      }
       tl.closestIndex(true);
       lastIndex = currentIndex;
       if (onChange) {

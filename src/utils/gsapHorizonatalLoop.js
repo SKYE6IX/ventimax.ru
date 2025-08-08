@@ -220,6 +220,7 @@ export function horizontalLoop(items, config) {
          tl.vars.onReverseComplete();
          tl.reverse();
       }
+
       if (config.draggable && typeof Draggable === "function") {
          proxy = document.createElement("div");
          let wrap = gsap.utils.wrap(0, 1),
@@ -235,7 +236,6 @@ export function horizontalLoop(items, config) {
                   wrap(startProgress + (draggable.startX - draggable.x) * ratio)
                ),
             syncIndex = () => tl.closestIndex(true);
-
          typeof InertiaPlugin === "undefined" &&
             console.warn(
                "InertiaPlugin required for momentum-based scrolling and snapping. https://greensock.com/club"
@@ -290,6 +290,7 @@ export function horizontalLoop(items, config) {
          })[0];
          tl.draggable = draggable;
       }
+
       tl.closestIndex(true);
       lastIndex = curIndex;
       onChange && onChange(items[curIndex], curIndex);

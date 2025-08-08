@@ -4,8 +4,6 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import Draggable from "gsap/Draggable";
-import InertiaPlugin from "gsap/InertiaPlugin";
 import CircleLeftArrow from "../icons/CircleLeftArrow";
 import CircleRightArrow from "../icons/CircleRightArrow";
 import { infiniteSlider } from "@/utils/infiniteSlider";
@@ -17,7 +15,7 @@ const exhibitionBlockData = [
    "/exhibition-images/ex-3.JPG",
    "/exhibition-images/ex-4.JPG",
 ];
-gsap.registerPlugin(useGSAP, Draggable, InertiaPlugin);
+gsap.registerPlugin(useGSAP);
 
 function ExhibitionBlock() {
    const t = useTranslations("Pages.home.exhibitionBlock");
@@ -46,6 +44,7 @@ function ExhibitionBlock() {
             config: {
                paused: true,
                center: true,
+               draggable: true,
                onChange: (element) => {
                   const tl = gsap.timeline();
                   if (activeElementRef.current) {
@@ -87,7 +86,12 @@ function ExhibitionBlock() {
    return (
       <section className="exhibition-block">
          <div className="exhibition-block__header">
-            <h3 className="exhibition-block__title">{t("title")}</h3>
+            <h3
+               className="exhibition-block__title"
+               data-testid="exhibition-title"
+            >
+               {t("title")}
+            </h3>
          </div>
          <div
             className="exhibition-block__slider-container"
@@ -100,6 +104,8 @@ function ExhibitionBlock() {
                      alt="Exhibitons images show casing our products"
                      fill
                      className="exhibition-block__image"
+                     data-testid="exhibition-image"
+                     priority
                   />
                </div>
             ))}
@@ -109,12 +115,14 @@ function ExhibitionBlock() {
                <button
                   className="exhibition-block__slider-control"
                   onClick={moveLeft}
+                  data-testid="exhibition-button"
                >
                   <CircleLeftArrow />
                </button>
                <button
                   className="exhibition-block__slider-control"
                   onClick={moveRight}
+                  data-testid="exhibition-button"
                >
                   <CircleRightArrow />
                </button>
