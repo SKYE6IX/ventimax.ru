@@ -1,263 +1,263 @@
 {
-  "Navigation": {
-    "home": "Home",
-    "about": "About Us",
-    "usage": "Usage",
-    "products": "Products",
-    "faq": "FAQ"
-  },
-  "Footer": {
-    "companyIntro": "Qingzhou Ventimax Agriculture and Animal Husbandry Technology LTD. Established in 2010, is a professional manufacturer engaged in the research, development, sale and service of all kinds of cooling heating and animal husbandry equipment.",
-    "rightReserve": "All rights reserved",
-    "links": {
-      "title": "Quick Links",
+   "Navigation": {
+      "home": "Home",
+      "about": "About Us",
+      "usage": "Usage",
       "products": "Products",
-      "aboutUs": "About us",
-      "faq": "FAQ",
-      "getInTouch": "Get in touch"
-    },
-    "contact": {
-      "title": "Contact Us",
-      "phone": "Phone",
-      "email": "Email",
-      "location": "Location"
-    }
-  },
-  "CTA": {
-    "text": "Get A Quote",
-    "linkText": "Read more"
-  },
-  "Form": {
-    "title": "Get In Touch",
-    "inputs": {
-      "name": {
-        "label": "Name",
-        "placeholder": "Your Name"
+      "faq": "FAQ"
+   },
+   "Footer": {
+      "companyIntro": "Qingzhou Ventimax Agriculture and Animal Husbandry Technology LTD. Established in 2010, is a professional manufacturer engaged in the research, development, sale and service of all kinds of cooling heating and animal husbandry equipment.",
+      "rightReserve": "All rights reserved",
+      "links": {
+         "title": "Quick Links",
+         "products": "Products",
+         "aboutUs": "About us",
+         "faq": "FAQ",
+         "getInTouch": "Get in touch"
       },
-      "email": {
-        "label": "Email",
-        "placeholder": "Your Email"
-      },
-      "number": {
-        "label": "Phone Number"
-      },
-      "subject": {
-        "label": "Subject"
-      },
-      "message": {
-        "label": "Message",
-        "placeholder": "Your Message"
+      "contact": {
+         "title": "Contact Us",
+         "phone": "Phone",
+         "email": "Email",
+         "location": "Location"
       }
-    },
-    "quickLink": {
-      "phone": "Phone",
-      "email": "Email",
-      "location": "Location"
-    },
-    "sendButton": "Send",
-    "response": {
-      "success": "Message sent successfully!",
-      "failed": "Message failed to send at this time, try again!"
-    },
-    "closeModal": "Close"
-  },
-  "SEO": {
-    "metaData": {
-      "description": "Qingzhou Ventimax Agriculture and Animal Husbandry Technology LTD. Established in 2010, is a professional manufacturer engaged in the research, development, sale and service of all kinds of cooling heating and animal husbandry equipment.",
-      "keywords": "industrial exhaust fans, high-efficiency cooling fans, Agricultural ventilation systems, Livestock barn cooling solutions, Energy-saving exhaust fans, Heavy-duty ventilation equipment, Stainless steel fan blades, Corrosion-resistant farm fans, Large airflow industrial fans, Low-noise ventilation systems, Livestock heating solutions, Energy-efficient barn heaters, Water and air heating systems, Coal/oil/gas/electric heaters, Greenhouse heating equipment, High-temperature hot air blowers, Farmhouse heating technology, Thermal efficiency heating machines, Automatic temperature control heaters, Industrial heating ventilation, Automated livestock feeding systems, Pig feed conveyor systems, Poultry feed distribution lines, Silo storage solutions for farms, Feed hopper trolley systems, Bulk feed transport equipment, Precision livestock feeding technology, Farm feed automation machinery, Gravity-fed feed delivery systems, Feed silo capacity options, Automated manure scraper machines, Poultry farm manure conveyors, Cattle barn manure removal systems, Pig farm waste management, Belt-type manure cleaners, High-efficiency dung pumps, Slurry removal equipment, Farm waste handling solutions, Manure separation technology, Low-maintenance manure systems, Smart farm environmental controls, IoT-based livestock monitoring, AI-driven farm automation, Greenhouse climate control systems, Remote farm management tools, Sensor-based ventilation control, Data-driven farm analytics, Automated feeding and watering, Livestock health monitoring tech, Precision agriculture controllers, Polycarbonate greenhouse panels, Hydroponic greenhouse materials, Shade nets for agriculture, Drip irrigation systems, Seedling nursery beds, Greenhouse ventilation gear, UV-resistant greenhouse film, Aluminum greenhouse frames, Automated window openers, High-strength greenhouse fittings, Poultry cage lighting systems, Cow neck clamps for dairy farms, Pig farrowing crates, Anti-slip livestock flooring, Automated water nipple drinkers, Cattle resting stalls, Farm hygiene management tools, Livestock barn accessories, Dairy farm feeding solutions, Animal housing equipment, livestock farming equipment for sale, livestock equipment suppliers, livestock equipment manufacturers, buy animal farming equipment, buy cattle farming equipment, poultry farming equipment for sale, livestock feed suppliers, livestock feed manufacturers, buy feeding silos for livestock, negative pressure fans for barns, negative pressure fans for sale, livestock ventilation systems, ventilation systems, barn ventilation equipment, automatic livestock waterers, cattle water troughs, barn construction for livestock, barn construction, electric fencing for livestock, cattle corral systems, milking machines for dairy, dairy farming equipment, layer chicken farming equipment, sheep handling equipment, hay feeders, farm equipment suppliers, agricultural equipment dealers, livestock cooling systems, livestock manure spreaders, cooling systems, livestock feed processing equipment, livestock barn cooling fans, barn cooling fans, water tank heaters, buy wholesale livestock equipment, buy poultry housing equipment, poultry housing equipment, purchase barn ventilation equipment, buy livestock ventilation systems, buy livestock equipment near me"
-    },
-    "jsonLd": {
-      "name": "Cooling, Heating & Poultry Farm Equipment | Shandong Hengyuan Lufeng Agriculture and Animal Husbandry Technology Co., Ltd.",
-      "description": "Discover high-quality poultry farm equipment, greenhouse ventilation fans, cooling pads, negative pressure fans, feed silos, and manure scrapers. Optimize your farm with our advanced cooling and heating solutions.",
-      "keywords": "poultry farm equipment, greenhouse ventilation fans, cooling pads for poultry, negative pressure fans, feed silos, manure scraper, poultry cooling systems, greenhouse climate control, animal husbandry equipment",
-      "mainEntity": {
-        "description": "Leading provider of poultry farm equipment, greenhouse ventilation fans, cooling pads, negative pressure fans, feed silos, and manure scrapers for efficient and sustainable farming solutions."
+   },
+   "CTA": {
+      "text": "Get A Quote",
+      "linkText": "Read more"
+   },
+   "Form": {
+      "title": "Get In Touch",
+      "inputs": {
+         "name": {
+            "label": "Name",
+            "placeholder": "Your Name"
+         },
+         "email": {
+            "label": "Email",
+            "placeholder": "Your Email"
+         },
+         "number": {
+            "label": "Phone Number"
+         },
+         "subject": {
+            "label": "Subject"
+         },
+         "message": {
+            "label": "Message",
+            "placeholder": "Your Message"
+         }
       },
-      "contactType": "Customer Service",
-      "breadcrumb": {
-        "itemOne": {
-          "name": "Home"
-        },
-        "itemTwo": {
-          "name": "Poultry & Greenhouse Equipment Solutions"
-        },
-        "itemThree": {
-          "name": "About us - Qingzhou Ventimax Agriculture and Animal Husbandry Technology LTD."
-        }
+      "quickLink": {
+         "phone": "Phone",
+         "email": "Email",
+         "location": "Location"
+      },
+      "sendButton": "Send",
+      "response": {
+         "success": "Message sent successfully!",
+         "failed": "Message failed to send at this time, try again!"
+      },
+      "closeModal": "Close"
+   },
+   "SEO": {
+      "metaData": {
+         "description": "Qingzhou Ventimax Agriculture and Animal Husbandry Technology LTD. Established in 2010, is a professional manufacturer engaged in the research, development, sale and service of all kinds of cooling heating and animal husbandry equipment.",
+         "keywords": "industrial exhaust fans, high-efficiency cooling fans, agricultural ventilation systems, livestock barn cooling solutions, energy-saving exhaust fans, heavy-duty ventilation equipment, stainless steel fan blades, corrosion-resistant farm fans, large airflow industrial fans, low-noise ventilation systems, livestock heating solutions, energy-efficient barn heaters, greenhouse heating equipment, high-temperature hot air blowers, automatic temperature control heaters, industrial heating ventilation, automated livestock feeding systems, pig feed conveyor systems, poultry feed distribution lines, silo storage solutions for farms, feed hopper trolley systems, bulk feed transport equipment, precision livestock feeding technology, farm feed automation machinery, automated manure scraper machines, poultry farm manure conveyors, cattle barn manure removal systems, pig farm waste management, high-efficiency dung pumps, slurry removal equipment, farm waste handling solutions, manure separation technology, smart farm environmental controls, IoT-based livestock monitoring, greenhouse climate control systems, remote farm management tools, sensor-based ventilation control, automated feeding and watering, livestock health monitoring tech, drip irrigation systems, greenhouse ventilation gear,poultry cage lighting systems, pig farrowing crates, automated water nipple drinkers, livestock barn cooling fans, milking machines for dairy, livestock equipment suppliers, buy livestock ventilation systems"
+      },
+      "jsonLd": {
+         "name": "Cooling, Heating & Poultry Farm Equipment | Shandong Hengyuan Lufeng Agriculture and Animal Husbandry Technology Co., Ltd.",
+         "description": "Discover high-quality poultry farm equipment, greenhouse ventilation fans, cooling pads, negative pressure fans, feed silos, and manure scrapers. Optimize your farm with our advanced cooling and heating solutions.",
+         "keywords": "poultry farm equipment, greenhouse ventilation fans, cooling pads for poultry, negative pressure fans, feed silos, manure scraper, poultry cooling systems, greenhouse climate control, animal husbandry equipment",
+         "mainEntity": {
+            "description": "Leading provider of poultry farm equipment, greenhouse ventilation fans, cooling pads, negative pressure fans, feed silos, and manure scrapers for efficient and sustainable farming solutions."
+         },
+         "contactType": "Customer Service",
+         "breadcrumb": {
+            "itemOne": {
+               "name": "Home"
+            },
+            "itemTwo": {
+               "name": "Poultry & Greenhouse Equipment Solutions"
+            },
+            "itemThree": {
+               "name": "About us - Qingzhou Ventimax Agriculture and Animal Husbandry Technology LTD."
+            }
+         }
       }
-    }
-  },
-  "Pages": {
-    "home": {
-      "heroBlock": {
-        "title": "FROM NEGATIVE-PRESSURE FANS TO GREENHOUSE PADS.<span> ELITE SYSTEM FOR LIVESTOCK WELFARE.</span>"
+   },
+   "Pages": {
+      "home": {
+         "heroBlock": {
+            "title": "FROM NEGATIVE-PRESSURE FANS TO GREENHOUSE PADS.<span> ELITE SYSTEM FOR LIVESTOCK WELFARE.</span>"
+         },
+         "introBlock": {
+            "title": "BOOST PRODUCTIVITY WITH SMARTER EQUIPMENT.",
+            "subTitle": "PROTECT YOUR LIVESTOCK."
+         },
+         "featuredProductBlock": {
+            "title": "Products",
+            "buttonText": "Explore All Our Products"
+         },
+         "aboutUsBlock": {
+            "title": "About us",
+            "subTitle": "We Provide The Best Agricultural Cooling and Heating Systems solutions.",
+            "text": "Qingzhou Ventimax Agriculture and Animal Husbandry Technology LTD. Established in 2010, is a professional manufacturer engaged in the research, development, sale and service of all kinds of cooling heating and animal husbandry equipment. We are located in Weifang City Shandong Province with convenient transportation access. Dedicated to strict quality control and thoughtful customer service. Selling well around China, our products are also exported to clients in countries and region like Australia, korea, Japan, Spain, Singapore and Europe and the United States.",
+            "weInto": {
+               "one": "Negative Pressure Fan",
+               "two": "Cooling Pad",
+               "three": "Green House And Poultry Fan",
+               "four": "Manure Scraper Machine",
+               "five": "Feed Silo",
+               "six": "Light Traps"
+            },
+            "buttonText": "Learn more",
+            "yoe": "Years of  Experience"
+         },
+         "exhibitionBlock": {
+            "title": "exhibitions"
+         },
+         "usageBlock": {
+            "title": "Usage",
+            "items": {
+               "coolingPad": "This system is in the process of circulating and distributing water over the cooling pads. The air passes through the wet pads, and evaporation cools the air, which is then blown into the facility.",
+               "silos": "These silos are in the process of Storing bulk feeds safely from moisture, pests, and contamination. It Automatically dispensing feed through the connected pipe system to animal feeders in a controlled manner, ensuring consistent supply.",
+               "coneFan": "This systems is in the process exhausting hot, stale air from inside the livestock and poultry building, creating negative pressure, which pulls in fresh, cooler air maintaining optimal temperature, humidity, and air quality inside the animal housing."
+            }
+         },
+         "contactBlock": {
+            "title": "Contact Us"
+         },
+         "faqBlock": {
+            "title": "Frequent Asked Questions",
+            "subTitle": "How can We Help You?",
+            "faqOne": {
+               "question": "Can I customize color-coated steel to a specific size or color?",
+               "answer": "Yes. Customization is available. You can choose the color or size(length, width, thickness, weight, etc.), paints, shapes. We offer coils and sheets, as well as further processing services, such as logo printing. Please send us your requirements, we will meet your requirements."
+            },
+            "faqTwo": {
+               "question": "Is your company a trader or manufacturer",
+               "answer": "We are manufacturer and have our own factory."
+            },
+            "faqThree": {
+               "question": "How do you package products for delivery?",
+               "answer": "We packaged all products according to customer's need."
+            },
+            "faqFour": {
+               "question": "How long is your delivery time?",
+               "answer": "If the products are in stock, generally it's about 5-10 days. It's about 15-20 days if the goods are not in stock, according to the quantity."
+            }
+         }
       },
-      "introBlock": {
-        "title": "BOOST PRODUCTIVITY WITH SMARTER EQUIPMENT.",
-        "subTitle": "PROTECT YOUR LIVESTOCK."
+      "aboutUs": {
+         "title": "About us",
+         "subTitle": "We Provide The Best Agricultural Cooling and Heating Systems solutions.",
+         "text": "Qingzhou Ventimax Equipment Ltd, was established in 2010, is a professional manufacturer engaged in the research, development, sale and service of all kinds of cooling heating and animal husbandry equipment, such as, negative pressure fan, cooling pad, greenhouse and poultry fan, light traps, manure scraper machine, feed silo, poultry farm equipment and so on. We are located in Weifang City Shandong Province with convenient transportation access. Dedicated to strict quality control and thoughtful customer service, our experienced staff members are always available to discuss your requirements and ensure full customer satisfaction. Selling well in all cities and provinces around China, our products are also exported to clients in other countries and regions such as Australia, korea, Japan, Spain, Singapore and Europe and the United States. In addition, we have obtained I S O 9 0 0 1 certificates. We also welcome O E M and O D M orders. Excellent and efficient service to win the majority of customers support and trust. Whether selecting a current product from our catalog or seeking engineering assistance for your application, you can talk to our customer service center about your sourcing requirements any time, we are eager to cooperate with you sincerely, and together create a better future, for the development of China's manufacturing industry to provide better service. We believe we will keep growing up and go further with you together.",
+         "metrics": {
+            "title": "Metrics",
+            "yoe": "Years of  Experience",
+            "productType": "Over 200 products types",
+            "established": "Established in 2010",
+            "provideServiceFor": "Providing services for 365 days"
+         },
+         "certificates": "Certificates"
       },
-      "featuredProductBlock": {
-        "title": "Products",
-        "buttonText": "Explore All Our Products"
+      "products": {
+         "navigation": {
+            "negativeFan": "Negative Pressure Fan",
+            "coolingPad": "Cooling pad",
+            "heatingEquipment": "Heating Equipment",
+            "farmingEquipment": "Farming Equipment",
+            "fecalCleaning": "Fecal Cleaning Equipment",
+            "otherFans": "Other Fans"
+         }
       },
-      "aboutUsBlock": {
-        "title": "About us",
-        "subTitle": "We Provide The Best Agricultural Cooling and Heating Systems solutions.",
-        "text": "Qingzhou Ventimax Agriculture and Animal Husbandry Technology LTD. Established in 2010, is a professional manufacturer engaged in the research, development, sale and service of all kinds of cooling heating and animal husbandry equipment. We are located in Weifang City Shandong Province with convenient transportation access. Dedicated to strict quality control and thoughtful customer service. Selling well around China, our products are also exported to clients in countries and region like Australia, korea, Japan, Spain, Singapore and Europe and the United States.",
-        "weInto": {
-          "one": "Negative Pressure Fan",
-          "two": "Cooling Pad",
-          "three": "Green House And Poultry Fan",
-          "four": "Manure Scraper Machine",
-          "five": "Feed Silo",
-          "six": "Light Traps"
-        },
-        "buttonText": "Learn more",
-        "yoe": "Years of  Experience"
-      },
-      "exhibitionBlock": {
-        "title": "exhibitions"
-      },
-      "usageBlock": {
-        "title": "Usage",
-        "items": {
-          "coolingPad": "This system is in the process of circulating and distributing water over the cooling pads. The air passes through the wet pads, and evaporation cools the air, which is then blown into the facility.",
-          "silos": "These silos are in the process of Storing bulk feeds safely from moisture, pests, and contamination. It Automatically dispensing feed through the connected pipe system to animal feeders in a controlled manner, ensuring consistent supply.",
-          "coneFan": "This systems is in the process exhausting hot, stale air from inside the livestock and poultry building, creating negative pressure, which pulls in fresh, cooler air maintaining optimal temperature, humidity, and air quality inside the animal housing."
-        }
-      },
-      "contactBlock": {
-        "title": "Contact Us"
-      },
-      "faqBlock": {
-        "title": "Frequent Asked Questions",
-        "subTitle": "How can We Help You?",
-        "faqOne": {
-          "question": "Can I customize color-coated steel to a specific size or color?",
-          "answer": "Yes. Customization is available. You can choose the color or size(length, width, thickness, weight, etc.), paints, shapes. We offer coils and sheets, as well as further processing services, such as logo printing. Please send us your requirements, we will meet your requirements."
-        },
-        "faqTwo": {
-          "question": "Is your company a trader or manufacturer",
-          "answer": "We are manufacturer and have our own factory."
-        },
-        "faqThree": {
-          "question": "How do you package products for delivery?",
-          "answer": "We packaged all products according to customer's need."
-        },
-        "faqFour": {
-          "question": "How long is your delivery time?",
-          "answer": "If the products are in stock, generally it's about 5-10 days. It's about 15-20 days if the goods are not in stock, according to the quantity."
-        }
+      "productDetails": {
+         "priceFrom": "From",
+         "aboutProduct": {
+            "title": "About the product",
+            "details": "Details",
+            "specifications": "Specifications",
+            "type": "Type"
+         }
       }
-    },
-    "aboutUs": {
-      "title": "About us",
-      "subTitle": "We Provide The Best Agricultural Cooling and Heating Systems solutions.",
-      "text": "Qingzhou Ventimax Equipment Ltd, was established in 2010, is a professional manufacturer engaged in the research, development, sale and service of all kinds of cooling heating and animal husbandry equipment, such as, negative pressure fan, cooling pad, greenhouse and poultry fan, light traps, manure scraper machine, feed silo, poultry farm equipment and so on. We are located in Weifang City Shandong Province with convenient transportation access. Dedicated to strict quality control and thoughtful customer service, our experienced staff members are always available to discuss your requirements and ensure full customer satisfaction. Selling well in all cities and provinces around China, our products are also exported to clients in other countries and regions such as Australia, korea, Japan, Spain, Singapore and Europe and the United States. In addition, we have obtained I S O 9 0 0 1 certificates. We also welcome O E M and O D M orders. Excellent and efficient service to win the majority of customers support and trust. Whether selecting a current product from our catalog or seeking engineering assistance for your application, you can talk to our customer service center about your sourcing requirements any time, we are eager to cooperate with you sincerely, and together create a better future, for the development of China's manufacturing industry to provide better service. We believe we will keep growing up and go further with you together.",
-      "metrics": {
-        "title": "Metrics",
-        "yoe": "Years of  Experience",
-        "productType": "Over 200 products types",
-        "established": "Established in 2010",
-        "provideServiceFor": "Providing services for 365 days"
+   },
+   "Products": {
+      "hy-push-pull-exhaust-fans": {
+         "highlight": "HY series High class fan is mainly made up of blade , Centrifugal Opening Device, motor , outer frame, protectingnets, supporting frames, shutters. lt is made based on aerodynamic, effectively reduce the wind resistance.",
+         "description": "HY series High class fan is mainly made up of blade, Centrifugal Opening Device,motor outer frame, protecting nets, supporting frames, shutters. It is made based on aerodynamic, effectively reduce the wind resistance. The major parts are made of galvanized steel sheets and Stainless steel sheets. Al the products are widely used in various types of buildings as farms ,greenhouses, factory building."
       },
-      "certificates": "Certificates"
-    },
-    "products": {
-      "navigation": {
-        "negativeFan": "Negative Pressure Fan",
-        "coolingPad": "Cooling pad",
-        "heatingEquipment": "Heating Equipment",
-        "farmingEquipment": "Farming Equipment",
-        "fecalCleaning": "Fecal Cleaning Equipment",
-        "otherFans": "Other Fans"
+      "hy-cooling-pad": {
+         "highlight": "Corrugated paper has high intensity structure, corrosion resistant, long service life. Fine percolating and absorbing water to ensure water drip wet the wall.",
+         "description": "It offers excellent percolation and water absorption to ensure the wall stays wet. Its unique three-dimensional structure maximizes the evaporation surface area for efficient heat exchange between water and air. The outer frame is available in aluminum alloy or galvanized board. It comes in various external colors, including brown, green, brown-green interlaced, one-sided black, one-sided green, and one-sided yellow. Corrugated paper features a high-strength structure, is corrosion-resistant, and has a long service life. The warranty period is 5 or 10 years."
+      },
+      "hy-silos": {
+         "highlight": "Silo coaming panel designed in semi-circular shape, smooth, strong with good looking. Lower coaming panel equipped with water drip edge, prevent raindrops falling on the lower cone or other parts.",
+         "description": "Silo coaming panel designed in semi-circular shape, smooth, strong with good looking. Lower coaming panel equipped with water drip edge, prevent raindrops falling on the lower cone or other parts. Reasonable angel design, each piece of upper cone plate is overlapped and combined to form the entire upper cone.Upper cone equipped with a vent hole and emergency discharge outlet (optional). Reasonable lower cone angel, feed material drop smoothly,no accumulation. Lower cone equipped with transparent inspection window. Lower cone outlet conventional size 442 or 690mm, outlet to ground distance >860mm, fit flex auger and chain feeding line easily."
+      },
+      "hy-electric-heaters": {
+         "highlight": "This fully automated system lets you set and forget your desired temperature, with multi-level heating adjustment for customized comfort. Its advanced ceramic heating technology saves 30% energy while withstanding harsh conditions like humid livestock barns.",
+         "description": "The system offers automatic control, allowing you to set the desired temperature for fully automated operation and shutdown of the electric heating fan, enabling unmanned operation. It features multiple firepower levels, letting you freely select the heating speed and gradient from one level to several based on heating needs and power conditions. It includes delay protection with multiple levels of delayed start to prevent excessive instantaneous starting current from impacting the power grid. The fan also has a delayed stop to utilize all residual heat, protecting the heating element. The ceramic heating is durable and energy-efficient, ideal for challenging environments like livestock and poultry houses or greenhouses with high ammonia and humidity. The specially designed extinction heating tube saves up to 30% more electricity. The fan is ultra-quiet, using an external rotor design with strong airflow and low noise, meeting household standards. It’s easy to use and heats quickly, requiring only electricity (single-phase or three-phase). It reaches maximum heat capacity within 10 minutes of being powered on."
+      },
+      "hy-dry-and-wet-seprator": {
+         "highlight": "This series of solid-liquid separators can be widely used as good equipment for separating animal feces, wine residue, medicine residue, slaughterhouse wastewater, biogas slurry, and dry wet separation in pigs, cows, chickens, and various large and medium-sized animal husbandry farms.",
+         "description": "This series of solid-liquid separators is versatile equipment suitable for separating animal feces, wine residue, medicine residue, slaughterhouse wastewater, biogas slurry, and performing dry-wet separation for pigs, cows, chickens, and various large and medium-sized livestock farms. It operates using the natural gravity of water flow, requiring no energy consumption. The crushing component uses low power, ensuring minimal energy use. The machine has a high daily processing capacity and excellent work efficiency. Constructed entirely from 304 stainless steel, it offers high strength, resists deformation, and has a long service life."
+      },
+      "hy-roof-ventilation-fan": {
+         "highlight": "Natural wind-driven ventilation system operates 24/7 without external power. Highly sensitive to even slight breezes or temperature variations, the turbine blades rotate effortlessly to ensure continuous airflow. Designed for stable and silent operation, it significantly improves indoor air quality while maintaining a peaceful environment.",
+         "description": "The system is powered by natural wind and operates 24 hours a day. It is highly sensitive, activated by slight breezes or temperature differences to drive the turbine blade. It rotates stably and quietly, improving the indoor environment. The design uses high-quality bearings, requiring no lubrication, ensuring durability and a low failure rate. It is corrosion-resistant, acid- and alkali-proof, and has a long service life."
+      },
+      "hy-heavy-hammer-exhaust-fan": {
+         "description": "Fans mainly consists of blade, motor, frame, protect net, bracing cage, shutters. The motor drives blade tocause air flow and louver window can open and close automatically to keep the dust from entering."
+      },
+      "hy-plastic-cooling-pad": {
+         "description": "The product we manufacture is an air purification device specifically designed for the animal husbandry industry. It helps restore a pure and clean air environment around the ranch, ensuring the surrounding area remains free from polluted gases. The device can utilize either biological or chemical purification methods. We offer standard modular equipment or building-integrated system modes, and we can also customize non-standard solutions based on user needs. For modular equipment, users can select the appropriate size based on their actual ventilation flow rate. We typically provide two standard specifications: 50,000 m³ and 75,000 m³. Each module operates as an independent system, but multiple modules can also be combined to share a common solution pool and control system. For integrated systems, the design is incorporated during the building's planning phase, seamlessly blending with the structure. These systems use adjustable prefabricated modules to achieve the required capacity, allowing for on-site installation and cost-effective operation."
+      },
+      "hy-poultry-light-filter": {
+         "description": "Non-glare PVC materials, by extrusion molding finished, anti-ageing, chemical resistant, high pressure washable. Reasonable design, different dimension available, easy assembly. Frame options for customers, stainless steel sheet or galvanized sheet."
+      },
+      "hy-series-coal-burning-heater": {
+         "description": "This heating system is designed for areas ranging from 300 to 1,800 square meters. Its combustion chamber features a heightened design, ensuring a long service life. The system includes a stainless steel dust precipitator, which is simple yet highly efficient. With an insulated three-return design, heat loss is minimized, achieving up to 90% thermal efficiency. A key durability feature is the 20mm-thick heat-resistant cast steel pipe, which prevents deformation even after a decade of use. All performance indicators meet national Class I environmental standards, making it both powerful and eco-friendly."
+      },
+      "hy-fecal-pumping-pump": {
+         "description": "This manure pump has the characteristics of stable performance and easy maintenance. Especially under harsh conditions such as high temperatures in summer, freezing in winter, uneven media, thick and viscous chicken feathers and straw fibers, it can still work normally. It has a simple structure, a wide range of applications, and a relatively low cost. Usage: This pump not only has the characteristics of a manure pump, but also has the function of a mud pump, which can transport highly viscous feces to a certain height and is not easy to block. Widely used for the transportation of feces in poor conditions such as chicken farms, duck farms, and pig farms. (The manure pump is in a lifting mode, and the motor of this machine cannot enter water. The lift is 6 meters, and the remote distance is 100 meters. This data is for reference only, please refer to the actual situation.)"
+      },
+      "hy-air-circulation-fan": {
+         "description": "This product features Haier’s triple-protection specialty motor, which delivers stable performance, advanced energy-saving technology, and an automatic thermal protection system. It has undergone rigorous 360-hour destructive testing in Haier’s laboratory to ensure durability. The fan blades are made of lightweight stamped aluminum sheets, designed with a wide angle for high airflow while maintaining low noise levels. The shell uses an integrated collector design and is available in stainless steel or spray-coated steel plate options for added versatility. For easy installation, it includes convenient and sleek buckle-type hangers. Built for longevity, this product is engineered for a long service life."
+      },
+      "hy-cow-house-hanging-exhaust-fan": {
+         "description": "The fan blades are made of Krupp stainless steel by punch forming, ensuring no dust, attractive appearance, and durability. The special blade shape design ensures large air volume, no deformation, no breakage, and consistent air volume. Both Chinese famous motors and Siemens motors are available, with customizable voltage and frequency. The Chinese famous motor has a special design for fans, featuring a phase lack protection device that powers off during electricity shortages. The motor protection grade is IP55 with insulation class F. The fan belt pulley is made of high-strength aluminum-magnesium alloy by die-casting, reducing weight while maintaining high corrosion resistance. The special reinforced ribs pulley design eliminates internal stress to improve rigidity and stability, ensuring it never breaks."
+      },
+      "hy-frp-cone-fan": {
+         "description": "This FRP fan is suitable for places where temperature needs to be cooled, such as breeding farms with corrosive gases and other industrial and mining plants. The fiberglass shell is extremely strong and resistant to corrosion, deformation, and discoloration. The horn-shaped exhaust vent is highly impact-resistant and improves performance by 10%. The PG material fiber-reinforced composite is formed by injection molding of glass fiber and nylon under high pressure, featuring high strength, strong toughness, and light weight. The PG blades adopt a streamlined propeller design with large air volume and low maintenance cost. High-quality imported bearings ensure smooth and efficient operation of fan blades, and the motor is of high quality and efficiency."
+      },
+      "hy-butterfly-cone-fan": {
+         "description": "This fan features an advanced front double-door opening mechanism with low wind resistance, good sealing, and high efficiency. The cone uses a plug-in connection mechanism, avoiding complicated bolt and nut fastening, reducing labor intensity, and improving the fan's aesthetics. The aluminum-magnesium alloy belt automatic tensioning device does not deform and has a long service life. The fan doors are equipped with rubber sealing devices when closed, effectively preventing outdoor air from entering through other stopped fans, greatly improving work efficiency (15-20% more efficient compared to fans of the same size). The motor is installed reasonably, protecting the motor while avoiding wind resistance to the blades, and the motor base connection makes the fan frame more sturdy."
+      },
+      "hy-air-cooler": {
+         "description": "The air cooler is widely applicable to industrial plants with high temperatures such as textiles, clothing, injection molding, foundries, toys, printing, electronics, laundry rooms, and boiler rooms. It is also suitable for public places like shopping malls, supermarkets, waiting rooms, hotels, restaurants, hospitals, and schools, as well as agricultural sites such as greenhouses, livestock, and flowers. The cooler provides efficient cooling and humidity control for various environments."
+      },
+      "hy-series-light-oil-burning-heater": {
+         "description": "The oil-fired hot air blower is a new product that uses diesel or kerosene as fuel to generate hot air for heating. It features lightweight, flexibility, small size, powerful hot air power, simple operation, separate smoke device, oil break detection, safety, reliability, low electricity consumption, and fuel saving. This machine has multiple safety devices: vibration sensing automatic stop device, flame monitoring device, overload protection device, overheating protection device, and power failure safety device. It is suitable for livestock breeding, greenhouse sheds, factory workshops, and all other places that require heating. Currently, there are many choices for heating energy in the market, including coal burning, gas burning, electric heating, and oil heating. Among various heating methods, air heating is more comfortable, and oil-fired hot air blowers, as an emerging industrial air heating method, have been widely accepted."
+      },
+      "hy-water-and-wind-coal-burning-heating-machine": {
+         "description": "This heating machine is mainly used in poultry farms, vegetable greenhouses, flower greenhouses, industrial factories, and other heating places. It can quickly increase indoor temperature by using hot air and hot water simultaneously. When the required temperature is reached, it stops quickly and uses the remaining temperature in the machine to maintain hot water temperature, achieving long heating preservation and saving coal consumption. It is easy to install and maintain, saves time and labor costs, saves 30% more energy compared to traditional heating methods, and improves heating efficiency by over 95%."
+      },
+      "hy-conveyor-manure-cleaner": {
+         "description": "The conveyor manure cleaner is mostly used for manure cleaning in stepped cage poultry houses. Reduces manpower and material resources, greatly improving work efficiency. Adopts the most advanced international cycloid pinwheel reducer to ensure the rationality of the output transmission ratio. The motor and reducer are directly connected, with small size and easy operation. Stable performance, no need for frequent maintenance. Uses special rubber with anti-aging materials, featuring sun protection, cold resistance, corrosion resistance, anti-aging, long service life, and many other advantages. High cleaning efficiency, up to 99% or more."
+      },
+      "hy-vertical-circulating-fan": {
+         "description": "The HY-500 provides excellent longitudinal ventilation for greenhouses. In modern greenhouses, ventilation plays a vital role. Air recirculation can evenly distribute heat flow in the greenhouse, facilitating synchronized growth of crops in all locations. With the improvement of modern greenhouse energy technology and the promotion of intensive cultivation, the necessity of temperature control for crops has become increasingly apparent. The GZAF-500 helps crop growers reduce the adverse effects of temperature in a simple and efficient way. Longitudinal and transverse airflow can provide a suitable climate environment for crop growth."
+      },
+      "hy-side-air-inlet": {
+         "description": "Made of high-quality engineering plastic by injection molding, with higher density and more firmness. It contains UV-resistant additives, giving it stronger anti-aging ability and longer service life. The air inlet has better sealing, flexible opening, and anti-bird nets. Double stainless steel springs ensure excellent sealing. Dimensions can be customized."
+      },
+      "hy-pig-feeding-line": {
+         "description": "The automatic feeding system for pig equipment consists of: 1. Main feeding line: mainly includes feed pipe, feeding auger, drive motor, main feed hopper, discharge pipe, sensor, and control equipment (feeding lines using ground hopper feeding do not need to install the main feeding line). 2. Auxiliary feeding line: mainly includes feed pipe, feeding auger, drive motor, feeding hopper, feed tray, sensor, and control equipment. The automatic feeding system is a new product developed by our company specifically for pig farms. Driven by a three-phase AC motor, the scraper chain transports feed from the feed tank to the pig house through the pipeline. The feed line pipeline passes above the feeding trough of the pigs, with a T-shaped discharge port at each feeding trough position. The feed automatically flows into the feeding trough under the drive of the chain. This system can be applied to fattening pig houses, positioning bars, sow precision feeding, and breeding pig testing equipment. The automatic feeding system can achieve fully automatic operation, reduce labor intensity, and improve the production efficiency of pig farms. It has stable performance, reliable use, and low failure rate, and has been well received by pig farm users since its launch in the market!"
+      },
+      "hy-automatic-water-line": {
+         "description": "The nipple drinking system is equipped with the most advanced water filter, water pressure regulator, automatic medicator, anti-electric shock device, etc. It can meet the drinking demands for broilers and breeders growing by floor or layer management. UPVC plastic pipe, fully close type drinking system, stops the outside environmental pollution, avoids virus's spreading. Various model nipples for customer's choice."
       }
-    },
-    "productDetails": {
-      "priceFrom": "From",
-      "aboutProduct": {
-        "title": "About the product",
-        "details": "Details",
-        "specifications": "Specifications",
-        "type": "Type"
-      }
-    }
-  },
-  "Products": {
-    "hy-push-pull-exhaust-fans": {
-      "highlight": "HY series High class fan is mainly made up of blade , Centrifugal Opening Device, motor , outer frame, protectingnets, supporting frames, shutters. lt is made based on aerodynamic, effectively reduce the wind resistance.",
-      "description": "HY series High class fan is mainly made up of blade, Centrifugal Opening Device,motor outer frame, protecting nets, supporting frames, shutters. It is made based on aerodynamic, effectively reduce the wind resistance. The major parts are made of galvanized steel sheets and Stainless steel sheets. Al the products are widely used in various types of buildings as farms ,greenhouses, factory building."
-    },
-    "hy-cooling-pad": {
-      "highlight": "Corrugated paper has high intensity structure, corrosion resistant, long service life. Fine percolating and absorbing water to ensure water drip wet the wall.",
-      "description": "It offers excellent percolation and water absorption to ensure the wall stays wet. Its unique three-dimensional structure maximizes the evaporation surface area for efficient heat exchange between water and air. The outer frame is available in aluminum alloy or galvanized board. It comes in various external colors, including brown, green, brown-green interlaced, one-sided black, one-sided green, and one-sided yellow. Corrugated paper features a high-strength structure, is corrosion-resistant, and has a long service life. The warranty period is 5 or 10 years."
-    },
-    "hy-silos": {
-      "highlight": "Silo coaming panel designed in semi-circular shape, smooth, strong with good looking. Lower coaming panel equipped with water drip edge, prevent raindrops falling on the lower cone or other parts.",
-      "description": "Silo coaming panel designed in semi-circular shape, smooth, strong with good looking. Lower coaming panel equipped with water drip edge, prevent raindrops falling on the lower cone or other parts. Reasonable angel design, each piece of upper cone plate is overlapped and combined to form the entire upper cone.Upper cone equipped with a vent hole and emergency discharge outlet (optional). Reasonable lower cone angel, feed material drop smoothly,no accumulation. Lower cone equipped with transparent inspection window. Lower cone outlet conventional size 442 or 690mm, outlet to ground distance >860mm, fit flex auger and chain feeding line easily."
-    },
-    "hy-electric-heaters": {
-      "highlight": "This fully automated system lets you set and forget your desired temperature, with multi-level heating adjustment for customized comfort. Its advanced ceramic heating technology saves 30% energy while withstanding harsh conditions like humid livestock barns.",
-      "description": "The system offers automatic control, allowing you to set the desired temperature for fully automated operation and shutdown of the electric heating fan, enabling unmanned operation. It features multiple firepower levels, letting you freely select the heating speed and gradient from one level to several based on heating needs and power conditions. It includes delay protection with multiple levels of delayed start to prevent excessive instantaneous starting current from impacting the power grid. The fan also has a delayed stop to utilize all residual heat, protecting the heating element. The ceramic heating is durable and energy-efficient, ideal for challenging environments like livestock and poultry houses or greenhouses with high ammonia and humidity. The specially designed extinction heating tube saves up to 30% more electricity. The fan is ultra-quiet, using an external rotor design with strong airflow and low noise, meeting household standards. It’s easy to use and heats quickly, requiring only electricity (single-phase or three-phase). It reaches maximum heat capacity within 10 minutes of being powered on."
-    },
-    "hy-dry-and-wet-seprator": {
-      "highlight": "This series of solid-liquid separators can be widely used as good equipment for separating animal feces, wine residue, medicine residue, slaughterhouse wastewater, biogas slurry, and dry wet separation in pigs, cows, chickens, and various large and medium-sized animal husbandry farms.",
-      "description": "This series of solid-liquid separators is versatile equipment suitable for separating animal feces, wine residue, medicine residue, slaughterhouse wastewater, biogas slurry, and performing dry-wet separation for pigs, cows, chickens, and various large and medium-sized livestock farms. It operates using the natural gravity of water flow, requiring no energy consumption. The crushing component uses low power, ensuring minimal energy use. The machine has a high daily processing capacity and excellent work efficiency. Constructed entirely from 304 stainless steel, it offers high strength, resists deformation, and has a long service life."
-    },
-    "hy-roof-ventilation-fan": {
-      "highlight": "Natural wind-driven ventilation system operates 24/7 without external power. Highly sensitive to even slight breezes or temperature variations, the turbine blades rotate effortlessly to ensure continuous airflow. Designed for stable and silent operation, it significantly improves indoor air quality while maintaining a peaceful environment.",
-      "description": "The system is powered by natural wind and operates 24 hours a day. It is highly sensitive, activated by slight breezes or temperature differences to drive the turbine blade. It rotates stably and quietly, improving the indoor environment. The design uses high-quality bearings, requiring no lubrication, ensuring durability and a low failure rate. It is corrosion-resistant, acid- and alkali-proof, and has a long service life."
-    },
-    "hy-heavy-hammer-exhaust-fan": {
-      "description": "Fans mainly consists of blade, motor, frame, protect net, bracing cage, shutters. The motor drives blade tocause air flow and louver window can open and close automatically to keep the dust from entering."
-    },
-    "hy-plastic-cooling-pad": {
-      "description": "The product we manufacture is an air purification device specifically designed for the animal husbandry industry. It helps restore a pure and clean air environment around the ranch, ensuring the surrounding area remains free from polluted gases. The device can utilize either biological or chemical purification methods. We offer standard modular equipment or building-integrated system modes, and we can also customize non-standard solutions based on user needs. For modular equipment, users can select the appropriate size based on their actual ventilation flow rate. We typically provide two standard specifications: 50,000 m³ and 75,000 m³. Each module operates as an independent system, but multiple modules can also be combined to share a common solution pool and control system. For integrated systems, the design is incorporated during the building's planning phase, seamlessly blending with the structure. These systems use adjustable prefabricated modules to achieve the required capacity, allowing for on-site installation and cost-effective operation."
-    },
-    "hy-poultry-light-filter": {
-      "description": "Non-glare PVC materials, by extrusion molding finished, anti-ageing, chemical resistant, high pressure washable. Reasonable design, different dimension available, easy assembly. Frame options for customers, stainless steel sheet or galvanized sheet."
-    },
-    "hy-series-coal-burning-heater": {
-      "description": "This heating system is designed for areas ranging from 300 to 1,800 square meters. Its combustion chamber features a heightened design, ensuring a long service life. The system includes a stainless steel dust precipitator, which is simple yet highly efficient. With an insulated three-return design, heat loss is minimized, achieving up to 90% thermal efficiency. A key durability feature is the 20mm-thick heat-resistant cast steel pipe, which prevents deformation even after a decade of use. All performance indicators meet national Class I environmental standards, making it both powerful and eco-friendly."
-    },
-    "hy-fecal-pumping-pump": {
-      "description": "This manure pump has the characteristics of stable performance and easy maintenance. Especially under harsh conditions such as high temperatures in summer, freezing in winter, uneven media, thick and viscous chicken feathers and straw fibers, it can still work normally. It has a simple structure, a wide range of applications, and a relatively low cost. Usage: This pump not only has the characteristics of a manure pump, but also has the function of a mud pump, which can transport highly viscous feces to a certain height and is not easy to block. Widely used for the transportation of feces in poor conditions such as chicken farms, duck farms, and pig farms. (The manure pump is in a lifting mode, and the motor of this machine cannot enter water. The lift is 6 meters, and the remote distance is 100 meters. This data is for reference only, please refer to the actual situation.)"
-    },
-    "hy-air-circulation-fan": {
-      "description": "This product features Haier’s triple-protection specialty motor, which delivers stable performance, advanced energy-saving technology, and an automatic thermal protection system. It has undergone rigorous 360-hour destructive testing in Haier’s laboratory to ensure durability. The fan blades are made of lightweight stamped aluminum sheets, designed with a wide angle for high airflow while maintaining low noise levels. The shell uses an integrated collector design and is available in stainless steel or spray-coated steel plate options for added versatility. For easy installation, it includes convenient and sleek buckle-type hangers. Built for longevity, this product is engineered for a long service life."
-    },
-    "hy-cow-house-hanging-exhaust-fan": {
-      "description": "The fan blades are made of Krupp stainless steel by punch forming, ensuring no dust, attractive appearance, and durability. The special blade shape design ensures large air volume, no deformation, no breakage, and consistent air volume. Both Chinese famous motors and Siemens motors are available, with customizable voltage and frequency. The Chinese famous motor has a special design for fans, featuring a phase lack protection device that powers off during electricity shortages. The motor protection grade is IP55 with insulation class F. The fan belt pulley is made of high-strength aluminum-magnesium alloy by die-casting, reducing weight while maintaining high corrosion resistance. The special reinforced ribs pulley design eliminates internal stress to improve rigidity and stability, ensuring it never breaks."
-    },
-    "hy-frp-cone-fan": {
-      "description": "This FRP fan is suitable for places where temperature needs to be cooled, such as breeding farms with corrosive gases and other industrial and mining plants. The fiberglass shell is extremely strong and resistant to corrosion, deformation, and discoloration. The horn-shaped exhaust vent is highly impact-resistant and improves performance by 10%. The PG material fiber-reinforced composite is formed by injection molding of glass fiber and nylon under high pressure, featuring high strength, strong toughness, and light weight. The PG blades adopt a streamlined propeller design with large air volume and low maintenance cost. High-quality imported bearings ensure smooth and efficient operation of fan blades, and the motor is of high quality and efficiency."
-    },
-    "hy-butterfly-cone-fan": {
-      "description": "This fan features an advanced front double-door opening mechanism with low wind resistance, good sealing, and high efficiency. The cone uses a plug-in connection mechanism, avoiding complicated bolt and nut fastening, reducing labor intensity, and improving the fan's aesthetics. The aluminum-magnesium alloy belt automatic tensioning device does not deform and has a long service life. The fan doors are equipped with rubber sealing devices when closed, effectively preventing outdoor air from entering through other stopped fans, greatly improving work efficiency (15-20% more efficient compared to fans of the same size). The motor is installed reasonably, protecting the motor while avoiding wind resistance to the blades, and the motor base connection makes the fan frame more sturdy."
-    },
-    "hy-air-cooler": {
-      "description": "The air cooler is widely applicable to industrial plants with high temperatures such as textiles, clothing, injection molding, foundries, toys, printing, electronics, laundry rooms, and boiler rooms. It is also suitable for public places like shopping malls, supermarkets, waiting rooms, hotels, restaurants, hospitals, and schools, as well as agricultural sites such as greenhouses, livestock, and flowers. The cooler provides efficient cooling and humidity control for various environments."
-    },
-    "hy-series-light-oil-burning-heater": {
-      "description": "The oil-fired hot air blower is a new product that uses diesel or kerosene as fuel to generate hot air for heating. It features lightweight, flexibility, small size, powerful hot air power, simple operation, separate smoke device, oil break detection, safety, reliability, low electricity consumption, and fuel saving. This machine has multiple safety devices: vibration sensing automatic stop device, flame monitoring device, overload protection device, overheating protection device, and power failure safety device. It is suitable for livestock breeding, greenhouse sheds, factory workshops, and all other places that require heating. Currently, there are many choices for heating energy in the market, including coal burning, gas burning, electric heating, and oil heating. Among various heating methods, air heating is more comfortable, and oil-fired hot air blowers, as an emerging industrial air heating method, have been widely accepted."
-    },
-    "hy-water-and-wind-coal-burning-heating-machine": {
-      "description": "This heating machine is mainly used in poultry farms, vegetable greenhouses, flower greenhouses, industrial factories, and other heating places. It can quickly increase indoor temperature by using hot air and hot water simultaneously. When the required temperature is reached, it stops quickly and uses the remaining temperature in the machine to maintain hot water temperature, achieving long heating preservation and saving coal consumption. It is easy to install and maintain, saves time and labor costs, saves 30% more energy compared to traditional heating methods, and improves heating efficiency by over 95%."
-    },
-    "hy-conveyor-manure-cleaner": {
-      "description": "The conveyor manure cleaner is mostly used for manure cleaning in stepped cage poultry houses. Reduces manpower and material resources, greatly improving work efficiency. Adopts the most advanced international cycloid pinwheel reducer to ensure the rationality of the output transmission ratio. The motor and reducer are directly connected, with small size and easy operation. Stable performance, no need for frequent maintenance. Uses special rubber with anti-aging materials, featuring sun protection, cold resistance, corrosion resistance, anti-aging, long service life, and many other advantages. High cleaning efficiency, up to 99% or more."
-    },
-    "hy-vertical-circulating-fan": {
-      "description": "The HY-500 provides excellent longitudinal ventilation for greenhouses. In modern greenhouses, ventilation plays a vital role. Air recirculation can evenly distribute heat flow in the greenhouse, facilitating synchronized growth of crops in all locations. With the improvement of modern greenhouse energy technology and the promotion of intensive cultivation, the necessity of temperature control for crops has become increasingly apparent. The GZAF-500 helps crop growers reduce the adverse effects of temperature in a simple and efficient way. Longitudinal and transverse airflow can provide a suitable climate environment for crop growth."
-    },
-    "hy-side-air-inlet": {
-      "description": "Made of high-quality engineering plastic by injection molding, with higher density and more firmness. It contains UV-resistant additives, giving it stronger anti-aging ability and longer service life. The air inlet has better sealing, flexible opening, and anti-bird nets. Double stainless steel springs ensure excellent sealing. Dimensions can be customized."
-    },
-    "hy-pig-feeding-line": {
-      "description": "The automatic feeding system for pig equipment consists of: 1. Main feeding line: mainly includes feed pipe, feeding auger, drive motor, main feed hopper, discharge pipe, sensor, and control equipment (feeding lines using ground hopper feeding do not need to install the main feeding line). 2. Auxiliary feeding line: mainly includes feed pipe, feeding auger, drive motor, feeding hopper, feed tray, sensor, and control equipment. The automatic feeding system is a new product developed by our company specifically for pig farms. Driven by a three-phase AC motor, the scraper chain transports feed from the feed tank to the pig house through the pipeline. The feed line pipeline passes above the feeding trough of the pigs, with a T-shaped discharge port at each feeding trough position. The feed automatically flows into the feeding trough under the drive of the chain. This system can be applied to fattening pig houses, positioning bars, sow precision feeding, and breeding pig testing equipment. The automatic feeding system can achieve fully automatic operation, reduce labor intensity, and improve the production efficiency of pig farms. It has stable performance, reliable use, and low failure rate, and has been well received by pig farm users since its launch in the market!"
-    },
-    "hy-automatic-water-line": {
-      "description": "The nipple drinking system is equipped with the most advanced water filter, water pressure regulator, automatic medicator, anti-electric shock device, etc. It can meet the drinking demands for broilers and breeders growing by floor or layer management. UPVC plastic pipe, fully close type drinking system, stops the outside environmental pollution, avoids virus's spreading. Various model nipples for customer's choice."
-    }
-  }
+   }
 }

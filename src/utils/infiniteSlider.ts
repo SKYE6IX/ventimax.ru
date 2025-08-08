@@ -289,7 +289,6 @@ export function infiniteSlider({
             tl.progress(
                wrap(startProgress + (draggable.startX - draggable.x) * ratio)
             );
-         const debounceAlign = debounce(align, 200);
          const syncIndex = () => tl.closestIndex(true);
          draggable = Draggable.create(draggableProxy, {
             trigger: items[0].parentNode as HTMLDivElement,
@@ -309,9 +308,11 @@ export function infiniteSlider({
                gsap.set(draggableProxy, { x: startProgress / -ratio });
             },
             onDrag: () => {
+               const debounceAlign = debounce(align, 200);
                debounceAlign();
             },
             onThrowUpdate: () => {
+               const debounceAlign = debounce(align, 200);
                debounceAlign();
             },
             snap: (value) => {

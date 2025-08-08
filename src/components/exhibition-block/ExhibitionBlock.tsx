@@ -26,49 +26,58 @@ function ExhibitionBlock() {
 
    const { contextSafe } = useGSAP(
       () => {
+         const mm = gsap.matchMedia();
          const slides = gsap.utils.toArray(
             ".exhibition-block__slide"
          ) as HTMLDivElement[];
-
-         // Reset activeElementRef and initial animation duriung navigations
-         activeElementRef.current = null;
-         setInitialAnimation(true);
-         // Set the initial style on each slide
-         gsap.set(".exhibition-block__image", {
-            scale: (i) => (i === 0 ? 1 : 0.9),
-         });
-
-         //Initialize the slide helper function
-         infiniteSliderRef.current = infiniteSlider({
-            items: slides,
-            config: {
-               paused: true,
-               center: true,
-               draggable: true,
-               onChange: (element) => {
-                  const tl = gsap.timeline();
-                  if (activeElementRef.current) {
-                     tl.fromTo(
-                        ".active .exhibition-block__image",
-                        { scale: 1 },
-                        { scale: 0.9, ease: "power1.in", duration: 0.2 }
-                     );
-                     activeElementRef.current.classList.remove("active");
-                  }
-                  element.classList.add("active");
-                  activeElementRef.current = element;
-                  tl.add(() => {
-                     tl.fromTo(
-                        ".active .exhibition-block__image",
-                        { scale: 0.9 },
-                        { scale: 1, ease: "power1.out", duration: 0.2 }
-                     );
-                  }, "+=0").progress(initialAnimation ? 1 : 0);
-               },
+         const breakPoint = 912;
+         mm.add(
+            {
+               isDesktop: `(min-width: ${breakPoint}px)`,
+               isMobile: `(max-width: ${breakPoint}px)`,
             },
-         });
-         infiniteSliderRef.current.toIndex(0, { duration: 0 });
-         setInitialAnimation(false);
+            (context) => {
+               const { isMobile } = context.conditions as { isMobile: boolean };
+               // Reset activeElementRef and initial animation duriung navigations
+               activeElementRef.current = null;
+               setInitialAnimation(true);
+               // Set the initial style on each slide
+               gsap.set(".exhibition-block__image", {
+                  scale: (i) => (i === 0 ? 1 : 0.9),
+               });
+               //Initialize the slide helper function
+               infiniteSliderRef.current = infiniteSlider({
+                  items: slides,
+                  config: {
+                     paused: true,
+                     center: true,
+                     draggable: isMobile,
+                     onChange: (element) => {
+                        const tl = gsap.timeline();
+                        if (activeElementRef.current) {
+                           tl.fromTo(
+                              ".active .exhibition-block__image",
+                              { scale: 1 },
+                              { scale: 0.9, ease: "power1.in", duration: 0.2 }
+                           );
+                           activeElementRef.current.classList.remove("active");
+                        }
+                        element.classList.add("active");
+                        activeElementRef.current = element;
+                        tl.add(() => {
+                           tl.fromTo(
+                              ".active .exhibition-block__image",
+                              { scale: 0.9 },
+                              { scale: 1, ease: "power1.out", duration: 0.2 }
+                           );
+                        }, "+=0").progress(initialAnimation ? 1 : 0);
+                     },
+                  },
+               });
+               infiniteSliderRef.current.toIndex(0, { duration: 0 });
+               setInitialAnimation(false);
+            }
+         );
       },
       { scope: sliderContainerRef }
    );
@@ -82,7 +91,6 @@ function ExhibitionBlock() {
          duration: 0.4,
       });
    });
-
    return (
       <section className="exhibition-block">
          <div className="exhibition-block__header">
