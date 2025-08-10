@@ -32,7 +32,7 @@ export async function generateMetadata({
    const { locale } = await params;
    const t = await getTranslations({ locale, namespace: "SEO" });
    return {
-      title: "Ventimax - Shandong Hengyuan Lufeng Agriculture and Animal Husbandry Technology Co., Ltd.",
+      title: `${t("metaData.title")}`,
       description: t("metaData.description"),
       keywords: convertStringToArray(t("metaData.keywords")),
       metadataBase: new URL("https://ventimax.ru/ru"),
@@ -40,7 +40,6 @@ export async function generateMetadata({
          canonical: "https://ventimax.ru/ru",
          languages: {
             en: "https://ventimax.ru/en",
-            ru: "https://ventimax.ru/ru",
             zh: "https://ventimax.ru/zh",
          },
       },
@@ -61,7 +60,7 @@ export async function generateMetadata({
          yandex: "ccd26c026b83880e",
          google: "WqBwl_Fzxiw8EqkOKgbmByoqTwGDOBc_8tfVic2ltkU",
       },
-      category: "Livestocks Equipments",
+      category: `${t("metaData.categories")}`,
    };
 }
 
