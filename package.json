@@ -1,45 +1,45 @@
 {
-  "name": "ventimax.ru",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev -p 8080 --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "test": "jest",
-    "test:watch": "jest --watch"
-  },
-  "dependencies": {
-    "@emailjs/browser": "^4.4.1",
-    "@gsap/react": "^2.1.2",
-    "gsap": "^3.13.0",
-    "next": "15.3.4",
-    "next-intl": "^4.3.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-transition-group": "^4.4.5",
-    "schema-dts": "^1.1.5"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@playwright/test": "^1.53.1",
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^14.6.1",
-    "@types/jest": "^30.0.0",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@types/react-transition-group": "^4.4.12",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.4",
-    "jest": "^30.0.3",
-    "jest-environment-jsdom": "^30.0.2",
-    "prettier": "3.6.2",
-    "sass": "^1.89.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5"
-  }
+   "name": "ventimax.ru",
+   "version": "0.1.0",
+   "private": true,
+   "scripts": {
+      "dev": "next dev -p 8080 --turbopack",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "test": "jest",
+      "test:watch": "jest --watch"
+   },
+   "dependencies": {
+      "@emailjs/browser": "^4.4.1",
+      "@gsap/react": "^2.1.2",
+      "gsap": "^3.13.0",
+      "next": "15.3.4",
+      "next-intl": "^4.3.1",
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0",
+      "react-transition-group": "^4.4.5",
+      "schema-dts": "^1.1.5"
+   },
+   "devDependencies": {
+      "@eslint/eslintrc": "^3",
+      "@playwright/test": "^1.53.1",
+      "@testing-library/dom": "^10.4.0",
+      "@testing-library/jest-dom": "^6.6.3",
+      "@testing-library/react": "^16.3.0",
+      "@testing-library/user-event": "^14.6.1",
+      "@types/jest": "^30.0.0",
+      "@types/node": "^20",
+      "@types/react": "^19",
+      "@types/react-dom": "^19",
+      "@types/react-transition-group": "^4.4.12",
+      "eslint": "^9",
+      "eslint-config-next": "15.3.4",
+      "jest": "^30.0.3",
+      "jest-environment-jsdom": "^30.0.2",
+      "prettier": "3.6.2",
+      "sass": "^1.89.2",
+      "ts-node": "^10.9.2",
+      "typescript": "^5"
+   }
 }
