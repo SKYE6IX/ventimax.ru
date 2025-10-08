@@ -82,6 +82,7 @@ export default async function RootLayout({
    }
    setRequestLocale(locale);
    const message = await getMessages({ locale: locale });
+
    const jsonLd: WithContext<WebPage> = {
       "@context": "https://schema.org",
       "@type": "WebPage",
