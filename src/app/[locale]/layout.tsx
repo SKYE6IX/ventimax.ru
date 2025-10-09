@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import {
@@ -39,6 +40,7 @@ export async function generateMetadata({
       alternates: {
          canonical: "https://ventimax.ru/ru",
          languages: {
+            ru: "https://ventimax.ru/ru",
             en: "https://ventimax.ru/en",
             zh: "https://ventimax.ru/zh",
          },
@@ -75,7 +77,6 @@ export default async function RootLayout({
    children: React.ReactNode;
    params: Promise<{ locale: string }>;
 }>) {
-   const isProduction = process.env.NODE_ENV === "production";
    const { locale } = await params;
    if (!hasLocale(routing.locales, locale)) {
       notFound();
@@ -146,12 +147,11 @@ export default async function RootLayout({
                   <Footer />
                </ModalToggleProvider>
             </NextIntlClientProvider>
-            {isProduction && (
-               <Script
-                  id="yandex-metrica"
-                  strategy="lazyOnload"
-                  dangerouslySetInnerHTML={{
-                     __html: `
+            <Script
+               id="yandex-metrica"
+               strategy="afterInteractive"
+               dangerouslySetInnerHTML={{
+                  __html: `
          (function(m,e,t,r,i,k,a){
         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
         m[i].l=1*new Date();
@@ -161,15 +161,23 @@ export default async function RootLayout({
          ym(103642400, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", 
          accurateTrackBounce:true, trackLinks:true});
             `,
-                  }}
-               />
-            )}
+               }}
+            />
             <script
                type="application/ld+json"
                dangerouslySetInnerHTML={{
                   __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
                }}
             />
+            <noscript>
+               <div>
+                  <img
+                     src="https://mc.yandex.ru/watch/103642400"
+                     style={{ position: "absolute", left: "-9999px" }}
+                     alt=""
+                  />
+               </div>
+            </noscript>
          </body>
       </html>
    );
