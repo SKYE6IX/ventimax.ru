@@ -1,303 +1,305 @@
 @use "@/global-style/variables.scss" as *;
 
 .product-details-page {
-  width: 100%;
-  padding-top: 80px;
-  padding-bottom: 60px;
-  @include max-breakpoint("md") {
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-  @include between-breakpoints("xs", "s") {
-    padding-top: 20px;
-  }
+   width: 100%;
+   padding-top: 80px;
+   padding-bottom: 60px;
+   @include max-breakpoint("md") {
+      padding-top: 60px;
+      padding-bottom: 40px;
+   }
+   @include between-breakpoints("xs", "s") {
+      padding-top: 20px;
+   }
 }
 .product-details-page__header {
-  display: flex;
-  padding-left: 50px;
-  padding-right: 100px;
-  gap: 80px;
-  @include max-breakpoint("md") {
-    padding-left: 80px;
-    padding-right: 80px;
-    gap: 50px;
-  }
-  @include between-breakpoints("xs", "s") {
-    gap: 20px;
-    position: relative;
-    flex-direction: column;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 70px;
-  }
+   display: flex;
+   padding-left: 50px;
+   padding-right: 100px;
+   gap: 80px;
+   @include max-breakpoint("md") {
+      padding-left: 80px;
+      padding-right: 80px;
+      gap: 50px;
+   }
+   @include between-breakpoints("xs", "s") {
+      gap: 20px;
+      position: relative;
+      flex-direction: column;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 70px;
+   }
 }
 .product-details-page__images-wrapper {
-  display: flex;
-  gap: 50px;
-  @include max-breakpoint("md") {
-    flex-direction: column-reverse;
-    gap: 30px;
-  }
-  @include between-breakpoints("xs", "s") {
-    flex-direction: column;
-  }
+   display: flex;
+   gap: 50px;
+   @include max-breakpoint("md") {
+      flex-direction: column-reverse;
+      gap: 30px;
+   }
+   @include between-breakpoints("xs", "s") {
+      flex-direction: column;
+   }
 }
 .product-details-page__image-list-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  @include max-breakpoint("md") {
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
-  @include between-breakpoints("xs", "s") {
-    gap: 10px;
-    justify-content: flex-start;
-    overflow-x: hidden;
-  }
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   @include max-breakpoint("md") {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+   }
+   @include between-breakpoints("xs", "s") {
+      gap: 10px;
+      justify-content: flex-start;
+      overflow-x: hidden;
+   }
 }
 .product-details-page__image-container {
-  position: relative;
-  width: 48px;
-  height: 48px;
-  background: $neutral;
-  border-radius: 5px;
-  img {
-    object-fit: contain;
-  }
-  cursor: pointer;
-  @include between-breakpoints("xs", "s") {
-    flex-shrink: 0;
-    width: 100%;
-    height: 390px;
-  }
+   position: relative;
+   width: 48px;
+   height: 48px;
+   background: $neutral;
+   border-radius: 5px;
+   img {
+      object-fit: contain;
+   }
+   cursor: pointer;
+   @include between-breakpoints("xs", "s") {
+      flex-shrink: 0;
+      width: 100%;
+      height: 390px;
+   }
 }
 .product-details-page__slider-indicator-wrapper {
-  display: none;
-  width: 100%;
-  justify-content: center;
-  gap: 15px;
+   display: none;
+   width: 100%;
+   justify-content: center;
+   gap: 15px;
 }
 .product-details-page__slider-indicator-wrapper.show {
-  display: flex;
-  @include min-breakpoint("768px") {
-    display: none;
-  }
+   display: flex;
+   @include min-breakpoint("768px") {
+      display: none;
+   }
 }
 .product-details-page__slider-indicator {
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  border: 1px solid $primary;
+   width: 20px;
+   height: 20px;
+   border-radius: 20px;
+   border: 1px solid $primary;
 }
 .product-details-page__slider-indicator.active {
-  background: $primary;
+   background: $primary;
 }
 .product-details-page__current-image-container {
-  position: relative;
-  width: 625px;
-  height: 625px;
-  border-radius: 10px;
-  background: $neutral;
-  img {
-    object-fit: contain;
-  }
-  @include max-breakpoint("md") {
-    width: 463px;
-    height: 463px;
-  }
-  @include max-breakpoint("853px") {
-    width: 390px;
-    height: 390px;
-  }
-  @include between-breakpoints("xs", "s") {
-    display: none;
-  }
+   position: relative;
+   width: 625px;
+   height: 625px;
+   border-radius: 10px;
+   background: $neutral;
+   img {
+      object-fit: contain;
+   }
+   @include max-breakpoint("md") {
+      width: 463px;
+      height: 463px;
+   }
+   @include max-breakpoint("853px") {
+      width: 390px;
+      height: 390px;
+   }
+   @include between-breakpoints("xs", "s") {
+      display: none;
+   }
 }
 .product-details-page__header-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 50px;
-  @include max-breakpoint("md") {
-    gap: 20px;
-  }
-  @include between-breakpoints("xs", "s") {
-    padding: 0px 20px;
-  }
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   @include max-breakpoint("md") {
+      gap: 20px;
+   }
+   @include between-breakpoints("xs", "s") {
+      padding: 0px 20px;
+   }
 }
 .product-details-page__product-title {
-  font-family: $font-roboto;
-  font-size: 2.5rem;
-  line-height: 48px;
-  font-weight: 500;
-  color: $text;
-  max-width: 400px;
-  @include max-breakpoint("md") {
-    font-size: 1.875rem;
-    line-height: 33px;
-  }
-  @include between-breakpoints("xs", "s") {
-    max-width: 350px;
-    position: absolute;
-    top: 0px;
-  }
-}
-.product-details-page__product-price {
-  font-family: $font-roboto;
-  font-size: 1.875rem;
-  line-height: 36px;
-  font-weight: 500;
-  color: $text;
-  @include max-breakpoint("md") {
-    font-size: 1.25rem;
-    line-height: 22px;
-  }
-  @include between-breakpoints("xs", "s") {
-    font-size: 2rem;
-    line-height: 35.2px;
-  }
+   font-family: $font-roboto;
+   font-size: 2.5rem;
+   line-height: 48px;
+   font-weight: 500;
+   color: $text;
+   max-width: 400px;
+   @include max-breakpoint("md") {
+      font-size: 1.875rem;
+      line-height: 33px;
+   }
+   @include between-breakpoints("xs", "s") {
+      max-width: 350px;
+      position: absolute;
+      top: 0px;
+   }
 }
 .product-details-page__button-container {
-  & .button-cta {
-    width: 100%;
-    @include between-breakpoints("xs", "s") {
-      padding-top: 18px;
-      padding-bottom: 18px;
-    }
-  }
+   & .button-cta {
+      width: 100%;
+      margin-top: 30px;
+      @include between-breakpoints("xs", "s") {
+         padding-top: 18px;
+         padding-bottom: 18px;
+      }
+   }
+}
+.product-details-page__contacts {
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+
+.product-details-page__contacts-item:nth-child(n + 2) {
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: $primary;
+   border-radius: 50px;
 }
 .product-details-page__body {
-  margin-top: 80px;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  @include max-breakpoint("md") {
-    width: calc(100% - 160px);
-    gap: 20px;
-  }
-  @include max-breakpoint("sm") {
-    width: calc(100% - 80px);
-  }
-  @include between-breakpoints("xs", "s") {
-    margin-top: 40px;
-    width: calc(100% - 40px);
-  }
+   margin-top: 80px;
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+   @include max-breakpoint("md") {
+      width: calc(100% - 160px);
+      gap: 20px;
+   }
+   @include max-breakpoint("sm") {
+      width: calc(100% - 80px);
+   }
+   @include between-breakpoints("xs", "s") {
+      margin-top: 40px;
+      width: calc(100% - 40px);
+   }
 }
 .product-details-page__body-title {
-  padding: 18px 22px;
-  border-radius: 15px;
-  border: 1px solid $primary;
-  display: inline-flex;
-  font-family: $font-roboto;
-  font-size: 1.5rem;
-  line-height: 28.8px;
-  color: $primary;
-  @include max-breakpoint("md") {
-    font-size: 1.25rem;
-    line-height: 22px;
-  }
-  @include between-breakpoints("xs", "s") {
-    font-size: 1.125rem;
-    line-height: 19.8px;
-    padding: 14px 18px;
-  }
+   padding: 18px 22px;
+   border-radius: 15px;
+   border: 1px solid $primary;
+   display: inline-flex;
+   font-family: $font-roboto;
+   font-size: 1.5rem;
+   line-height: 28.8px;
+   color: $primary;
+   @include max-breakpoint("md") {
+      font-size: 1.25rem;
+      line-height: 22px;
+   }
+   @include between-breakpoints("xs", "s") {
+      font-size: 1.125rem;
+      line-height: 19.8px;
+      padding: 14px 18px;
+   }
 }
 .product-details-page__details-wrapper,
 .product-details-page__specifications-wrapper {
-  width: 100%;
-  border-radius: 15px;
-  border: 1px solid $primary;
-  background: $neutral;
-  padding: 30px;
-  @include max-breakpoint("md") {
-    padding: 20px;
-  }
+   width: 100%;
+   border-radius: 15px;
+   border: 1px solid $primary;
+   background: $neutral;
+   padding: 30px;
+   @include max-breakpoint("md") {
+      padding: 20px;
+   }
 }
 .product-details-page__details-title,
 .product-details-page__specifications-title {
-  font-family: $font-roboto;
-  font-size: 1.375rem;
-  line-height: 26.4px;
-  color: $primary;
-  font-weight: 500;
-  text-align: center;
+   font-family: $font-roboto;
+   font-size: 1.375rem;
+   line-height: 26.4px;
+   color: $primary;
+   font-weight: 500;
+   text-align: center;
 }
 .product-details-page__details {
-  font-family: $font-roboto;
-  font-size: 1.125rem;
-  line-height: 25.2px;
-  color: $text;
-  font-weight: 400;
-  margin-top: 20px;
+   font-family: $font-roboto;
+   font-size: 1.125rem;
+   line-height: 25.2px;
+   color: $text;
+   font-weight: 400;
+   margin-top: 20px;
 }
 .product-details-page__specifications-type {
-  margin-top: 30px;
-  position: relative;
-  width: 250px;
-  padding: 18px 15px;
-  display: inline-flex;
-  align-items: center;
-  border-radius: 15px;
-  border: 1px solid $primary;
-  font-family: $font-roboto;
-  font-size: 1rem;
-  line-height: 19.2px;
-  font-weight: 500;
-  color: $text;
-  @include max-breakpoint("md") {
-    margin-top: 20px;
-  }
+   margin-top: 30px;
+   position: relative;
+   width: 250px;
+   padding: 18px 15px;
+   display: inline-flex;
+   align-items: center;
+   border-radius: 15px;
+   border: 1px solid $primary;
+   font-family: $font-roboto;
+   font-size: 1rem;
+   line-height: 19.2px;
+   font-weight: 500;
+   color: $text;
+   @include max-breakpoint("md") {
+      margin-top: 20px;
+   }
 }
 .product-details-page__specifications-type-icon {
-  position: absolute;
-  right: 15px;
-  z-index: 1;
-  svg {
-    width: 23px;
-    height: 12px;
-    stroke-width: 3.2px;
-  }
+   position: absolute;
+   right: 15px;
+   z-index: 1;
+   svg {
+      width: 23px;
+      height: 12px;
+      stroke-width: 3.2px;
+   }
 }
 .product-details-page__specifications-select {
-  position: relative;
-  z-index: 10;
-  background: transparent;
-  appearance: none;
-  font-family: $font-roboto;
-  font-size: 1rem;
-  line-height: 19.2px;
-  font-weight: 300;
-  border: none;
-  outline: none;
-  width: 100%;
-  height: 100%;
+   position: relative;
+   z-index: 10;
+   background: transparent;
+   appearance: none;
+   font-family: $font-roboto;
+   font-size: 1rem;
+   line-height: 19.2px;
+   font-weight: 300;
+   border: none;
+   outline: none;
+   width: 100%;
+   height: 100%;
 }
 .product-details-page__specifications-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-top: 30px;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-top: 30px;
 }
 .product-details-page__specifications-item {
-  font-family: $font-roboto;
-  font-size: 0.875rem;
-  line-height: 16.8px;
-  color: $text;
-  font-weight: 500;
-  span {
-    font-weight: 300;
-  }
-  padding-bottom: 10px;
+   font-family: $font-roboto;
+   font-size: 0.875rem;
+   line-height: 16.8px;
+   color: $text;
+   font-weight: 500;
+   span {
+      font-weight: 300;
+   }
+   padding-bottom: 10px;
 }
 .product-details-page__specifications-item:not(
-  .product-details-page__specifications-item:last-child
+   .product-details-page__specifications-item:last-child
 ) {
-  border-bottom: 1px solid $primary;
+   border-bottom: 1px solid $primary;
 }

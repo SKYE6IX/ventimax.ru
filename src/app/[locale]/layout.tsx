@@ -60,7 +60,7 @@ export async function generateMetadata({
       },
       verification: {
          yandex: "ccd26c026b83880e",
-         google: "WqBwl_Fzxiw8EqkOKgbmByoqTwGDOBc_8tfVic2ltkU",
+         google: "eug_j6Qc6BbHZ5JDVJNoeMh0Xp7LFmxIT0QbfLgF0SM",
       },
       category: `${t("metaData.categories")}`,
    };

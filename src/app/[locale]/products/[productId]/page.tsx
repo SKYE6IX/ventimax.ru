@@ -9,6 +9,10 @@ import ArrowDownIcon from "@/components/icons/ArrowDownIcon";
 import { products } from "@/products-data/products";
 import { infiniteSlider } from "@/utils/infiniteSlider";
 import "./page.scss";
+import Link from "next/link";
+import WhatAppsIcon from "@/components/icons/WhatAppsIcon";
+import TelephoneIcon from "@/components/icons/TelephoneIcon";
+import MailIcon from "@/components/icons/MailIcon";
 
 gsap.registerPlugin(useGSAP);
 
@@ -110,6 +114,29 @@ function ProductDetails({
                </h3>
                <div className="product-details-page__button-container">
                   <CtaButton />
+               </div>
+               <div className="product-details-page__contacts">
+                  <Link
+                     href="https://wa.me/8616653608178"
+                     className="product-details-page__contacts-item"
+                     data-testid="form-social-link"
+                  >
+                     <WhatAppsIcon />
+                  </Link>
+                  <Link
+                     href="tel:+8616653608178"
+                     className="product-details-page__contacts-item"
+                     data-testid="form-quick-link-number"
+                  >
+                     <TelephoneIcon />
+                  </Link>
+                  <Link
+                     href="mailto:amyxuan@cool-fan.com"
+                     className="product-details-page__contacts-item"
+                     data-testid="form-quick-link-email"
+                  >
+                     <MailIcon />
+                  </Link>
                </div>
             </div>
          </div>
