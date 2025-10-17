@@ -36,7 +36,7 @@ export async function generateMetadata({
       title: `${t("metaData.title")}`,
       description: t("metaData.description"),
       keywords: convertStringToArray(t("metaData.keywords")),
-      metadataBase: new URL("https://ventimax.ru/ru"),
+      metadataBase: new URL("https://ventimax.ru"),
       alternates: {
          canonical: "https://ventimax.ru/ru",
          languages: {
