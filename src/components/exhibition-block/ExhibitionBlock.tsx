@@ -18,6 +18,7 @@ const exhibitionBlockData = [
    "/exhibition-images/ex-6.jpg",
    "/exhibition-images/ex-7.jpg",
    "/exhibition-images/ex-8.jpg",
+   "/exhibition-images/ex-9.JPG",
 ];
 gsap.registerPlugin(useGSAP);
 
