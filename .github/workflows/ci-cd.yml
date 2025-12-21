@@ -50,6 +50,12 @@ jobs:
            with:
               yc-sa-json-credentials: ${{ secrets.YC_SA_CI_CD_KEY_JSON }}
 
+         - name: Login to Docker Hub
+           uses: docker/login-action@v3
+           with:
+              username: ${{ vars.DOCKER_USERNAME }}
+              password: ${{ secrets.DOCKERHUB_TOKEN }}
+
          - name: Pull from Docker Hub and Push to Yandex CR
            env:
               CR_REGISTRY_ID: ${{ vars.YC_REGISTRY_ID }}
@@ -73,5 +79,5 @@ jobs:
               revision-cores: 1
               revision-memory: 512Mb
               revision-core-fraction: 100
+              revision-execution-timeout: 30
               revision-image-url: cr.yandex/${{ vars.YC_REGISTRY_ID }}/${{ github.event.repository.name }}:latest
-              revision-execution-timeout: 10
