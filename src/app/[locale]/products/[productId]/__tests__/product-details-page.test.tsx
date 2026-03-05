@@ -8,138 +8,144 @@ import message from "../../../../../../messages/en.json";
 jest.mock("@gsap/react");
 jest.mock("gsap");
 jest.mock("react", () => ({
-  ...jest.requireActual("react"),
-  use: jest.fn(),
+   ...jest.requireActual("react"),
+   use: jest.fn(),
 }));
 
 describe("Product component", () => {
-  beforeEach(() => {
-    jest.clearAllMocks();
-    (useGSAP as jest.Mock).mockReturnValue({
-      contextSafe: jest.fn(),
-    });
-  });
+   beforeEach(() => {
+      jest.clearAllMocks();
+      (useGSAP as jest.Mock).mockReturnValue({
+         contextSafe: jest.fn(),
+      });
+   });
 
-  it("render product image", async () => {
-    // Arrange
-    const mockData = {
-      productId: "hy-push-pull-exhaust-fans",
-    };
-    jest.spyOn(React, "use").mockImplementation(() => {
-      return mockData;
-    });
-    const param = Promise.resolve(mockData);
-    render(
-      <NextIntlClientProvider locale="en" messages={message}>
-        <ProductDetails params={param} />
-      </NextIntlClientProvider>
-    );
+   it("render product image", async () => {
+      // Arrange
+      const mockData = {
+         productId: "hy-push-pull-exhaust-fans",
+      };
 
-    // Act
-    const productImage = screen.getByTestId("product-details-image");
+      jest.spyOn(React, "use").mockImplementation(() => {
+         return mockData;
+      });
 
-    // Assert
-    expect(productImage).toBeInTheDocument();
-  });
+      const param = Promise.resolve(mockData);
+      render(
+         <NextIntlClientProvider locale="en" messages={message}>
+            <ProductDetails params={param} />
+         </NextIntlClientProvider>
+      );
 
-  it("render product correct product title", async () => {
-    // Arrange
-    const mockData = {
-      productId: "hy-push-pull-exhaust-fans",
-    };
-    jest.spyOn(React, "use").mockImplementation(() => {
-      return mockData;
-    });
-    const param = Promise.resolve(mockData);
-    const mockTitle = "HY-PUSH-PULL EXHAUST FAN";
+      // Act
+      const productImages = screen.getAllByTestId("product-details-image");
 
-    render(
-      <NextIntlClientProvider locale="en" messages={message}>
-        <ProductDetails params={param} />
-      </NextIntlClientProvider>
-    );
+      // Assert
+      for (const el of productImages) {
+         expect(el).toBeInTheDocument();
+      }
+   });
 
-    // Act
-    const productTitle = screen.getByTestId("product-details-title");
+   it("render product correct product title", async () => {
+      // Arrange
+      const mockData = {
+         productId: "hy-push-pull-exhaust-fans",
+      };
+      jest.spyOn(React, "use").mockImplementation(() => {
+         return mockData;
+      });
+      const param = Promise.resolve(mockData);
+      const mockTitle = "HY-PUSH-PULL EXHAUST FAN";
 
-    // Assert
-    expect(productTitle).toHaveTextContent(mockTitle);
-  });
+      render(
+         <NextIntlClientProvider locale="en" messages={message}>
+            <ProductDetails params={param} />
+         </NextIntlClientProvider>
+      );
 
-  it("render product detail title and specification title", async () => {
-    // Arrange
-    const mockData = {
-      productId: "hy-push-pull-exhaust-fans",
-    };
-    jest.spyOn(React, "use").mockImplementation(() => {
-      return mockData;
-    });
-    const param = Promise.resolve(mockData);
+      // Act
+      const productTitle = screen.getByTestId("product-details-title");
 
-    render(
-      <NextIntlClientProvider locale="en" messages={message}>
-        <ProductDetails params={param} />
-      </NextIntlClientProvider>
-    );
+      // Assert
+      expect(productTitle).toHaveTextContent(mockTitle);
+   });
 
-    // Act
-    const detailTitle = screen.getByTestId("product-details-title");
-    const specificationTitle = screen.getByTestId(
-      "product-specification-title"
-    );
+   it("render product detail title and specification title", async () => {
+      // Arrange
+      const mockData = {
+         productId: "hy-push-pull-exhaust-fans",
+      };
+      jest.spyOn(React, "use").mockImplementation(() => {
+         return mockData;
+      });
+      const param = Promise.resolve(mockData);
 
-    // Assert
-    expect(detailTitle).toBeInTheDocument();
-    expect(specificationTitle).toBeInTheDocument();
-  });
+      render(
+         <NextIntlClientProvider locale="en" messages={message}>
+            <ProductDetails params={param} />
+         </NextIntlClientProvider>
+      );
 
-  it("render product detail description", async () => {
-    // Arrange
-    const mockData = {
-      productId: "hy-push-pull-exhaust-fans",
-    };
-    jest.spyOn(React, "use").mockImplementation(() => {
-      return mockData;
-    });
-    const param = Promise.resolve(mockData);
+      // Act
+      const detailTitle = screen.getByTestId("product-details-title");
+      const specificationTitle = screen.getByTestId(
+         "product-specification-title"
+      );
 
-    render(
-      <NextIntlClientProvider locale="en" messages={message}>
-        <ProductDetails params={param} />
-      </NextIntlClientProvider>
-    );
+      // Assert
+      expect(detailTitle).toBeInTheDocument();
+      expect(specificationTitle).toBeInTheDocument();
+   });
 
-    // Act
-    const detailDescription = screen.getByTestId("product-details-description");
+   it("render product detail description", async () => {
+      // Arrange
+      const mockData = {
+         productId: "hy-push-pull-exhaust-fans",
+      };
+      jest.spyOn(React, "use").mockImplementation(() => {
+         return mockData;
+      });
+      const param = Promise.resolve(mockData);
 
-    // Assert
-    expect(detailDescription).toBeInTheDocument();
-  });
+      render(
+         <NextIntlClientProvider locale="en" messages={message}>
+            <ProductDetails params={param} />
+         </NextIntlClientProvider>
+      );
 
-  it("render product specification item", async () => {
-    // Arrange
-    const mockData = {
-      productId: "hy-push-pull-exhaust-fans",
-    };
-    jest.spyOn(React, "use").mockImplementation(() => {
-      return mockData;
-    });
-    const param = Promise.resolve(mockData);
+      // Act
+      const detailDescription = screen.getByTestId(
+         "product-details-description"
+      );
 
-    render(
-      <NextIntlClientProvider locale="en" messages={message}>
-        <ProductDetails params={param} />
-      </NextIntlClientProvider>
-    );
+      // Assert
+      expect(detailDescription).toBeInTheDocument();
+   });
 
-    // Act
-    const specificationItems = screen.getAllByTestId(
-      "product-details-specification-item"
-    );
+   it("render product specification item", async () => {
+      // Arrange
+      const mockData = {
+         productId: "hy-push-pull-exhaust-fans",
+      };
+      jest.spyOn(React, "use").mockImplementation(() => {
+         return mockData;
+      });
+      const param = Promise.resolve(mockData);
 
-    // Assert
-    for (const el of specificationItems) {
-      expect(el).toBeInTheDocument();
-    }
-  });
+      render(
+         <NextIntlClientProvider locale="en" messages={message}>
+            <ProductDetails params={param} />
+         </NextIntlClientProvider>
+      );
+
+      // Act
+      const specificationItems = screen.getAllByTestId(
+         "product-details-specification-item"
+      );
+
+      // Assert
+      for (const el of specificationItems) {
+         expect(el).toBeInTheDocument();
+      }
+   });
 });

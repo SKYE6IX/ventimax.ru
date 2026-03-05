@@ -182,7 +182,8 @@
             "details": "详情",
             "specifications": "规格",
             "type": "类 型"
-         }
+         },
+         "paymentMethod": "我们接受向VTB银行的本地支付。"
       }
    },
    "Products": {

@@ -170,6 +170,30 @@
    background: $primary;
    border-radius: 50px;
 }
+
+.product-details-page__accept-payment {
+   display: none;
+}
+.product-details-page__accept-payment:lang("ru"),
+.product-details-page__accept-payment:lang("en") {
+   margin-top: 20px;
+   border-radius: 12px;
+   border: 1px solid #204e51;
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   padding: 15px;
+}
+.product-details-page__accept-payment-title {
+   color: #204e51;
+   font-family: $font-roboto, sans-serif;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 20px;
+   letter-spacing: 0.5px;
+}
+
 .product-details-page__body {
    margin-top: 80px;
    width: 1200px;

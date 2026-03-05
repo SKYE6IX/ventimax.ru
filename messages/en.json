@@ -182,7 +182,8 @@
             "details": "Details",
             "specifications": "Specifications",
             "type": "Type"
-         }
+         },
+         "paymentMethod": "We accept local payment to VTB bank"
       }
    },
    "Products": {

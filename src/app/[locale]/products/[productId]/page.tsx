@@ -13,6 +13,7 @@ import Link from "next/link";
 import WhatAppsIcon from "@/components/icons/WhatAppsIcon";
 import TelephoneIcon from "@/components/icons/TelephoneIcon";
 import MailIcon from "@/components/icons/MailIcon";
+import VtbIcon from "@/components/icons/VtbIcon";
 
 gsap.registerPlugin(useGSAP);
 
@@ -112,9 +113,11 @@ function ProductDetails({
                >
                   {product?.name}
                </h3>
+
                <div className="product-details-page__button-container">
                   <CtaButton />
                </div>
+
                <div className="product-details-page__contacts">
                   <Link
                      href="https://wa.me/8616653608178"
@@ -137,6 +140,15 @@ function ProductDetails({
                   >
                      <MailIcon />
                   </Link>
+               </div>
+
+               <div className="product-details-page__accept-payment">
+                  <h4 className="product-details-page__accept-payment-title">
+                     {t("paymentMethod")}
+                  </h4>
+                  <div className="product-details-page__accept-payment-icon">
+                     <VtbIcon />
+                  </div>
                </div>
             </div>
          </div>

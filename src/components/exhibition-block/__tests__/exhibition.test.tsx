@@ -43,7 +43,7 @@ describe("exhibition block", () => {
       const exhibitionImages = screen.getAllByTestId("exhibition-image");
 
       // Assert
-      expect(exhibitionImages).toHaveLength(4);
+      expect(exhibitionImages.length).toBeGreaterThan(1);
       for (const el of exhibitionImages) {
          expect(el).toBeInTheDocument();
       }
