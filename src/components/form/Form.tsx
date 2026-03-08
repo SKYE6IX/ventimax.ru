@@ -19,6 +19,7 @@ interface FormState {
    subject: string;
    message: string;
 }
+
 const defaultFormState = {
    name: "",
    email: "",
@@ -34,6 +35,7 @@ function Form() {
    const [isSending, setIsSending] = useState(false);
    const [formState, setFormState] = useState<FormState>(defaultFormState);
    const formRef = useRef<HTMLFormElement>(null);
+
    const handleChange = (
       e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
    ) => {
@@ -169,6 +171,7 @@ function Form() {
                         value={formState.subject}
                         onChange={handleChange}
                         data-testid="form-input"
+                        required
                      />
                   </label>
                </div>
