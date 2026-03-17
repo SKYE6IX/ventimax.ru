@@ -14,6 +14,7 @@ import WhatAppsIcon from "@/components/icons/WhatAppsIcon";
 import TelephoneIcon from "@/components/icons/TelephoneIcon";
 import MailIcon from "@/components/icons/MailIcon";
 import VtbIcon from "@/components/icons/VtbIcon";
+import TelegramIcon from "@/components/icons/TelegramIcon";
 
 gsap.registerPlugin(useGSAP);
 
@@ -125,6 +126,13 @@ function ProductDetails({
                      data-testid="form-social-link"
                   >
                      <WhatAppsIcon />
+                  </Link>
+                  <Link
+                     href="https://t.me/QingZhouVentimax"
+                     className="product-details-page__contacts-item"
+                     data-testid="form-social-link"
+                  >
+                     <TelegramIcon />
                   </Link>
                   <Link
                      href="tel:+8616653608178"
