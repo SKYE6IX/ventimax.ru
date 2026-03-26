@@ -8,8 +8,7 @@ import TelephoneIcon from "../icons/TelephoneIcon";
 import MailIcon from "../icons/MailIcon";
 import LocationIcon from "../icons/LocationIcon";
 import WhatAppsIcon from "../icons/WhatAppsIcon";
-import FacebookIcon from "../icons/FacebookIcon";
-import YoutubeIcon from "../icons/YoutubeIcon";
+import TelegramIcon from "../icons/TelegramIcon";
 import "./form.scss";
 
 interface FormState {
@@ -76,6 +75,13 @@ function Form() {
             );
       }
    };
+
+   const url = new URL("https://t.me/skye6ix");
+   url.searchParams.set(
+      "text",
+      "Здравствуйте, мы заинтересованы в покупке сельскохозяйственного оборудования!"
+   );
+   const tlUrl = url.toString().replace(/\+/g, "%20");
 
    return (
       <div className="form-container">
@@ -151,7 +157,6 @@ function Form() {
                         placeholder={t("inputs.number.label")}
                         type="tel"
                         name="phone"
-                        required
                         value={formState.phone}
                         onChange={handleChange}
                         data-testid="form-input"
@@ -171,7 +176,6 @@ function Form() {
                         value={formState.subject}
                         onChange={handleChange}
                         data-testid="form-input"
-                        required
                      />
                   </label>
                </div>
@@ -244,11 +248,11 @@ function Form() {
                            {t("quickLink.email")}:
                         </span>
                         <Link
-                           href="mailto:amyxuan@cool-fan.com"
+                           href="mailto:customers-support@ventimax.ru"
                            className="form-container__quick-link-text"
                            data-testid="form-quick-link-email"
                         >
-                           amyxuan@cool-fan.com
+                           customers-support@ventimax.ru
                         </Link>
                      </div>
                   </div>
@@ -276,22 +280,17 @@ function Form() {
                      href="https://wa.me/8616653608178"
                      className="form-container__social-link"
                      data-testid="form-social-link"
+                     target="_blank"
                   >
                      <WhatAppsIcon />
                   </Link>
                   <Link
-                     href="#"
+                     href={tlUrl}
                      className="form-container__social-link"
                      data-testid="form-social-link"
+                     target="_blank"
                   >
-                     <FacebookIcon />
-                  </Link>
-                  <Link
-                     href="#"
-                     className="form-container__social-link"
-                     data-testid="form-social-link"
-                  >
-                     <YoutubeIcon />
+                     <TelegramIcon />
                   </Link>
                </div>
             </div>

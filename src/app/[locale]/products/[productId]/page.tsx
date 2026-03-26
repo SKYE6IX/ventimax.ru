@@ -59,6 +59,14 @@ function ProductDetails({
       },
       { scope: sliderContainerRef }
    );
+
+   const url = new URL("https://t.me/skye6ix");
+   url.searchParams.set(
+      "text",
+      "Здравствуйте, мы заинтересованы в покупке сельскохозяйственного оборудования!"
+   );
+   const tlUrl = url.toString().replace(/\+/g, "%20");
+
    return (
       <div className="product-details-page">
          <div className="product-details-page__header">
@@ -124,13 +132,15 @@ function ProductDetails({
                      href="https://wa.me/8616653608178"
                      className="product-details-page__contacts-item"
                      data-testid="form-social-link"
+                     target="_blank"
                   >
                      <WhatAppsIcon />
                   </Link>
                   <Link
-                     href="https://t.me/QingZhouVentimax"
+                     href={tlUrl}
                      className="product-details-page__contacts-item"
                      data-testid="form-social-link"
+                     target="_blank"
                   >
                      <TelegramIcon />
                   </Link>
@@ -138,13 +148,15 @@ function ProductDetails({
                      href="tel:+8616653608178"
                      className="product-details-page__contacts-item"
                      data-testid="form-quick-link-number"
+                     target="_blank"
                   >
                      <TelephoneIcon />
                   </Link>
                   <Link
-                     href="mailto:amyxuan@cool-fan.com"
+                     href="mailto:customers-support@ventimax.ru"
                      className="product-details-page__contacts-item"
                      data-testid="form-quick-link-email"
+                     target="_blank"
                   >
                      <MailIcon />
                   </Link>
